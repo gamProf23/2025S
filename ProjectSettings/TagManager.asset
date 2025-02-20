@@ -2,16 +2,16 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Background
   - Water
   - UI
-  - 
+  - FrtBg
   - 
   - 
   - 
@@ -41,3 +41,13 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BG
+    uniqueID: 3547364627
+    locked: 0
+  - name: Front
+    uniqueID: 1003274473
+    locked: 0
+  m_RenderingLayers:
+  - Default
+  - BG
+  - Front
