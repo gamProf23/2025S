@@ -29,5 +29,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScenes/ExitTest/DownRightRoom.unity
     guid: 99c686fcea0dfc74c87470c23f7f6b90
+  - enabled: 1
+    path: Assets/Scenes/MasterScenes/TutorialLvlDesign.unity
+    guid: 89fc994932553184a946a682f80a5db0
+  - enabled: 1
+    path: Assets/Scenes/MasterScenes/PuzzleLvlDesign.unity
+    guid: e3da12d9d4f6c7a4891926d3048c4828
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
