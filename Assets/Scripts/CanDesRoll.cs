@@ -3,6 +3,17 @@ using UnityEngine;
 public class CanDesRoll : MonoBehaviour
 {
     public float velocityToKill;
+
+    public bool destroyForever;
+
+    private void Awake()
+    {
+        if (FindAnyObjectByType<SceneInfo>().GetCDList().ContainsKey(gameObject.scene.name) == true && FindAnyObjectByType<SceneInfo>().GetCDList()[gameObject.scene.name].Contains(gameObject.name) == true && destroyForever == true)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
         
@@ -19,6 +30,7 @@ public class CanDesRoll : MonoBehaviour
         if (collision.gameObject.tag == "Player" && collision.relativeVelocity.x > velocityToKill)
         {
             collision.gameObject.GetComponent<Rigidbody2D>().linearVelocity = collision.relativeVelocity;
+            FindAnyObjectByType<SceneInfo>().AddToCDList(gameObject.name);
             Destroy(gameObject);
         }
     }

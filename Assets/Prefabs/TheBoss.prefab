@@ -46,8 +46,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPlayerPrefab: {fileID: 6182061177719637992, guid: b4230db592f813141a52dc14ec580a6a, type: 3}
   myCameraPrefab: {fileID: 6931553661465259174, guid: 51818c52813fd254682260b3cc284fdf, type: 3}
+  myCanvasPrefab: {fileID: 5896310346828634814, guid: cdf8c442de44a78429fcbe0ae16f998a, type: 3}
   cameraClone: {fileID: 0}
-  leftExitScene: 
-  rightExitScene: 
-  leftExit: {fileID: 0}
-  rightExit: {fileID: 0}
+  L1SceneName: 
+  L2SceneName: 
+  L3SceneName: 
+  R1SceneName: 
+  R2SceneName: 
+  R3SceneName: 
+  U1SceneName: 
+  U2SceneName: 
+  U3SceneName: 
+  D1SceneName: 
+  D2SceneName: 
+  D3SceneName: 

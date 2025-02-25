@@ -2,7 +2,16 @@ using UnityEngine;
 
 public class Roarable : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public bool destroyForever;
+
+    private void Awake()
+    {
+        if (FindAnyObjectByType<SceneInfo>().GetCDList().ContainsKey(gameObject.scene.name) == true && FindAnyObjectByType<SceneInfo>().GetCDList()[gameObject.scene.name].Contains(gameObject.name) == true && destroyForever == true)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
         
@@ -18,6 +27,7 @@ public class Roarable : MonoBehaviour
     {
         if (collision.gameObject.name == "BearRoar")
         {
+            FindAnyObjectByType<SceneInfo>().AddToCDList(gameObject.name);
             Destroy(gameObject);
         }
 
