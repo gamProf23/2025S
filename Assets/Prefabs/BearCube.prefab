@@ -269,9 +269,9 @@ MonoBehaviour:
   waterGravity: 0.5
   outOfWaterUpForce: 100
   jumpKey: 32
-  clawKey: 47
-  rollKey: 303
-  roarKey: 46
+  clawKey: 106
+  rollKey: 107
+  roarKey: 108
   playerObject: {fileID: 0}
   playerRB: {fileID: 0}
   playerPosition: {x: 0, y: 0}
@@ -282,6 +282,7 @@ MonoBehaviour:
   isSwiming: 0
   myRoar: {fileID: 8737738838457462506}
   myBall: {fileID: 2259868932977037174}
+  amBall: 0
   myClaw: {fileID: 5971424291894822041}
   isGrounded: 0
   movingRight: 1
@@ -337,7 +338,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0403e9c8865191d4582943ac7b0fad69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
 --- !u!1 &5971424291894822041
 GameObject:
   m_ObjectHideFlags: 0
