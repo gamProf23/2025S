@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TestScenes/NewTestExit/TheNewHub.unity
+    guid: 576d9a2a3f3046b45ac1021437b2df52
+  - enabled: 1
     path: Assets/Scenes/TestScenes/JunkScenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -29,9 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScenes/ExitTest/DownRightRoom.unity
     guid: 99c686fcea0dfc74c87470c23f7f6b90
-  - enabled: 1
-    path: Assets/Scenes/TestScenes/NewTestExit/TheNewHub.unity
-    guid: 576d9a2a3f3046b45ac1021437b2df52
   - enabled: 1
     path: Assets/Scenes/TestScenes/NewTestExit/MargeRoom.unity
     guid: 80d9666bf25d1d543aba19b7a2097eca
