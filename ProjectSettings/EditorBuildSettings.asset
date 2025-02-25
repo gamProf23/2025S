@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestScenes/SampleScene.unity
+    path: Assets/Scenes/TestScenes/JunkScenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/TestScenes/17.unity
     guid: 3bee4102b3db5314f98bb12c34ae65e7
   - enabled: 1
-    path: Assets/Scenes/TestScenes/TheClam.unity
+    path: Assets/Scenes/TestScenes/JunkScenes/TheClam.unity
     guid: f1f79b5a0f26a8545b5dddf774b31ef3
   - enabled: 1
-    path: Assets/Scenes/TestScenes/SpoonerStreet.unity
+    path: Assets/Scenes/TestScenes/JunkScenes/SpoonerStreet.unity
     guid: 5b5b44ae57c556247983ee39bd1a167d
   - enabled: 1
     path: Assets/Scenes/TestScenes/ExitTest/TheHub.unity
@@ -29,5 +29,29 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScenes/ExitTest/DownRightRoom.unity
     guid: 99c686fcea0dfc74c87470c23f7f6b90
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/NewTestExit/TheNewHub.unity
+    guid: 576d9a2a3f3046b45ac1021437b2df52
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/NewTestExit/MargeRoom.unity
+    guid: 80d9666bf25d1d543aba19b7a2097eca
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/NewTestExit/HomerRoom.unity
+    guid: af4ffbe02ad658d4abbeea9536a5dfc7
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/NewTestExit/PeterRoom.unity
+    guid: dbd4c269c9766a94a8eb91eabe7830f4
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/NewTestExit/LoisRoom.unity
+    guid: 9ae704747890597449b7b49c28a0297f
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/NewTestExit/ClevlandRoom.unity
+    guid: 22e54594314aa3c4a95600dfaf3a5794
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/NewTestExit/StanRoom.unity
+    guid: 722353274474804439a012620cd7e325
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/NewTestExit/BobRoom.unity
+    guid: 10d52c67f81447e48b596a387fd80470
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
