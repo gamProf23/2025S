@@ -2,9 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SceneManagement;
 using Unity.VisualScripting;
-using System.Linq;
 
 public class SceneInfo : MonoBehaviour
 {
