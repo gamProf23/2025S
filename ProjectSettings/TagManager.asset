@@ -10,6 +10,11 @@ TagManager:
   - Water
   - RollDestroy
   - Ball
+  - Berry
+  - Fish
+  - Honey
+  - Collectable
+  - OneWayPlatform
   layers:
   - Default
   - TransparentFX

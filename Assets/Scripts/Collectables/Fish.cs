@@ -1,0 +1,52 @@
+using UnityEngine;
+
+public class Fish : MonoBehaviour
+{
+    public Collectable myFish;
+    Collectable fishClone;
+    
+    private void Awake()
+    {
+        if (FindAnyObjectByType<SceneInfo>().GetCDList().ContainsKey(gameObject.scene.name) == true && FindAnyObjectByType<SceneInfo>().GetCDList()[gameObject.scene.name].Contains(gameObject.name) == true)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Claw")
+        {
+            fishClone = Instantiate(myFish, transform.position, transform.rotation);
+            FindAnyObjectByType<SceneInfo>().AddToCDList(gameObject.name);
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Water")
+        {
+            GetComponent<Rigidbody2D>().gravityScale = 0;
+        }
+        
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Water")
+        {
+            GetComponent<Rigidbody2D>().gravityScale = 1;
+        }
+    }
+}

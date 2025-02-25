@@ -69,7 +69,7 @@ public class Bear : MonoBehaviour
     bool isRoaring = false;
 
     public GameObject myBall;
-    bool amBall = false;
+    public bool amBall = false;
 
     public GameObject myClaw;
     bool isSwiping = false;
@@ -509,7 +509,7 @@ public class Bear : MonoBehaviour
             }
         }
 
-        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Slope")
+        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Slope" || collision.gameObject.tag == "OneWayPlatform")
         {
             isGrounded = false;
             playerSpeed = playerSpeedI;
@@ -521,11 +521,24 @@ public class Bear : MonoBehaviour
     {
         foreach (ContactPoint2D hitPos in collision.contacts)
         {
-            if ((collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Slope") && hitPos.normal.y > 0)
+            if ((collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Slope" || collision.gameObject.tag == "OneWayPlatform") && hitPos.normal.y > 0)
             {
-                jumpAmount = jumpAmountI;
-                isGrounded = true;
-                climbingTimer = climbingTimerI;
+                if (collision.gameObject.tag == "OneWayPlatform")
+                {
+                    if ((transform.position.y - GetComponent<SpriteRenderer>().bounds.size.y/2) > (collision.transform.position.y + collision.gameObject.GetComponent<SpriteRenderer>().bounds.size.y/2))
+                    {
+                        jumpAmount = jumpAmountI;
+                        isGrounded = true;
+                        climbingTimer = climbingTimerI;
+                    }
+                }
+                else
+                {
+                    jumpAmount = jumpAmountI;
+                    isGrounded = true;
+                    climbingTimer = climbingTimerI;
+                }
+                
             }
             else
             {

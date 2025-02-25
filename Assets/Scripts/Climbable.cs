@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class Climbable : MonoBehaviour
 {
-   
+
+    private void Awake()
+    {
+
+    }
+
     void Start()
     {
         

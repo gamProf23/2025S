@@ -15,7 +15,9 @@ public class CamFollow : MonoBehaviour
 
     public Vector2 camLimitL;
     public Vector2 camLimitR;
+    public Vector2 camLimitUp;
     public Vector2 camLimitDown;
+    
 
     [HeaderAttribute("Set Dynamically")]
 
@@ -69,10 +71,17 @@ public class CamFollow : MonoBehaviour
             destination.x = camLimitR.x - offsetX;
         }
 
+        if (FindAnyObjectByType<CamLimitUp>() != null && destination.y > camLimitUp.y - offsetY)
+        {
+            destination.y = camLimitUp.y - offsetY;
+        }
+
         if (destination.y < camLimitDown.y + offsetY)
         {
             destination.y = camLimitDown.y + offsetY;
         }
+
+        
 
         // Interpolate from the current Camera position toward destination
         destination = Vector3.Lerp(transform.position, destination, easing);  // Smoothes the transtion between the initial camera position and the projectile).
@@ -89,7 +98,15 @@ public class CamFollow : MonoBehaviour
     public void SetUpCam()
     {
         camLimitL = FindAnyObjectByType<CamLimitL>().gameObject.transform.position;
+        
+        
         camLimitR = FindAnyObjectByType<CamLimitR>().gameObject.transform.position;
+        
+        if (FindAnyObjectByType<CamLimitUp>() != null)
+        {
+            camLimitUp = FindAnyObjectByType<CamLimitUp>().gameObject.transform.position;
+        }
+        
         camLimitDown = FindAnyObjectByType<CamLimitDown>().gameObject.transform.position;
 
         POI = FindAnyObjectByType<Bear>().gameObject;
@@ -103,6 +120,11 @@ public class CamFollow : MonoBehaviour
         if (POI.transform.position.x > camLimitR.x - offsetX)
         {
             transform.position = new Vector2(camLimitR.x - offsetX, transform.position.y);
+        }
+
+        if (FindAnyObjectByType<CamLimitUp>() != null && POI.transform.position.y > camLimitUp.y - offsetY)
+        {
+            transform.position = new Vector2(transform.position.x, camLimitUp.y - offsetY);
         }
 
         if (POI.transform.position.y < camLimitDown.y + offsetY)
