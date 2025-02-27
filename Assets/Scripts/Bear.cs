@@ -134,9 +134,9 @@ public class Bear : MonoBehaviour
     }
 
     void Update()
-    { 
-        
+    {
 
+        //Debug.Log(playerRB.linearVelocityX);
         playerPosition = transform.position;
         translationX = Input.GetAxis("Horizontal");
         translationY = Input.GetAxis("Vertical");
@@ -307,7 +307,7 @@ public class Bear : MonoBehaviour
         }
 
         //Jump
-        if (Input.GetKeyUp(jumpKey) && ((jumpAmount > 0) || (isClimbing == true)))
+        if (Input.GetKeyDown(jumpKey) && ((jumpAmount > 0) || (isClimbing == true)))
         {
             if (isClimbing == false)
             {
@@ -548,12 +548,36 @@ public class Bear : MonoBehaviour
 
         if (collision.gameObject.tag == "Slope" && amBall == true)
         {
-            if (playerRB.linearVelocity.y > 0)
+            /*if (playerRB.linearVelocity.y >= 0)
             {
+                
                 playerRB.linearVelocity = new Vector2(playerRB.linearVelocity.x, 0);
+            }*/
+
+            if ((playerRB.linearVelocityX < 0 && playerRB.linearVelocityX > -0.4f) || (playerRB.linearVelocityX > 0 && playerRB.linearVelocityX < 0.4f))
+            {
+                if (collision.transform.position.x < transform.position.x)
+                {
+                    translationX = 0.25f;
+                }
+                else
+                {
+                    translationX = -0.25f;
+                }
+
+                Vector2 checkPos = transform.position - (Vector3)new Vector2(0.0f, GetComponent<CapsuleCollider2D>().size.y / 2);
+                SlopeCheckHorizontal(checkPos);
+                SlopeCheckVertical(checkPos);
+                newVelocity.Set(playerSpeed * slopeNormalPerp.x * -translationX, playerSpeed * slopeNormalPerp.y * -translationX);
+                transform.Translate(newVelocity * Time.deltaTime * 2);
             }
-        
-            playerRB.linearVelocity = playerRB.linearVelocity * slopeVelocityMult;
+
+            if (playerRB.linearVelocityY < 0)
+            {
+                playerRB.linearVelocity = playerRB.linearVelocity * slopeVelocityMult;
+            }
+            
+            //Debug.Log(playerRB.linearVelocityX);
         }
     }
 
