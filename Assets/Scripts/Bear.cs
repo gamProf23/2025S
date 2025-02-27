@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Loading;
 using Unity.VisualScripting;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -80,6 +81,8 @@ public class Bear : MonoBehaviour
     List<Vector3> swipePointsL = new List<Vector3>();
     List<Vector3> swipePointsR = new List<Vector3>();
 
+    public Animator myAnimations;
+
     [Header("Slope Stuff: DO NOT TOUCH")]
 
     private float slopeCheckDistance = 0.75f;
@@ -94,6 +97,8 @@ public class Bear : MonoBehaviour
     public PhysicsMaterial2D fullFriction;
     public PhysicsMaterial2D noFriction;
 
+    
+
 
 
 
@@ -105,6 +110,7 @@ public class Bear : MonoBehaviour
         myRoar.transform.position = new Vector2(transform.position.x + (myRoar.GetComponent<SpriteRenderer>().size.x * 0.5f) + 0.5f, transform.position.y);
         playerSpeed = playerSpeedI;
         climbingTimer = climbingTimerI;
+        myAnimations = GetComponent<Animator>();
 
         if (FindAnyObjectByType<SpawnPoint>() != null)
         {
@@ -135,6 +141,7 @@ public class Bear : MonoBehaviour
 
     void Update()
     {
+        
 
         //Debug.Log(playerRB.linearVelocityX);
         playerPosition = transform.position;
@@ -397,6 +404,15 @@ public class Bear : MonoBehaviour
         {
             playerSpeed = playerSpeedI;
         }
+
+        if (translationX == 0)
+        {
+            myAnimations.SetBool("AmMoving", false);
+        }
+        else
+        {
+            myAnimations.SetBool("AmMoving", true);
+        }
        
     }
 
@@ -443,8 +459,7 @@ public class Bear : MonoBehaviour
         myClaw.GetComponent<Collider2D>().enabled = false;
         isSwiping = false;
 
-        //StopAllCoroutines();
-
+        //StopAllCoroutines()
     }
 
     void WallTouching()

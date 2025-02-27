@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cleveland_Brown_0: -8143061403514025539
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
