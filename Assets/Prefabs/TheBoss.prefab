@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2212340658850319287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7578924285782844394}
+  - component: {fileID: 2997653304522546107}
+  m_Layer: 0
+  m_Name: TheBoss
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7578924285782844394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2212340658850319287}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.96926886, y: -0.53982407, z: -0.086237766}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2997653304522546107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2212340658850319287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 963c7fa733e7b1d42ad945dff199a984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPlayerPrefab: {fileID: 6182061177719637992, guid: b4230db592f813141a52dc14ec580a6a, type: 3}
+  myCameraPrefab: {fileID: 6931553661465259174, guid: 51818c52813fd254682260b3cc284fdf, type: 3}
+  myCanvasPrefab: {fileID: 5896310346828634814, guid: cdf8c442de44a78429fcbe0ae16f998a, type: 3}
+  cameraClone: {fileID: 0}
+  L1SceneName: 
+  L2SceneName: 
+  L3SceneName: 
+  R1SceneName: 
+  R2SceneName: 
+  R3SceneName: 
+  U1SceneName: 
+  U2SceneName: 
+  U3SceneName: 
+  D1SceneName: 
+  D2SceneName: 
+  D3SceneName: 
