@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lois_Griffin_0: -968895294224712428
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
