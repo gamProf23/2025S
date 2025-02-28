@@ -27,7 +27,12 @@ public class CamFollow : MonoBehaviour
 
     public float offsetY = 10;
 
+    float textBoxOffset = 5f;
+
     public bool setMeUp = false;
+
+    float adjustedTextBoxY;
+    bool adjustedForTextBox = false;
 
     void Awake()
     {
@@ -52,7 +57,7 @@ public class CamFollow : MonoBehaviour
             setMeUp = false;
         }
 
-
+        
 
 
         if (POI == null) return;
@@ -81,7 +86,17 @@ public class CamFollow : MonoBehaviour
             destination.y = camLimitDown.y + offsetY;
         }
 
-        
+        if (FindAnyObjectByType<Bear>().isTalking == true && adjustedForTextBox == false)
+        {
+            adjustedTextBoxY = transform.position.y - textBoxOffset;
+            destination.y = adjustedTextBoxY;
+            adjustedForTextBox = true;
+        }
+        else if (FindAnyObjectByType<Bear>().isTalking == true && adjustedForTextBox == true)
+        {
+            destination.y = adjustedTextBoxY;
+        }
+
 
         // Interpolate from the current Camera position toward destination
         destination = Vector3.Lerp(transform.position, destination, easing);  // Smoothes the transtion between the initial camera position and the projectile).
