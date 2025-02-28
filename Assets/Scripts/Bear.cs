@@ -83,9 +83,12 @@ public class Bear : MonoBehaviour
 
     public Animator myAnimations;
 
+    float scaleX;
+    float scaleXNeg;
+
     [Header("Slope Stuff: DO NOT TOUCH")]
 
-    private float slopeCheckDistance = 0.75f;
+    private float slopeCheckDistance = 3f;
     public bool isOnSlope = false;
     private float slopeSideAngle;
     private Vector2 slopeNormalPerp;
@@ -106,11 +109,16 @@ public class Bear : MonoBehaviour
     {
         playerRB = GetComponent<Rigidbody2D>();
         jumpAmount = jumpAmountI;
-        myClaw.transform.position = new Vector2(transform.position.x + 0.5f, transform.position.y + 0.5f);
-        myRoar.transform.position = new Vector2(transform.position.x + (myRoar.GetComponent<SpriteRenderer>().size.x * 0.5f) + 0.5f, transform.position.y);
+        //myClaw.transform.position = new Vector2(transform.position.x + 0.5f, transform.position.y + 1f);
+        //myRoar.transform.position = new Vector2(transform.position.x + (myRoar.GetComponent<SpriteRenderer>().size.x * 0.5f) + 2.5f, transform.position.y);
         playerSpeed = playerSpeedI;
+        movingRight = true;
         climbingTimer = climbingTimerI;
         myAnimations = GetComponent<Animator>();
+        scaleX = transform.localScale.x;
+        scaleXNeg = transform.localScale.x * -1;
+
+        transform.localScale = new Vector3(scaleXNeg, transform.localScale.y, 1);
 
         if (FindAnyObjectByType<SpawnPoint>() != null)
         {
@@ -129,13 +137,13 @@ public class Bear : MonoBehaviour
     {
         if (movingRight == false)
         {
-            myClaw.transform.position = new Vector2(transform.position.x - 0.5f, transform.position.y + 0.5f);
-            myRoar.transform.position = new Vector2(transform.position.x - (GetComponent<SpriteRenderer>().size.x * 0.5f) - 0.5f, transform.position.y);
+            myClaw.transform.position = new Vector2(transform.position.x - 2.25f, transform.position.y + 1.75f);
+            myRoar.transform.position = new Vector2(transform.position.x - (GetComponent<SpriteRenderer>().size.x * 0.5f) - 2.5f, transform.position.y);
         }
         else
         {
-            myClaw.transform.position = new Vector2(transform.position.x + 0.5f, transform.position.y + 0.5f);
-            myRoar.transform.position = new Vector2(transform.position.x + (GetComponent<SpriteRenderer>().size.x * 0.5f) + 0.5f, transform.position.y);
+            myClaw.transform.position = new Vector2(transform.position.x + 2.25f, transform.position.y + 1.75f);
+            myRoar.transform.position = new Vector2(transform.position.x + (GetComponent<SpriteRenderer>().size.x * 0.5f) + 2.5f, transform.position.y);
         }
     }
 
@@ -160,26 +168,27 @@ public class Bear : MonoBehaviour
 
         swipePointsL = new List<Vector3>() 
         {
-            new Vector2(transform.position.x - 0.5f, transform.position.y + 0.5f),
-            new Vector2(transform.position.x - 1f, transform.position.y),
-            new Vector2(transform.position.x - 0.5f, transform.position.y - 0.5f)
+            new Vector2(transform.position.x - 2.25f, transform.position.y + 1.75f),
+            new Vector2(transform.position.x - 3f, transform.position.y),
+            new Vector2(transform.position.x - 2.25f, transform.position.y - 1.75f)
         };
 
         swipePointsR = new List<Vector3>()
         {
-            new Vector2(transform.position.x + 0.5f, transform.position.y + 0.5f),
-            new Vector2(transform.position.x + 1f, transform.position.y),
-            new Vector2(transform.position.x + 0.5f, transform.position.y - 0.5f)
+            new Vector2(transform.position.x + 2.25f, transform.position.y + 1.75f),
+            new Vector2(transform.position.x + 3f, transform.position.y),
+            new Vector2(transform.position.x + 2.25f, transform.position.y - 1.75f)
         };
 
         //Debug.Log (playerRB.velocity);
 
-        if (translationX < 0)
+        if (translationX < 0 && amBall == false)
         {
             if (isSwiping == false)
             {
-                myClaw.transform.position = new Vector2(transform.position.x - 0.5f, transform.position.y + 0.5f);
-                myRoar.transform.position = new Vector2(transform.position.x - (GetComponent<SpriteRenderer>().size.x * 0.5f) - 0.5f, transform.position.y);
+                myClaw.transform.position = new Vector2(transform.position.x - 2.25f, transform.position.y + 1.75f);
+                myRoar.transform.position = new Vector2(transform.position.x - (GetComponent<SpriteRenderer>().size.x * 0.5f) - 2.5f, transform.position.y);
+                transform.localScale = new Vector3(scaleX, transform.localScale.y, 1);
             }
 
             movingRight = false;
@@ -188,8 +197,9 @@ public class Bear : MonoBehaviour
         {
             if (isSwiping == false)
             {
-                myClaw.transform.position = new Vector2(transform.position.x + 0.5f, transform.position.y + 0.5f);
-                myRoar.transform.position = new Vector2(transform.position.x + (GetComponent<SpriteRenderer>().size.x * 0.5f) + 0.5f, transform.position.y);
+                myClaw.transform.position = new Vector2(transform.position.x + 2.25f, transform.position.y + 1.75f);
+                myRoar.transform.position = new Vector2(transform.position.x + (GetComponent<SpriteRenderer>().size.x * 0.5f) + 2.5f, transform.position.y);
+                transform.localScale = new Vector3(scaleXNeg, transform.localScale.y, 1);
             }
 
             movingRight = true;
@@ -255,11 +265,11 @@ public class Bear : MonoBehaviour
 
                     if (transform.position.x < whatImClimbing.transform.position.x)
                     {
-                        transform.position = new Vector2(whatImClimbing.transform.position.x - GetComponent<SpriteRenderer>().bounds.size.x, transform.position.y);
+                        transform.position = new Vector2(whatImClimbing.transform.position.x - GetComponent<Collider2D>().bounds.size.x, transform.position.y);
                     }
                     else if (transform.position.x > whatImClimbing.transform.position.x)
                     {
-                        transform.position = new Vector2(whatImClimbing.transform.position.x + GetComponent<SpriteRenderer>().bounds.size.x, transform.position.y);
+                        transform.position = new Vector2(whatImClimbing.transform.position.x + GetComponent<Collider2D>().bounds.size.x, transform.position.y);
                     }
 
                     playerRB.Sleep();
@@ -313,6 +323,11 @@ public class Bear : MonoBehaviour
 
         }
 
+        if (myAnimations.GetBool("AmJumping") == true)
+        {
+            myAnimations.SetBool("AmJumping", false);
+        }
+
         //Jump
         if (Input.GetKeyDown(jumpKey) && ((jumpAmount > 0) || (isClimbing == true)))
         {
@@ -328,8 +343,9 @@ public class Bear : MonoBehaviour
                     playerRB.AddForce(Vector2.up * jumpForce);
                     GetComponent<CapsuleCollider2D>().enabled = true;
                 }
-                    
-                
+
+                myAnimations.SetBool("AmJumping", true);
+                myAnimations.Play("BearJump");
                 jumpAmount = jumpAmount - 1;
                 isGrounded = false;
             }
@@ -405,14 +421,25 @@ public class Bear : MonoBehaviour
             playerSpeed = playerSpeedI;
         }
 
-        if (translationX == 0)
-        {
-            myAnimations.SetBool("AmMoving", false);
-        }
-        else
+        if ((translationX > 0.01f || translationX < -0.01f) && amBall == false && isGrounded == true)
         {
             myAnimations.SetBool("AmMoving", true);
         }
+        else
+        {
+            myAnimations.SetBool("AmMoving", false);
+        }
+
+        if (isGrounded == false)
+        {
+            myAnimations.SetBool("AmInAir", true);
+        }
+        else
+        {
+            myAnimations.SetBool("AmInAir", false);
+        }
+
+        
        
     }
 
@@ -472,17 +499,17 @@ public class Bear : MonoBehaviour
         if (movingRight == true)
         {
             startPos = gameObject.transform.position;
-            endPos = gameObject.transform.right * 1f;
+            endPos = gameObject.transform.right * 2f;
         }
         else
         {
             startPos = gameObject.transform.position;
-            endPos = gameObject.transform.right * -1f ;
+            endPos = gameObject.transform.right * -2f ;
         }
 
         Debug.DrawRay(startPos, endPos);
 
-        hit = Physics2D.Raycast(startPos, endPos, 0.6f);
+        hit = Physics2D.Raycast(startPos, endPos, 2f);
 
         if (hit.transform != null && hit.transform.tag == "Ground")
         {
@@ -540,7 +567,7 @@ public class Bear : MonoBehaviour
             {
                 if (collision.gameObject.tag == "OneWayPlatform")
                 {
-                    if ((transform.position.y - GetComponent<SpriteRenderer>().bounds.size.y/2) > (collision.transform.position.y + collision.gameObject.GetComponent<SpriteRenderer>().bounds.size.y/2))
+                    if ((transform.position.y - GetComponent<Collider2D>().bounds.size.y/2) > (collision.transform.position.y + collision.gameObject.GetComponent<Collider2D>().bounds.size.y/2))
                     {
                         jumpAmount = jumpAmountI;
                         isGrounded = true;
@@ -569,7 +596,7 @@ public class Bear : MonoBehaviour
                 playerRB.linearVelocity = new Vector2(playerRB.linearVelocity.x, 0);
             }*/
 
-            if ((playerRB.linearVelocityX < 0 && playerRB.linearVelocityX > -0.4f) || (playerRB.linearVelocityX > 0 && playerRB.linearVelocityX < 0.4f))
+            if ((playerRB.linearVelocityX < 0 && playerRB.linearVelocityX > -0.7f) || (playerRB.linearVelocityX > 0 && playerRB.linearVelocityX < 0.7f))
             {
                 if (collision.transform.position.x < transform.position.x)
                 {
