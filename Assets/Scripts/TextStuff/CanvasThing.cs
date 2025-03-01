@@ -32,18 +32,18 @@ public class CanvasThing : MonoBehaviour
     public void AddBerry()
     {
         berryCount++;
-        berryText.text = "B: " + berryCount.ToString();
+        berryText.text = /*"B: " + */berryCount.ToString();
     }
 
     public void AddFish()
     {
         fishCount++;
-        fishText.text = "F: " + fishCount.ToString();
+        fishText.text = /*"F: " + */fishCount.ToString();
     }
 
     public void AddHoney()
     {
         honeyCount++;
-        honeyText.text = "H: " + honeyCount.ToString();
+        honeyText.text = /* "H: " + */honeyCount.ToString();
     }
 }
