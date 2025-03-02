@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,6 +19,9 @@ public class CanvasThing : MonoBehaviour
     TMP_Text textBoxText;
     Image textBoxPortrait;
 
+    public Sprite bearPortrait;
+    bool keyPressed = false;
+
     private void Awake()
     {
        berryText = transform.GetChild(0).GetComponent<TMP_Text>();
@@ -34,25 +38,32 @@ public class CanvasThing : MonoBehaviour
     }
     void Update()
     {
-        
+        if (Input.anyKeyDown == true)
+        {
+            keyPressed = true;
+        }
+        else
+        {
+            keyPressed = false;
+        }
     }
 
     public void AddBerry()
     {
         berryCount++;
-        berryText.text = "B: " + berryCount.ToString();
+        berryText.text = " " + berryCount.ToString();
     }
 
     public void AddFish()
     {
         fishCount++;
-        fishText.text = "F: " + fishCount.ToString();
+        fishText.text = " " + fishCount.ToString();
     }
 
     public void AddHoney()
     {
         honeyCount++;
-        honeyText.text = "H: " + honeyCount.ToString();
+        honeyText.text = " " + honeyCount.ToString();
     }
 
     public void NPCTalk(List<string> text, Sprite image)
@@ -61,6 +72,7 @@ public class CanvasThing : MonoBehaviour
     }
 
     public bool crRunning = false;
+    
     public IEnumerator NPCTalkCR(List<string> text, Sprite image)
     {
         crRunning = true;
@@ -68,17 +80,44 @@ public class CanvasThing : MonoBehaviour
         string emptyText = "";
         textBox.transform.gameObject.SetActive(true);
         textBoxPortrait.sprite = image;
+        keyPressed = false;
 
         foreach (string s in text)
         {
+            if (s.Contains("SwitchP") == true)
+            {
+                if (textBoxPortrait.sprite == image)
+                {
+                    textBoxPortrait.sprite = bearPortrait;
+                }
+                else if(textBoxPortrait.sprite == bearPortrait)
+                {
+                    textBoxPortrait.sprite = image;
+                }
+
+                continue;
+            }
+
             foreach (char c in s)
             {
                 emptyText += c;
                 textBoxText.text = emptyText;
+                Input.ResetInputAxes();
+
                 yield return new WaitForSeconds(0.05f);
+
+                
+                if (Input.anyKey == true)
+                {
+                    emptyText = s;
+                    textBoxText.text = emptyText;
+                    keyPressed = false;
+                    break;
+                }
+
             }
 
-            while (Input.anyKey == false)
+            while (keyPressed == false)
             {
                 yield return new WaitForEndOfFrame();
             }

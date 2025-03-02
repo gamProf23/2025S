@@ -86,7 +86,7 @@ public class CamFollow : MonoBehaviour
             destination.y = camLimitDown.y + offsetY;
         }
 
-        if (FindAnyObjectByType<Bear>().isTalking == true && adjustedForTextBox == false)
+        /*if (FindAnyObjectByType<Bear>().isTalking == true && adjustedForTextBox == false)
         {
             adjustedTextBoxY = transform.position.y - textBoxOffset;
             destination.y = adjustedTextBoxY;
@@ -95,7 +95,7 @@ public class CamFollow : MonoBehaviour
         else if (FindAnyObjectByType<Bear>().isTalking == true && adjustedForTextBox == true)
         {
             destination.y = adjustedTextBoxY;
-        }
+        }*/
 
 
         // Interpolate from the current Camera position toward destination

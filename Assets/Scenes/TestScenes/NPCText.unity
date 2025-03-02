@@ -668,6 +668,8 @@ MonoBehaviour:
   myText:
   - Hi my name is Peter
   - This is worse than that time I was in a Unity prototype
+  - SwitchP
+  - OMG PETER GRIFFIN FROM FAMY GUY
   myPortrait: {fileID: 7440995474765512945, guid: 2494366e052e0a747be3e52a9df592fb, type: 3}
 --- !u!212 &1088916713
 SpriteRenderer:
