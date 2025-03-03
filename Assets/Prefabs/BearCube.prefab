@@ -270,9 +270,9 @@ MonoBehaviour:
   waterGravity: 0.5
   outOfWaterUpForce: 100
   jumpKey: 32
-  clawKey: 47
-  rollKey: 303
-  roarKey: 46
+  clawKey: 106
+  rollKey: 108
+  roarKey: 107
   playerObject: {fileID: 0}
   playerRB: {fileID: 0}
   playerPosition: {x: 0, y: 0}
