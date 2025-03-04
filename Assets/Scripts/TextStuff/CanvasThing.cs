@@ -32,14 +32,14 @@ public class CanvasThing : MonoBehaviour
 
     private void Awake()
     {
-        berryText = transform.GetChild(1).GetComponent<TMP_Text>();
-        fishText = transform.GetChild(2).GetComponent<TMP_Text>();
-        honeyText = transform.GetChild(3).GetComponent<TMP_Text>();
-        textBox = transform.GetChild(4).GetComponent<Image>();
+        berryText = transform.GetChild(0).GetComponent<TMP_Text>();
+        fishText = transform.GetChild(1).GetComponent<TMP_Text>();
+        honeyText = transform.GetChild(2).GetComponent<TMP_Text>();
+        textBox = transform.GetChild(3).GetComponent<Image>();
         textBoxText = textBox.transform.GetChild(0).GetComponent<TMP_Text>();
         textBoxPortrait = textBox.transform.GetChild(1).GetComponent<Image>();
 
-        pauseMenu = transform.GetChild(0).GetComponent<Image>();
+        pauseMenu = transform.GetChild(4).GetComponent<Image>();
         backButton = pauseMenu.transform.GetChild(1).GetComponent<Button>();
         mapButton = pauseMenu.transform.GetChild(2).GetComponent<Button>();
         exitButton = pauseMenu.transform.GetChild(3).GetComponent<Button>();
@@ -124,7 +124,7 @@ public class CanvasThing : MonoBehaviour
 
     void ExitButton()
     {
-        //put exit stuff here
+        Application.Quit();
     }
 
     public void AddBerry()

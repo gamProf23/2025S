@@ -1,0 +1,1292 @@
+fileFormatVersion: 2
+guid: 52c71f1788b54d64185c3fd87f0eff52
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7692132027844315015
+    second: spreadsheetBear_ts_0
+  - first:
+      213: 7291861900351448573
+    second: spreadsheetBear_ts_1
+  - first:
+      213: 678518456643113911
+    second: spreadsheetBear_ts_2
+  - first:
+      213: -8171803157795400916
+    second: spreadsheetBear_ts_3
+  - first:
+      213: -8240342882505797096
+    second: spreadsheetBear_ts_4
+  - first:
+      213: 6799820889575275259
+    second: spreadsheetBear_ts_5
+  - first:
+      213: -8537347434020085941
+    second: spreadsheetBear_ts_6
+  - first:
+      213: 8581506061987375358
+    second: spreadsheetBear_ts_7
+  - first:
+      213: 5573483535409197960
+    second: spreadsheetBear_ts_8
+  - first:
+      213: -3485375287198075759
+    second: spreadsheetBear_ts_9
+  - first:
+      213: 2869802617601205775
+    second: spreadsheetBear_ts_10
+  - first:
+      213: 8358831077565962140
+    second: spreadsheetBear_ts_11
+  - first:
+      213: 9085542701610677045
+    second: spreadsheetBear_ts_12
+  - first:
+      213: 2462659746674237230
+    second: spreadsheetBear_ts_13
+  - first:
+      213: -8901382833669113115
+    second: spreadsheetBear_ts_14
+  - first:
+      213: -1535820360223955313
+    second: spreadsheetBear_ts_15
+  - first:
+      213: 1612887973775975869
+    second: spreadsheetBear_ts_16
+  - first:
+      213: -1066034615116132311
+    second: spreadsheetBear_ts_17
+  - first:
+      213: -2572858756215253515
+    second: spreadsheetBear_ts_18
+  - first:
+      213: 2274571229775854161
+    second: spreadsheetBear_ts_19
+  - first:
+      213: -1905714138163113973
+    second: spreadsheetBear_ts_20
+  - first:
+      213: 394165556190413345
+    second: spreadsheetBear_ts_21
+  - first:
+      213: -7281275434975249888
+    second: spreadsheetBear_ts_22
+  - first:
+      213: 1312007011681886316
+    second: spreadsheetBear_ts_23
+  - first:
+      213: 8769655156286064415
+    second: spreadsheetBear_ts_24
+  - first:
+      213: -1214859419657086291
+    second: spreadsheetBear_ts_25
+  - first:
+      213: -1407574671083988518
+    second: spreadsheetBear_ts_26
+  - first:
+      213: 8683377543261092340
+    second: spreadsheetBear_ts_27
+  - first:
+      213: -3734389455538170820
+    second: spreadsheetBear_ts_28
+  - first:
+      213: -8444094851480932130
+    second: spreadsheetBear_ts_29
+  - first:
+      213: -5969411800710114529
+    second: spreadsheetBear_ts_30
+  - first:
+      213: -4498166884302105195
+    second: spreadsheetBear_ts_31
+  - first:
+      213: -5526059527980485800
+    second: spreadsheetBear_ts_32
+  - first:
+      213: -8271127266411758231
+    second: spreadsheetBear_ts_33
+  - first:
+      213: 1186832240854577910
+    second: spreadsheetBear_ts_34
+  - first:
+      213: -8319705370925371915
+    second: spreadsheetBear_ts_35
+  - first:
+      213: -1744153097224831714
+    second: spreadsheetBear_ts_36
+  - first:
+      213: -8697028013571556254
+    second: spreadsheetBear_ts_37
+  - first:
+      213: -8861562318009842082
+    second: spreadsheetBear_ts_38
+  - first:
+      213: 6427434455490242618
+    second: spreadsheetBear_ts_39
+  - first:
+      213: -2577022452742650346
+    second: spreadsheetBear_ts_40
+  - first:
+      213: -1327133075667191413
+    second: spreadsheetBear_ts_41
+  - first:
+      213: 2172770470224119738
+    second: spreadsheetBear_ts_42
+  - first:
+      213: 585220807647213597
+    second: spreadsheetBear_ts_43
+  - first:
+      213: 5728527069372331518
+    second: spreadsheetBear_ts_44
+  - first:
+      213: -8900563532725262024
+    second: spreadsheetBear_ts_45
+  - first:
+      213: 1760492519933078862
+    second: spreadsheetBear_ts_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_0
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1057
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9783fe2ecae004590800000000000000
+      internalID: -7692132027844315015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1060
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df527a1b3c5e13560800000000000000
+      internalID: 7291861900351448573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1057
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b352cdf0f49a6900800000000000000
+      internalID: 678518456643113911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1059
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c239035f25ce79e80800000000000000
+      internalID: -8171803157795400916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_4
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1063
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812d2dcbecb64ad80800000000000000
+      internalID: -8240342882505797096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_5
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 998
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfa3a637211dd5e50800000000000000
+      internalID: 6799820889575275259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_6
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 995
+        width: 70
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4fd327ddbf358980800000000000000
+      internalID: -8537347434020085941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_7
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 994
+        width: 77
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef86e9eeb42a71770800000000000000
+      internalID: 8581506061987375358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_8
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 995
+        width: 68
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883bd81febdf85d40800000000000000
+      internalID: 5573483535409197960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_9
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 994
+        width: 68
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19432a184a571afc0800000000000000
+      internalID: -3485375287198075759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_10
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 992
+        width: 87
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f062b9d964693d720800000000000000
+      internalID: 2869802617601205775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_11
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 967
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9790dbf398800470800000000000000
+      internalID: 8358831077565962140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_12
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 968
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 533b52923f4561e70800000000000000
+      internalID: 9085542701610677045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_13
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 972
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2fdb2bedff1d2220800000000000000
+      internalID: 2462659746674237230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_14
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 973
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea746d697fe77480800000000000000
+      internalID: -8901382833669113115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_15
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 971
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86e90ef48bafaae0800000000000000
+      internalID: -1535820360223955313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_16
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 973
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5aa631111226610800000000000000
+      internalID: 1612887973775975869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_17
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 972
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9209bb76a2fa431f0800000000000000
+      internalID: -1066034615116132311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_18
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 978
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f55982c79e5b4cd0800000000000000
+      internalID: -2572858756215253515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_19
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 979
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15afc177b76e09f10800000000000000
+      internalID: 2274571229775854161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_20
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 902
+        width: 53
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b001957961b8d85e0800000000000000
+      internalID: -1905714138163113973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_21
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 901
+        width: 94
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1228c672c7b587500800000000000000
+      internalID: 394165556190413345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_22
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 909
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ab58ad196b3fa90800000000000000
+      internalID: -7281275434975249888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_23
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 904
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c60ee120d6f253210800000000000000
+      internalID: 1312007011681886316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_24
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 896
+        width: 75
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f178a19a6e214b970800000000000000
+      internalID: 8769655156286064415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_25
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 860
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa5d4f5bc3f32fe0800000000000000
+      internalID: -1214859419657086291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_26
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 861
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad993375b4a477ce0800000000000000
+      internalID: -1407574671083988518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_27
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 872
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f97eac7edd818870800000000000000
+      internalID: 8683377543261092340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_28
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 795
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c34dea96398cc2cc0800000000000000
+      internalID: -3734389455538170820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_29
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 755
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed036c7a87c80da80800000000000000
+      internalID: -8444094851480932130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_30
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 757
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1316a43893682da0800000000000000
+      internalID: -5969411800710114529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_31
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 757
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5955fb01d0d4391c0800000000000000
+      internalID: -4498166884302105195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_32
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 694
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8537f0b332e7f43b0800000000000000
+      internalID: -5526059527980485800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_33
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 692
+        width: 71
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96dba71d29d073d80800000000000000
+      internalID: -8271127266411758231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_34
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 694
+        width: 74
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f23e1c82a9787010800000000000000
+      internalID: 1186832240854577910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_35
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 695
+        width: 72
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd651a7b087a8c80800000000000000
+      internalID: -8319705370925371915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_36
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 695
+        width: 80
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d340ebff58bc7e0800000000000000
+      internalID: -1744153097224831714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_37
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 655
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c3279b913fd4780800000000000000
+      internalID: -8697028013571556254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_38
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 657
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e564908b508650580800000000000000
+      internalID: -8861562318009842082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_39
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 659
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a382a905595d23950800000000000000
+      internalID: 6427434455490242618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_40
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 591
+        width: 84
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616811e9bb39c3cd0800000000000000
+      internalID: -2577022452742650346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_41
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 590
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b897f27cf73159de0800000000000000
+      internalID: -1327133075667191413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_42
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 587
+        width: 87
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7ca281b3b372e10800000000000000
+      internalID: 2172770470224119738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_43
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 587
+        width: 85
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18baf2593f1f1800800000000000000
+      internalID: 585220807647213597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_44
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 340
+        width: 68
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5b520c401df7f40800000000000000
+      internalID: 5728527069372331518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_45
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 290
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8396d1bcf98da7480800000000000000
+      internalID: -8900563532725262024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBear_ts_46
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 221
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4de7509e968e6810800000000000000
+      internalID: 1760492519933078862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
