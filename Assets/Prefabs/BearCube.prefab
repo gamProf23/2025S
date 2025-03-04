@@ -264,11 +264,11 @@ MonoBehaviour:
   jumpAmountI: 1
   rollMaxVelocity: 20
   clawSpeed: 20
-  jumpForce: 400
+  jumpForce: 350
   swimUpForce: 150
   slopeVelocityMult: 1.1
   waterGravity: 0.5
-  outOfWaterUpForce: 100
+  outOfWaterUpForce: 75
   jumpKey: 32
   clawKey: 106
   rollKey: 108
