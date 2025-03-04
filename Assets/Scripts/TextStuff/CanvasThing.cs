@@ -130,31 +130,19 @@ public class CanvasThing : MonoBehaviour
     public void AddBerry()
     {
         berryCount++;
-<<<<<<< HEAD
-        berryText.text = /*"B: " + */berryCount.ToString();
-=======
         berryText.text = " " + berryCount.ToString();
->>>>>>> main
     }
 
     public void AddFish()
     {
         fishCount++;
-<<<<<<< HEAD
-        fishText.text = /*"F: " + */fishCount.ToString();
-=======
         fishText.text = " " + fishCount.ToString();
->>>>>>> main
     }
 
     public void AddHoney()
     {
         honeyCount++;
-<<<<<<< HEAD
-        honeyText.text = /* "H: " + */honeyCount.ToString();
-=======
         honeyText.text = " " + honeyCount.ToString();
->>>>>>> main
     }
 
     public void NPCTalk(List<string> text, Sprite image)
