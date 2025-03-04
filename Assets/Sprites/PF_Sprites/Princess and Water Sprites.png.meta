@@ -484,22 +484,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Princess and Water Sprites_0: -6668441952079011240
-      Princess and Water Sprites_1: 4173268668991482172
-      Princess and Water Sprites_10: 7376118516526287652
-      Princess and Water Sprites_11: 2969185929158968231
-      Princess and Water Sprites_12: -5602927293637193882
-      Princess and Water Sprites_13: 4386042559538733082
-      Princess and Water Sprites_14: -5383751035269862440
-      Princess and Water Sprites_2: -1772253662856583124
-      Princess and Water Sprites_3: 5065739923181529745
-      Princess and Water Sprites_4: 651938014221802488
-      Princess and Water Sprites_5: 3005848610819688178
-      Princess and Water Sprites_6: -4628002037071391396
-      Princess and Water Sprites_7: 6903915993621447914
-      Princess and Water Sprites_8: 8352189694250908221
-      Princess and Water Sprites_9: -6587885045837140620
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
