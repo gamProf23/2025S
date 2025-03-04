@@ -78,6 +78,8 @@ public class Bear : MonoBehaviour
     public bool isGrounded = false;
     public bool movingRight = true;
 
+    public bool isTalking = false;
+
     List<Vector3> swipePointsL = new List<Vector3>();
     List<Vector3> swipePointsR = new List<Vector3>();
 
@@ -153,8 +155,18 @@ public class Bear : MonoBehaviour
 
         //Debug.Log(playerRB.linearVelocityX);
         playerPosition = transform.position;
-        translationX = Input.GetAxis("Horizontal");
-        translationY = Input.GetAxis("Vertical");
+
+        if (isTalking == false)
+        {
+            translationX = Input.GetAxis("Horizontal");
+            translationY = Input.GetAxis("Vertical");
+        }
+        else
+        {
+            translationX = 0;
+            translationY = 0;
+        }
+        
 
         /*if (Input.GetKeyUp(KeyCode.A))
         {
