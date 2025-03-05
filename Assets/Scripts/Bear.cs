@@ -319,10 +319,14 @@ public class Bear : MonoBehaviour
                 if(movingRight == false)
                 {
                     StartCoroutine(ClawSwipe("Left"));
+                    myAnimations.SetBool("AmSwiping", true);
+                    myAnimations.Play("BearSwipe");
                 }
                 else
                 {
                     StartCoroutine(ClawSwipe("Right"));
+                    myAnimations.SetBool("AmSwiping", true);
+                    myAnimations.Play("BearSwipe");
                 }
 
                 if (isSwiming == true)
@@ -495,6 +499,7 @@ public class Bear : MonoBehaviour
         }
 
         myClaw.GetComponent<Collider2D>().enabled = false;
+        myAnimations.SetBool("AmSwiping", false);
         isSwiping = false;
 
         //StopAllCoroutines()
@@ -640,6 +645,7 @@ public class Bear : MonoBehaviour
         {
             playerRB.gravityScale = waterGravity;
             isSwiming = true;
+            myAnimations.SetBool("AmSwiming", true);
         }
     }
 
@@ -651,6 +657,7 @@ public class Bear : MonoBehaviour
         {
             playerRB.gravityScale = 1;
             isSwiming = false;
+            myAnimations.SetBool("AmSwiming", false);
 
             if (collision.gameObject.transform.position.y + (collision.GetComponent<SpriteRenderer>().bounds.size.y * 0.5f) < transform.position.y)
             {
