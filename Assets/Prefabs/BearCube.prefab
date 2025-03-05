@@ -264,15 +264,15 @@ MonoBehaviour:
   jumpAmountI: 1
   rollMaxVelocity: 20
   clawSpeed: 20
-  jumpForce: 350
-  swimUpForce: 200
+  jumpForce: 400
+  swimUpForce: 150
   slopeVelocityMult: 1.1
   waterGravity: 0.5
-  outOfWaterUpForce: 75
+  outOfWaterUpForce: 100
   jumpKey: 32
-  clawKey: 106
-  rollKey: 108
-  roarKey: 107
+  clawKey: 47
+  rollKey: 303
+  roarKey: 46
   playerObject: {fileID: 0}
   playerRB: {fileID: 0}
   playerPosition: {x: 0, y: 0}
