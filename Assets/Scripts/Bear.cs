@@ -610,12 +610,14 @@ public class Bear : MonoBehaviour
             if (collision.transform.parent != null && collision.transform.parent.GetComponent<MovingGround>() != null)
             {
                 isOnMGround = false;
+                myMGround = null;
             }
 
         }
 
     }
 
+    GameObject myMGround;
     private void OnCollisionStay2D(Collision2D collision)
     {
         foreach (ContactPoint2D hitPos in collision.contacts)
@@ -633,6 +635,7 @@ public class Bear : MonoBehaviour
                         if (collision.transform.parent.GetComponent<MovingGround>() != null && isBall == false)
                         {
                             GetComponent<Rigidbody2D>().MovePosition(Vector2.MoveTowards(transform.position, new Vector2(collision.transform.position.x, collision.transform.position.y + collision.gameObject.GetComponent<Collider2D>().bounds.size.y / 2), collision.transform.parent.GetComponent<MovingGround>().moveSpeed * Time.deltaTime));
+                            myMGround = collision.gameObject;
                             isOnMGround = true;
                         }
                     }
@@ -693,6 +696,7 @@ public class Bear : MonoBehaviour
             playerRB.gravityScale = waterGravity;
             isSwiming = true;
             myAnimations.SetBool("AmSwiming", true);
+            climbingTimer = climbingTimerI;
         }
     }
 
