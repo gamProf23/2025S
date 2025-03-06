@@ -156,7 +156,6 @@ public class Bear : MonoBehaviour
     void Update()
     {
         Physics2D.SyncTransforms();
-        //Debug.Log(playerRB.linearVelocityX);
         playerPosition = transform.position;
 
         if (isTalking == false)
@@ -476,7 +475,7 @@ public class Bear : MonoBehaviour
     {
         GetComponent<Collider2D>().enabled = false;
 
-        if (playerRB.linearVelocityY > 0)
+        /*if (playerRB.linearVelocityY > 0)
         {
             
             playerRB.linearVelocityY = playerRB.linearVelocityY + 1;
@@ -484,10 +483,12 @@ public class Bear : MonoBehaviour
         else
         {
             playerRB.linearVelocityY = 0;
-        }
-        
+        }*/
 
-        yield return new WaitForSeconds(0.1f);
+        playerRB.linearVelocityY = playerRB.linearVelocityY + 1;
+
+
+        yield return new WaitForSeconds(0);
         playerRB.AddForce(Vector2.up * (jumpForce + 100));
 
         GetComponent<Collider2D>().enabled = true;
@@ -617,7 +618,7 @@ public class Bear : MonoBehaviour
 
     }
 
-    GameObject myMGround;
+    public GameObject myMGround;
     private void OnCollisionStay2D(Collision2D collision)
     {
         foreach (ContactPoint2D hitPos in collision.contacts)
@@ -636,6 +637,7 @@ public class Bear : MonoBehaviour
                         {
                             GetComponent<Rigidbody2D>().MovePosition(Vector2.MoveTowards(transform.position, new Vector2(collision.transform.position.x, collision.transform.position.y + collision.gameObject.GetComponent<Collider2D>().bounds.size.y / 2), collision.transform.parent.GetComponent<MovingGround>().moveSpeed * Time.deltaTime));
                             myMGround = collision.gameObject;
+                            playerRB.AddRelativeForceY(-100);
                             isOnMGround = true;
                         }
                     }

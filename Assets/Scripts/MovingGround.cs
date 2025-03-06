@@ -36,7 +36,16 @@ public class MovingGround : MonoBehaviour
             if (Vector2.Distance(movingThing.transform.position, mp1) < 0.01f)
             {
                 whereTo = 2;
+
+                if (FindAnyObjectByType<Bear>().myMGround == movingThing)
+                {
+                    Debug.Log("bruh");
+                    //FindAnyObjectByType<Bear>().GetComponent<Rigidbody2D>().AddRelativeForceY(-1000);
+                }   
             }
+            
+            
+
         }
         else if (whereTo == 2)
         {
@@ -45,8 +54,20 @@ public class MovingGround : MonoBehaviour
             if (Vector2.Distance(movingThing.transform.position, mp2) < 0.01f)
             {
                 whereTo = 1;
+
+                if (FindAnyObjectByType<Bear>().myMGround == movingThing)
+                {
+                    Debug.Log("bruh");
+                    //FindAnyObjectByType<Bear>().GetComponent<Rigidbody2D>().AddRelativeForceY(-1000);
+                }
             }
+
+            
         }
+
+        
+
+        
     }
 
     public Vector3 GetMoveTowards()
