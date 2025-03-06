@@ -53,6 +53,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestScenes/NewTestExit/BobRoom.unity
     guid: 10d52c67f81447e48b596a387fd80470
+  - enabled: 0
+    path: Assets/Scenes/MasterScenes/PuzzleLvlDesign.unity
+    guid: e3da12d9d4f6c7a4891926d3048c4828
   - enabled: 1
     path: Assets/Scenes/MasterScenes/TitleScreen.unity
     guid: 73e0ca30ce7d2f04986ed2caec44ada2
@@ -60,7 +63,10 @@ EditorBuildSettings:
     path: Assets/Scenes/MasterScenes/TutorialLvlDesign.unity
     guid: 89fc994932553184a946a682f80a5db0
   - enabled: 1
-    path: Assets/Scenes/MasterScenes/PuzzleLvlDesign.unity
-    guid: e3da12d9d4f6c7a4891926d3048c4828
+    path: Assets/Scenes/MasterScenes/Forest_1.unity
+    guid: b6158ff12637b45468d4829fcd3957ea
+  - enabled: 1
+    path: Assets/Scenes/MasterScenes/RedwoodPlaceholder.unity
+    guid: b4d1133d45eb61a4299ca9996f6d7cf4
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
