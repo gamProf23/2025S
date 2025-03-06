@@ -260,7 +260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHP: 10
   playerSpeedI: 5
-  climbingTimerI: 2
+  climbingTimerI: 1000
   jumpAmountI: 1
   rollMaxVelocity: 20
   clawSpeed: 20
@@ -283,10 +283,11 @@ MonoBehaviour:
   isSwiming: 0
   myRoar: {fileID: 8737738838457462506}
   myBall: {fileID: 2259868932977037174}
-  amBall: 0
+  isBall: 0
   myClaw: {fileID: 5971424291894822041}
   isGrounded: 0
   movingRight: 1
+  isTalking: 0
   myAnimations: {fileID: 0}
   isOnSlope: 0
   fullFriction: {fileID: 6200000, guid: 31e29a6c59e869d4c88539519cb3ac48, type: 2}
