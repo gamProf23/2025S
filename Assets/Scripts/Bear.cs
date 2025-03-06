@@ -693,6 +693,7 @@ public class Bear : MonoBehaviour
             playerRB.gravityScale = waterGravity;
             isSwiming = true;
             myAnimations.SetBool("AmSwiming", true);
+            climbingTimer = climbingTimerI;
         }
     }
 
