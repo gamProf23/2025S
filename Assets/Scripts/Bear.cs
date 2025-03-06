@@ -475,7 +475,17 @@ public class Bear : MonoBehaviour
     IEnumerator JumpOffMGround()
     {
         GetComponent<Collider2D>().enabled = false;
-        playerRB.linearVelocityY = 0;
+
+        if (playerRB.linearVelocityY > 0)
+        {
+            
+            playerRB.linearVelocityY = playerRB.linearVelocityY + 1;
+        }
+        else
+        {
+            playerRB.linearVelocityY = 0;
+        }
+        
 
         yield return new WaitForSeconds(0.1f);
         playerRB.AddForce(Vector2.up * (jumpForce + 100));
