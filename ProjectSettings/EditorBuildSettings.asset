@@ -54,6 +54,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TestScenes/NewTestExit/BobRoom.unity
     guid: 10d52c67f81447e48b596a387fd80470
   - enabled: 1
+    path: Assets/Scenes/MasterScenes/TitleScreen.unity
+    guid: 73e0ca30ce7d2f04986ed2caec44ada2
+  - enabled: 1
     path: Assets/Scenes/MasterScenes/TutorialLvlDesign.unity
     guid: 89fc994932553184a946a682f80a5db0
   - enabled: 1
