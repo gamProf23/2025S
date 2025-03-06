@@ -1,13 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
-using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 using UnityEngine.UI;
 public class CanvasThing : MonoBehaviour
 {
-    public int berryCount;
+    public  int berryCount;
     public int fishCount;
     public int honeyCount;
 
@@ -15,23 +13,10 @@ public class CanvasThing : MonoBehaviour
     TMP_Text fishText;
     TMP_Text honeyText;
 
-    Image textBox;
-    TMP_Text textBoxText;
-    Image textBoxPortrait;
-
-    Image pauseMenu;
-
-    Button backButton;
-    Button mapButton;
-    Button exitButton;
-
-    float changeSpeed = 0.05f;
-
-    public Sprite bearPortrait;
-    bool keyPressed = false;
-
     private void Awake()
     {
+<<<<<<< HEAD
+<<<<<<< HEAD
         berryText = transform.GetChild(0).GetComponent<TMP_Text>();
         fishText = transform.GetChild(1).GetComponent<TMP_Text>();
         honeyText = transform.GetChild(2).GetComponent<TMP_Text>();
@@ -49,13 +34,26 @@ public class CanvasThing : MonoBehaviour
         exitButton.onClick.AddListener(ExitButton);
 
         DontDestroyOnLoad(gameObject);
+=======
+=======
+>>>>>>> parent of b809579 (Merge branch 'main' into Connor-LevelDesign)
+       berryText = transform.GetChild(0).GetComponent<TMP_Text>();
+       fishText = transform.GetChild(1).GetComponent<TMP_Text>();
+       honeyText = transform.GetChild(2).GetComponent<TMP_Text>();
+       DontDestroyOnLoad(gameObject);
+<<<<<<< HEAD
+>>>>>>> parent of b809579 (Merge branch 'main' into Connor-LevelDesign)
+=======
+>>>>>>> parent of b809579 (Merge branch 'main' into Connor-LevelDesign)
     }
     void Start()
     {
-
+        
     }
     void Update()
     {
+<<<<<<< HEAD
+<<<<<<< HEAD
         ReduceBFH();
         if (Input.anyKeyDown == true)
         {
@@ -125,90 +123,29 @@ public class CanvasThing : MonoBehaviour
     void ExitButton()
     {
         Application.Quit();
+=======
+        
+>>>>>>> parent of b809579 (Merge branch 'main' into Connor-LevelDesign)
+=======
+        
+>>>>>>> parent of b809579 (Merge branch 'main' into Connor-LevelDesign)
     }
 
     public void AddBerry()
     {
         berryCount++;
-        berryText.text = " " + berryCount.ToString();
+        berryText.text = "B: " + berryCount.ToString();
     }
 
     public void AddFish()
     {
         fishCount++;
-        fishText.text = " " + fishCount.ToString();
+        fishText.text = "F: " + fishCount.ToString();
     }
 
     public void AddHoney()
     {
         honeyCount++;
-        honeyText.text = " " + honeyCount.ToString();
+        honeyText.text = "H: " + honeyCount.ToString();
     }
-
-    public void NPCTalk(List<string> text, Sprite image)
-    {
-        StartCoroutine(NPCTalkCR(text, image));
-    }
-
-    public bool crRunning = false;
-    
-    public IEnumerator NPCTalkCR(List<string> text, Sprite image)
-    {
-        crRunning = true;
-        FindAnyObjectByType<Bear>().isTalking = true;
-        string emptyText = "";
-        textBox.transform.gameObject.SetActive(true);
-        textBoxPortrait.sprite = image;
-        keyPressed = false;
-
-        foreach (string s in text)
-        {
-            if (s.Contains("SwitchP") == true)
-            {
-                if (textBoxPortrait.sprite == image)
-                {
-                    textBoxPortrait.sprite = bearPortrait;
-                }
-                else if(textBoxPortrait.sprite == bearPortrait)
-                {
-                    textBoxPortrait.sprite = image;
-                }
-
-                continue;
-            }
-
-            foreach (char c in s)
-            {
-                emptyText += c;
-                textBoxText.text = emptyText;
-                Input.ResetInputAxes();
-
-                yield return new WaitForSeconds(0.05f);
-
-                
-                if (Input.anyKey == true)
-                {
-                    emptyText = s;
-                    textBoxText.text = emptyText;
-                    keyPressed = false;
-                    break;
-                }
-
-            }
-
-            while (keyPressed == false)
-            {
-                yield return new WaitForEndOfFrame();
-            }
-
-            emptyText = "";
-        }
-        
-
-        textBox.transform.gameObject.SetActive(false);
-        FindAnyObjectByType<Bear>().isTalking = false;
-        crRunning = false;
-
-    }
-
 }

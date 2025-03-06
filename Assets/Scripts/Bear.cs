@@ -80,8 +80,6 @@ public class Bear : MonoBehaviour
     public bool isGrounded = false;
     public bool movingRight = true;
 
-    public bool isTalking = false;
-
     List<Vector3> swipePointsL = new List<Vector3>();
     List<Vector3> swipePointsR = new List<Vector3>();
 
@@ -158,18 +156,8 @@ public class Bear : MonoBehaviour
         Physics2D.SyncTransforms();
         //Debug.Log(playerRB.linearVelocityX);
         playerPosition = transform.position;
-
-        if (isTalking == false)
-        {
-            translationX = Input.GetAxis("Horizontal");
-            translationY = Input.GetAxis("Vertical");
-        }
-        else
-        {
-            translationX = 0;
-            translationY = 0;
-        }
-        
+        translationX = Input.GetAxis("Horizontal");
+        translationY = Input.GetAxis("Vertical");
 
         /*if (Input.GetKeyUp(KeyCode.A))
         {

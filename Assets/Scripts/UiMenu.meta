@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/UiMenu.meta
 guid: 72896c82d6e1be94dae4b0c4119ac472
 folderAsset: yes
+========
+guid: 91165ad4f40fe4a4a88d9b22a62db26f
+>>>>>>>> parent of b809579 (Merge branch 'main' into Connor-LevelDesign):Assets/Scenes/Caleb_UI_Stuff/UI_Showcase.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
