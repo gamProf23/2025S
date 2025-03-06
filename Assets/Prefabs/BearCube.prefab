@@ -265,7 +265,11 @@ MonoBehaviour:
   rollMaxVelocity: 20
   clawSpeed: 20
   jumpForce: 350
+<<<<<<< HEAD
   swimUpForce: 150
+=======
+  swimUpForce: 200
+>>>>>>> main
   slopeVelocityMult: 1.1
   waterGravity: 0.5
   outOfWaterUpForce: 75

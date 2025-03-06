@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 2c87965c643b01d4a903886c5db22f5d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6668441952079011240
+    second: Princess and Water Sprites_0
+  - first:
+      213: 4173268668991482172
+    second: Princess and Water Sprites_1
+  - first:
+      213: -1772253662856583124
+    second: Princess and Water Sprites_2
+  - first:
+      213: 5065739923181529745
+    second: Princess and Water Sprites_3
+  - first:
+      213: 651938014221802488
+    second: Princess and Water Sprites_4
+  - first:
+      213: 3005848610819688178
+    second: Princess and Water Sprites_5
+  - first:
+      213: -4628002037071391396
+    second: Princess and Water Sprites_6
+  - first:
+      213: 6903915993621447914
+    second: Princess and Water Sprites_7
+  - first:
+      213: 8352189694250908221
+    second: Princess and Water Sprites_8
+  - first:
+      213: -6587885045837140620
+    second: Princess and Water Sprites_9
+  - first:
+      213: 7376118516526287652
+    second: Princess and Water Sprites_10
+  - first:
+      213: 2969185929158968231
+    second: Princess and Water Sprites_11
+  - first:
+      213: -5602927293637193882
+    second: Princess and Water Sprites_12
+  - first:
+      213: 4386042559538733082
+    second: Princess and Water Sprites_13
+  - first:
+      213: -5383751035269862440
+    second: Princess and Water Sprites_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Princess and Water Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 54
+        width: 24
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852a401206fe473a0800000000000000
+      internalID: -6668441952079011240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess and Water Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 58
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3921875ebd6ae930800000000000000
+      internalID: 4173268668991482172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess and Water Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 59
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c286c85fea0b767e0800000000000000
+      internalID: -1772253662856583124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess and Water Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 59
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19aefb5ee9f1d4640800000000000000
+      internalID: 5065739923181529745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess and Water Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 59
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb93497b262c0900800000000000000
+      internalID: 651938014221802488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess and Water Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 59
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f64288c26be6b920800000000000000
+      internalID: 3005848610819688178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess and Water Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 59
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c555390eaa806cfb0800000000000000
+      internalID: -4628002037071391396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess and Water Sprites_7
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 48
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae4c1f68403afcf50800000000000000
+      internalID: 6903915993621447914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess and Water Sprites_8
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 12
+        width: 78
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3af08e6640f8e370800000000000000
+      internalID: 8352189694250908221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess and Water Sprites_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 9
+        width: 59
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47de4c574712394a0800000000000000
+      internalID: -6587885045837140620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess and Water Sprites_10
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 46
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b0bbed5bc3d5660800000000000000
+      internalID: 7376118516526287652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess and Water Sprites_11
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 46
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3cb930fdaa43920800000000000000
+      internalID: 2969185929158968231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess and Water Sprites_12
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 47
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f0a60ef476e32b0800000000000000
+      internalID: -5602927293637193882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess and Water Sprites_13
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 11
+        width: 58
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a102d0b387a5edc30800000000000000
+      internalID: 4386042559538733082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Princess and Water Sprites_14
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 34
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db299f25f21945b0800000000000000
+      internalID: -5383751035269862440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Princess and Water Sprites_0: -6668441952079011240
+      Princess and Water Sprites_1: 4173268668991482172
+      Princess and Water Sprites_10: 7376118516526287652
+      Princess and Water Sprites_11: 2969185929158968231
+      Princess and Water Sprites_12: -5602927293637193882
+      Princess and Water Sprites_13: 4386042559538733082
+      Princess and Water Sprites_14: -5383751035269862440
+      Princess and Water Sprites_2: -1772253662856583124
+      Princess and Water Sprites_3: 5065739923181529745
+      Princess and Water Sprites_4: 651938014221802488
+      Princess and Water Sprites_5: 3005848610819688178
+      Princess and Water Sprites_6: -4628002037071391396
+      Princess and Water Sprites_7: 6903915993621447914
+      Princess and Water Sprites_8: 8352189694250908221
+      Princess and Water Sprites_9: -6587885045837140620
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

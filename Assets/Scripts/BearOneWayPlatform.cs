@@ -15,7 +15,7 @@ public class BearOneWayPlatform : MonoBehaviour
 
     private void Update()
     {
-        if (FindAnyObjectByType<Bear>().amBall == true)
+        if (FindAnyObjectByType<Bear>().isBall == true)
         {
             playerCollider = transform.GetChild(1).GetComponent<CircleCollider2D>();
         }
