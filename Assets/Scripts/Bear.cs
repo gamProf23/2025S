@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Loading;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -69,10 +70,12 @@ public class Bear : MonoBehaviour
     bool isRoaring = false;
 
     public GameObject myBall;
-    public bool amBall = false;
+    public bool isBall = false;
 
     public GameObject myClaw;
     bool isSwiping = false;
+
+    bool isOnMGround = false;
 
     public bool isGrounded = false;
     public bool movingRight = true;
@@ -86,6 +89,8 @@ public class Bear : MonoBehaviour
 
     float scaleX;
     float scaleXNeg;
+
+    Vector3 ogScale;
 
     [Header("Slope Stuff: DO NOT TOUCH")]
 
@@ -150,8 +155,7 @@ public class Bear : MonoBehaviour
 
     void Update()
     {
-        
-
+        Physics2D.SyncTransforms();
         //Debug.Log(playerRB.linearVelocityX);
         playerPosition = transform.position;
 
@@ -193,7 +197,7 @@ public class Bear : MonoBehaviour
 
         //Debug.Log (playerRB.velocity);
 
-        if (translationX < 0 && amBall == false)
+        if (translationX < 0 && isBall == false)
         {
             if (isSwiping == false)
             {
@@ -219,7 +223,7 @@ public class Bear : MonoBehaviour
         //Roaring
         if (Input.GetKey(roarKey))
         {
-            if (amBall == false)
+            if (isBall == false)
             {
                 myRoar.SetActive(true);
                 isRoaring = true;
@@ -238,7 +242,7 @@ public class Bear : MonoBehaviour
             isRoaring = false;
         }
 
-        if (amBall == false)
+        if (isBall == false)
         {
             if (isClimbing == false)
             {
@@ -350,7 +354,17 @@ public class Bear : MonoBehaviour
             {
                 if (isOnSlope == false)
                 {
-                    playerRB.AddForce(Vector2.up * jumpForce);
+                    if (isOnMGround == false)
+                    {
+                        playerRB.AddForce(Vector2.up * jumpForce);
+                    }
+                    else
+                    {
+                        StartCoroutine("JumpOffMGround");
+                    }
+
+                    
+
                 }
                 else
                 {
@@ -395,7 +409,7 @@ public class Bear : MonoBehaviour
                 GetComponent<CapsuleCollider2D>().enabled = false;
                 playerRB.constraints = RigidbodyConstraints2D.None;
                 GetComponent<Renderer>().enabled = false;
-                amBall = true;
+                isBall = true;
                 myBall.SetActive(true);
             }
 
@@ -407,13 +421,13 @@ public class Bear : MonoBehaviour
                 playerRB.mass = 1;
                 playerRB.constraints = RigidbodyConstraints2D.FreezeRotation;
                 GetComponent<Renderer>().enabled = true;
-                amBall = false;
+                isBall = false;
                 myBall.SetActive(false);
             }
         }
 
         //Limits Speed in Ball Form
-        if (amBall == true)
+        if (isBall == true)
         {
             transform.position = myBall.transform.position;
 
@@ -436,7 +450,7 @@ public class Bear : MonoBehaviour
             playerSpeed = playerSpeedI;
         }
 
-        if ((translationX > 0.01f || translationX < -0.01f) && amBall == false && isGrounded == true)
+        if ((translationX > 0.01f || translationX < -0.01f) && isBall == false && isGrounded == true)
         {
             myAnimations.SetBool("AmMoving", true);
         }
@@ -456,6 +470,17 @@ public class Bear : MonoBehaviour
 
         
        
+    }
+
+    IEnumerator JumpOffMGround()
+    {
+        GetComponent<Collider2D>().enabled = false;
+        playerRB.linearVelocityY = 0;
+
+        yield return new WaitForSeconds(0.1f);
+        playerRB.AddForce(Vector2.up * (jumpForce + 100));
+
+        GetComponent<Collider2D>().enabled = true;
     }
 
     IEnumerator ClawSwipe(string whichWay)
@@ -571,6 +596,12 @@ public class Bear : MonoBehaviour
         {
             isGrounded = false;
             playerSpeed = playerSpeedI;
+
+            if (collision.transform.parent != null && collision.transform.parent.GetComponent<MovingGround>() != null)
+            {
+                isOnMGround = false;
+            }
+
         }
 
     }
@@ -583,11 +614,17 @@ public class Bear : MonoBehaviour
             {
                 if (collision.gameObject.tag == "OneWayPlatform")
                 {
-                    if ((transform.position.y - GetComponent<Collider2D>().bounds.size.y/2) > (collision.transform.position.y + collision.gameObject.GetComponent<Collider2D>().bounds.size.y/2))
+                    if ((transform.position.y - GetComponent<Collider2D>().bounds.size.y / 2) > (collision.transform.position.y + collision.gameObject.GetComponent<Collider2D>().bounds.size.y / 2))
                     {
                         jumpAmount = jumpAmountI;
                         isGrounded = true;
                         climbingTimer = climbingTimerI;
+
+                        if (collision.transform.parent.GetComponent<MovingGround>() != null && isBall == false)
+                        {
+                            GetComponent<Rigidbody2D>().MovePosition(Vector2.MoveTowards(transform.position, new Vector2(collision.transform.position.x, collision.transform.position.y + collision.gameObject.GetComponent<Collider2D>().bounds.size.y / 2), collision.transform.parent.GetComponent<MovingGround>().moveSpeed * Time.deltaTime));
+                            isOnMGround = true;
+                        }
                     }
                 }
                 else
@@ -604,7 +641,7 @@ public class Bear : MonoBehaviour
             }
         }
 
-        if (collision.gameObject.tag == "Slope" && amBall == true)
+        if (collision.gameObject.tag == "Slope" && isBall == true)
         {
             /*if (playerRB.linearVelocity.y >= 0)
             {
