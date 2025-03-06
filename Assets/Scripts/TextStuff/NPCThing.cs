@@ -22,7 +22,7 @@ public class NPCThing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) && player.amBall == false && player.isGrounded == true && player.isTalking == false && player.amBall == false))
+        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) && player.isBall == false && player.isGrounded == true && player.isTalking == false && player.isBall == false))
         {
             if ((player.transform.position.y < transform.position.y + (GetComponent<SpriteRenderer>().bounds.size.y / 2) && player.transform.position.y > transform.transform.position.y - (GetComponent<SpriteRenderer>().bounds.size.y / 2)) && (player.transform.position.x < transform.position.x + (GetComponent<SpriteRenderer>().bounds.size.x / 2) && player.transform.position.x > transform.position.x - (GetComponent<SpriteRenderer>().bounds.size.x / 2)))
             {
