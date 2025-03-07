@@ -474,6 +474,20 @@ public class Bear : MonoBehaviour
     IEnumerator JumpOffMGround()
     {
         GetComponent<Collider2D>().enabled = false;
+<<<<<<< Updated upstream
+=======
+
+        if (playerRB.linearVelocityY > 0)
+        {
+            
+            playerRB.linearVelocityY = playerRB.linearVelocityY + 1;
+        }
+        else
+        {
+            playerRB.linearVelocityY = 0;
+        }
+        
+>>>>>>> Stashed changes
 
         /*if (playerRB.linearVelocityY > 0)
         {
