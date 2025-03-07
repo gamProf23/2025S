@@ -26,7 +26,7 @@ public class Bear : MonoBehaviour
 
     //In Seconds
     public float climbingTimerI; //2
-    float climbingTimer; 
+    
 
     public int jumpAmountI;
     int jumpAmount;
@@ -54,6 +54,7 @@ public class Bear : MonoBehaviour
 
     [Header("DO NOT TOUCH")]
 
+    public float climbingTimer;
     public GameObject playerObject;
     public Rigidbody2D playerRB;
     public Vector2 playerPosition;
