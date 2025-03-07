@@ -357,7 +357,7 @@ public class Bear : MonoBehaviour
         }
 
         //Jump
-        if (Input.GetKeyDown(jumpKey) && ((jumpAmount > 0) || (isClimbing == true)))
+        if (Input.GetKeyDown(jumpKey) && ((jumpAmount > 0) || (isClimbing == true)) && isTalking == false)
         {
             if (isClimbing == false)
             {

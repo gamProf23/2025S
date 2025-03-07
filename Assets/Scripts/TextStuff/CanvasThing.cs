@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using Unity.VisualScripting.Dependencies.NCalc;
+using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
 using UnityEngine.UI;
 public class CanvasThing : MonoBehaviour
@@ -24,6 +25,15 @@ public class CanvasThing : MonoBehaviour
     Button backButton;
     Button mapButton;
     Button exitButton;
+
+    Image tbInteraction;
+    TMP_Text yText;
+    TMP_Text nText;
+    Image ySel;
+    Image nSel;
+
+    int sel = 0;
+    NPCThing npcThing;
 
     float changeSpeed = 0.05f;
 
@@ -47,6 +57,12 @@ public class CanvasThing : MonoBehaviour
         backButton.onClick.AddListener(BackButton);
         mapButton.onClick.AddListener(MapButton);
         exitButton.onClick.AddListener(ExitButton);
+
+        tbInteraction = transform.GetChild(5).GetComponent<Image>();
+        yText = tbInteraction.transform.GetChild(0).GetComponent<TMP_Text>();
+        nText = tbInteraction.transform.GetChild(1).GetComponent<TMP_Text>();
+        ySel = tbInteraction.transform.GetChild(2).GetComponent<Image>();
+        nSel = tbInteraction.transform.GetChild(3).GetComponent<Image>();
 
         DontDestroyOnLoad(gameObject);
     }
@@ -77,6 +93,66 @@ public class CanvasThing : MonoBehaviour
             {
                 Time.timeScale = 1;
                 pauseMenu.transform.gameObject.SetActive(false);
+            }
+        }
+
+        if (sel != 0)
+        {
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)))
+            {
+                if (sel == 1)
+                {
+                    ySel.gameObject.SetActive(false);
+                    nSel.gameObject.SetActive(true);
+                    sel = 2;
+                }
+                else if (sel == 2)
+                {
+                    ySel.gameObject.SetActive(true);
+                    nSel.gameObject.SetActive(false);
+                    sel = 1;
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                tbInteraction.gameObject.SetActive(false);
+
+                if (sel == 1)
+                {
+                    if (npcThing.berryCondition == 0 && npcThing.fishCondition == 0 && npcThing.honeyCondition == 0)
+                    {
+                        StartCoroutine(NPCTalkCR(npcThing.myInteractionYText, npcThing.myPortrait, null));
+                    }
+                    else if (berryCount >= npcThing.berryCondition && fishCount >= npcThing.fishCondition && honeyCount >= npcThing.honeyCondition)
+                    {
+                        berryCount = berryCount - npcThing.berryCondition;
+                        fishCount = fishCount - npcThing.fishCondition;
+                        honeyCount = honeyCount - npcThing.honeyCondition;
+
+                        berryText.text = " " + berryCount.ToString();
+                        fishText.text = " " + fishCount.ToString();
+                        honeyText.text = " " + honeyCount.ToString();
+
+                        npcThing.conditionIsMet = true;
+
+                        FindAnyObjectByType<SceneInfo>().AddToCMList(npcThing.name);
+
+                        StartCoroutine(NPCTalkCR(npcThing.myInteractionYText, npcThing.myPortrait, null));
+                    }
+                    else
+                    {
+                        StartCoroutine(NPCTalkCR(npcThing.myInteractionFailText, npcThing.myPortrait, null));
+                    }
+                    
+                }
+                else if (sel == 2)
+                {
+                    StartCoroutine(NPCTalkCR(npcThing.myInteractionNText, npcThing.myPortrait, null));
+                }
+
+                sel = 0;
+                npcThing = null;
             }
         }
     }
@@ -145,18 +221,20 @@ public class CanvasThing : MonoBehaviour
         honeyText.text = " " + honeyCount.ToString();
     }
 
-    public void NPCTalk(List<string> text, Sprite image)
+    public void NPCTalk(List<string> text, Sprite image, NPCThing interaction)
     {
-        StartCoroutine(NPCTalkCR(text, image));
+        StartCoroutine(NPCTalkCR(text, image, interaction));
     }
 
     public bool crRunning = false;
     
-    public IEnumerator NPCTalkCR(List<string> text, Sprite image)
+    public IEnumerator NPCTalkCR(List<string> text, Sprite image, NPCThing interaction)
     {
+        bool interactionBool = false;
         crRunning = true;
         FindAnyObjectByType<Bear>().isTalking = true;
         string emptyText = "";
+        textBoxText.text = "";
         textBox.transform.gameObject.SetActive(true);
         textBoxPortrait.sprite = image;
         keyPressed = false;
@@ -175,6 +253,12 @@ public class CanvasThing : MonoBehaviour
                 }
 
                 continue;
+            }
+
+            if (s.Contains("Interaction") == true)
+            {
+                interactionBool = true;
+                break;
             }
 
             foreach (char c in s)
@@ -204,11 +288,54 @@ public class CanvasThing : MonoBehaviour
             emptyText = "";
         }
         
+        if (interactionBool == false)
+        {
+            textBox.transform.gameObject.SetActive(false);
+            FindAnyObjectByType<Bear>().isTalking = false;
+            crRunning = false;
+        }
+        else
+        {
+            StartCoroutine(NPCInteractionCR(interaction));
+        }
+        
 
-        textBox.transform.gameObject.SetActive(false);
-        FindAnyObjectByType<Bear>().isTalking = false;
-        crRunning = false;
+    }
 
+    IEnumerator NPCInteractionCR(NPCThing intr)
+    {
+        string emptyText = "";
+        textBoxText.text = "";
+        keyPressed = false;
+
+        foreach (char c in intr.myInteractionText)
+        {
+            emptyText += c;
+            textBoxText.text = emptyText;
+            Input.ResetInputAxes();
+
+            yield return new WaitForSeconds(0.05f);
+
+
+            if (Input.anyKey == true)
+            {
+                emptyText = intr.myInteractionText;
+                textBoxText.text = emptyText;
+                keyPressed = false;
+                break;
+            }
+
+        }
+
+        tbInteraction.gameObject.SetActive(true);
+
+        sel = 1;
+        npcThing = intr;
+        yText.text = intr.myInteractionYSel;
+        nText.text = intr.myInteractionNSel;
+        ySel.gameObject.SetActive(true);
+        nSel.gameObject.SetActive(false);
+        
     }
 
 }

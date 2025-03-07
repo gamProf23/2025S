@@ -68,5 +68,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MasterScenes/RedwoodPlaceholder.unity
     guid: b4d1133d45eb61a4299ca9996f6d7cf4
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/NPCText1.unity
+    guid: b07df9c0107faa243a4f88fb9c7f386f
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/NPCText2.unity
+    guid: 5b3123d3dac8ba148b48db3ad7ef0e63
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
