@@ -37,11 +37,12 @@ public class MovingGround : MonoBehaviour
             {
                 whereTo = 2;
 
-                if (FindAnyObjectByType<Bear>().myMGround == movingThing)
+                /*if (FindAnyObjectByType<Bear>().myMGround == movingThing)
                 {
                     Debug.Log("bruh");
                     //FindAnyObjectByType<Bear>().GetComponent<Rigidbody2D>().AddRelativeForceY(-1000);
-                }   
+                }  
+                */
             }
             
             
@@ -55,11 +56,12 @@ public class MovingGround : MonoBehaviour
             {
                 whereTo = 1;
 
-                if (FindAnyObjectByType<Bear>().myMGround == movingThing)
+                /*if (FindAnyObjectByType<Bear>().myMGround == movingThing)
                 {
                     Debug.Log("bruh");
                     //FindAnyObjectByType<Bear>().GetComponent<Rigidbody2D>().AddRelativeForceY(-1000);
                 }
+                */
             }
 
             

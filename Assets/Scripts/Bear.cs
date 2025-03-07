@@ -201,8 +201,13 @@ public class Bear : MonoBehaviour
             if (isSwiping == false)
             {
                 myClaw.transform.position = new Vector2(transform.position.x - 2.25f, transform.position.y + 1.75f);
-                myRoar.transform.position = new Vector2(transform.position.x - (GetComponent<SpriteRenderer>().size.x * 0.5f) - 2.5f, transform.position.y);
-                transform.localScale = new Vector3(scaleX, transform.localScale.y, 1);
+                myRoar.transform.position = new Vector2(transform.position.x - (GetComponent<SpriteRenderer>().size.x * 0.5f) - 2.5f, transform.position.y + 1);
+
+                if (isClimbing == false)
+                {
+                    transform.localScale = new Vector3(scaleX, transform.localScale.y, 1);
+                }
+                
             }
 
             movingRight = false;
@@ -212,8 +217,13 @@ public class Bear : MonoBehaviour
             if (isSwiping == false)
             {
                 myClaw.transform.position = new Vector2(transform.position.x + 2.25f, transform.position.y + 1.75f);
-                myRoar.transform.position = new Vector2(transform.position.x + (GetComponent<SpriteRenderer>().size.x * 0.5f) + 2.5f, transform.position.y);
-                transform.localScale = new Vector3(scaleXNeg, transform.localScale.y, 1);
+                myRoar.transform.position = new Vector2(transform.position.x + (GetComponent<SpriteRenderer>().size.x * 0.5f) + 2.5f, transform.position.y + 1f);
+
+                if (isClimbing == false)
+                {
+                    transform.localScale = new Vector3(scaleXNeg, transform.localScale.y, 1);
+                }
+                
             }
 
             movingRight = true;
@@ -449,6 +459,7 @@ public class Bear : MonoBehaviour
             playerSpeed = playerSpeedI;
         }
 
+        //Animation Stuff
         if ((translationX > 0.01f || translationX < -0.01f) && isBall == false && isGrounded == true)
         {
             myAnimations.SetBool("AmMoving", true);
@@ -467,6 +478,24 @@ public class Bear : MonoBehaviour
             myAnimations.SetBool("AmInAir", false);
         }
 
+        if (isClimbing == true)
+        {
+            myAnimations.SetBool("AmClimbing", true);
+        }
+        else
+        {
+            myAnimations.SetBool("AmClimbing", false);
+        }
+
+        if (isRoaring == true)
+        {
+            myAnimations.SetBool("AmRoaring", true);
+        }
+        else
+        {
+            myAnimations.SetBool("AmRoaring", false);
+        }
+
         
        
     }
@@ -474,8 +503,7 @@ public class Bear : MonoBehaviour
     IEnumerator JumpOffMGround()
     {
         GetComponent<Collider2D>().enabled = false;
-<<<<<<< Updated upstream
-=======
+
 
         if (playerRB.linearVelocityY > 0)
         {
@@ -487,7 +515,6 @@ public class Bear : MonoBehaviour
             playerRB.linearVelocityY = 0;
         }
         
->>>>>>> Stashed changes
 
         /*if (playerRB.linearVelocityY > 0)
         {
@@ -502,8 +529,17 @@ public class Bear : MonoBehaviour
         playerRB.linearVelocityY = playerRB.linearVelocityY + 1;
 
 
-        yield return new WaitForSeconds(0);
-        playerRB.AddForce(Vector2.up * (jumpForce + 100));
+        yield return new WaitForSeconds(0.1f);
+
+        if (translationX == 0)
+        {
+            playerRB.AddForce(Vector2.up * (jumpForce));
+        }
+        else
+        {
+            playerRB.AddForce(Vector2.up * (jumpForce + 175));
+        }
+        
 
         GetComponent<Collider2D>().enabled = true;
     }
