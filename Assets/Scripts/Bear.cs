@@ -366,14 +366,18 @@ public class Bear : MonoBehaviour
                 {
                     if (isOnMGround == false)
                     {
+                        if (isOnFallingP == true)
+                        {
+                            playerRB.linearVelocityY = 0;
+                        }
+                        
                         playerRB.AddForce(Vector2.up * jumpForce);
+
                     }
                     else
                     {
                         StartCoroutine("JumpOffMGround");
                     }
-
-                    
 
                 }
                 else
@@ -658,6 +662,7 @@ public class Bear : MonoBehaviour
         {
             isGrounded = false;
             playerSpeed = playerSpeedI;
+            isOnFallingP = false;
 
             if (collision.transform.parent != null && collision.transform.parent.GetComponent<MovingGround>() != null)
             {
@@ -670,6 +675,7 @@ public class Bear : MonoBehaviour
     }
 
     public GameObject myMGround;
+    bool isOnFallingP = false;
     private void OnCollisionStay2D(Collision2D collision)
     {
         foreach (ContactPoint2D hitPos in collision.contacts)
@@ -684,12 +690,21 @@ public class Bear : MonoBehaviour
                         isGrounded = true;
                         climbingTimer = climbingTimerI;
 
-                        if (collision.transform.parent.GetComponent<MovingGround>() != null && isBall == false)
+                        if (collision.transform.parent != null && collision.transform.parent.GetComponent<MovingGround>() != null && isBall == false)
                         {
                             GetComponent<Rigidbody2D>().MovePosition(Vector2.MoveTowards(transform.position, new Vector2(collision.transform.position.x, collision.transform.position.y + collision.gameObject.GetComponent<Collider2D>().bounds.size.y / 2), collision.transform.parent.GetComponent<MovingGround>().moveSpeed * Time.deltaTime));
                             myMGround = collision.gameObject;
-                            playerRB.AddRelativeForceY(-100);
+                            playerRB.AddRelativeForceY(-20 * collision.transform.parent.GetComponent<MovingGround>().moveSpeed);
                             isOnMGround = true;
+                        }
+
+                        if (collision.transform.GetComponent<FallingPlatform>() != null && collision.transform.GetComponent<FallingPlatform>().readyToFall == true)
+                        {
+                            isOnFallingP = true;
+                        }
+                        else
+                        {
+                            isOnFallingP = false;
                         }
                     }
                 }
