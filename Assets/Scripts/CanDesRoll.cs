@@ -16,18 +16,18 @@ public class CanDesRoll : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
-    
+
     void Update()
     {
-       
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player" && collision.relativeVelocity.x > velocityToKill)
+        if (collision.gameObject.tag == "Player" && (collision.relativeVelocity.x > velocityToKill || collision.relativeVelocity.x < velocityToKill * -1))
         {
             collision.gameObject.GetComponent<Rigidbody2D>().linearVelocity = collision.relativeVelocity;
             FindAnyObjectByType<SceneInfo>().AddToCDList(gameObject.name);
