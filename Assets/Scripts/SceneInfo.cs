@@ -74,7 +74,7 @@ public class SceneInfo : MonoBehaviour
     static bool hasEnteredDoor;
 
     public static Dictionary<string, List<string>> collectablesDestroyed = collectablesDestroyed = new Dictionary<string, List<string>>();
-
+    public static Dictionary<string, List<string>> conditionsMet = conditionsMet = new Dictionary<string, List<string>>();
     public void AddToCDList(string objName)
     {
         if (collectablesDestroyed.ContainsKey(gameObject.scene.name) == false)
@@ -89,6 +89,22 @@ public class SceneInfo : MonoBehaviour
     public Dictionary<string, List<string>> GetCDList()
     {
         return collectablesDestroyed;
+    }
+
+    public void AddToCMList(string objName)
+    {
+        if (conditionsMet.ContainsKey(gameObject.scene.name) == false)
+        {
+            conditionsMet.Add(gameObject.scene.name, new List<string>());
+            //Debug.Log("bruh");
+        }
+
+        conditionsMet[gameObject.scene.name].Add(objName);
+    }
+
+    public Dictionary<string, List<string>> GetCMList()
+    {
+        return conditionsMet;
     }
 
     //leaving more room for more directions
