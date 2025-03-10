@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class CanvasThing : MonoBehaviour
 {
@@ -200,7 +201,7 @@ public class CanvasThing : MonoBehaviour
 
     void ExitButton()
     {
-        Application.Quit();
+        SceneManager.LoadScene("TitleScreen");
     }
 
     public void AddBerry()
