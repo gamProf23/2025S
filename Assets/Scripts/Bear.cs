@@ -471,8 +471,19 @@ public class Bear : MonoBehaviour
         }
         else
         {
-            myAnimations.SetBool("AmMoving", false);
+            //myAnimations.SetBool("AmMoving", false);
+
+            if ((translationY > 0.01f || translationY < -0.01f) && isBall == false && isGrounded == false)
+            {
+                myAnimations.SetBool("AmMoving", true);
+            }
+            else
+            {
+                myAnimations.SetBool("AmMoving", false);
+            }
         }
+
+        
 
         if (isGrounded == false)
         {
@@ -706,6 +717,20 @@ public class Bear : MonoBehaviour
                         {
                             isOnFallingP = false;
                         }
+                    }
+                }
+                else if (collision.gameObject.tag == "Ground")
+                {
+                    jumpAmount = jumpAmountI;
+                    isGrounded = true;
+                    climbingTimer = climbingTimerI;
+
+                    if (collision.transform.parent != null && collision.transform.parent.GetComponent<MovingGround>() != null && isBall == false)
+                    {
+                        GetComponent<Rigidbody2D>().MovePosition(Vector2.MoveTowards(transform.position, new Vector2(collision.transform.position.x, collision.transform.position.y + collision.gameObject.GetComponent<Collider2D>().bounds.size.y / 2), collision.transform.parent.GetComponent<MovingGround>().moveSpeed * Time.deltaTime));
+                        myMGround = collision.gameObject;
+                        playerRB.AddRelativeForceY(-20 * collision.transform.parent.GetComponent<MovingGround>().moveSpeed);
+                        isOnMGround = true;
                     }
                 }
                 else
