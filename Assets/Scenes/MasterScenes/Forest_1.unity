@@ -10918,24 +10918,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText:
-  - Hey I think there is probably 7 Bee Hives in here, I don't know
+  - Hey can I have 3 berries
   - SwitchP
-  - What do you mean I don't know
+  - There is a bush right next to you, why don't you just get them yourself
   - SwitchP
-  - Im sleepy leave me alone
+  - Nah, I don't really feel like it
   - SwitchP
-  - Ok
-  myPortrait: {fileID: -2646489650387840478, guid: 50caba8659500324facf6534d1f29bf2, type: 3}
-  myInteractionYSel: 
-  myInteractionNSel: 
-  myInteractionText: 
-  berryCondition: 0
+  - Interaction
+  myPortrait: {fileID: -1884701423190137557, guid: 1f7f95803b430dc47b25da35f8f338a5, type: 3}
+  myInteractionYSel: Yes
+  myInteractionNSel: No
+  myInteractionText: (Will you give 3 berries) (Press SPACE to select)
+  berryCondition: 3
   fishCondition: 0
   honeyCondition: 0
-  myInteractionYText: []
-  myInteractionNText: []
-  myInteractionFailText: []
-  conditionMetText: []
+  myInteractionYText:
+  - Thanks
+  myInteractionNText:
+  - How heartless
+  myInteractionFailText:
+  - Please get more berries, I NEED THEM
+  conditionMetText:
+  - Thanks
   conditionIsMet: 0
 --- !u!212 &1821215176
 SpriteRenderer:
@@ -10981,7 +10985,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 7169175197127940270, guid: 50caba8659500324facf6534d1f29bf2, type: 3}
+  m_Sprite: {fileID: -6464869995595449900, guid: 4de1f1e416c2c684c96c01f1e6faf89c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11001,7 +11005,7 @@ Transform:
   m_GameObject: {fileID: 1821215174}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 69.78, y: -16.23, z: 0}
+  m_LocalPosition: {x: 69.84, y: -16.15, z: 0}
   m_LocalScale: {x: 5.279925, y: 5.191346, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
