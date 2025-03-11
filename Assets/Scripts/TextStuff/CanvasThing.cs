@@ -201,7 +201,13 @@ public class CanvasThing : MonoBehaviour
 
     void ExitButton()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("TitleScreen");
+
+        FindAnyObjectByType<SceneInfo>().ToTitleScreen();
+        Destroy(FindAnyObjectByType<Bear>().gameObject);
+        Destroy(FindAnyObjectByType<CamFollow>().gameObject);
+        Destroy(gameObject);
     }
 
     public void AddBerry()
