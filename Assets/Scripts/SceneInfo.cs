@@ -142,6 +142,11 @@ public class SceneInfo : MonoBehaviour
         
     }
 
+    public void ToTitleScreen()
+    {
+        hasLoadedPrefab = false;
+    }
+
     void Start()
     {
         FindAnyObjectByType<CamFollow>().setMeUp = true;
