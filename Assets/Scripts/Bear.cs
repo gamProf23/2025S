@@ -95,13 +95,13 @@ public class Bear : MonoBehaviour
 
     [Header("Slope Stuff: DO NOT TOUCH")]
 
-    private float slopeCheckDistance = 0f;
+    private float slopeCheckDistance = 0.5f;
     public bool isOnSlope = false;
     private float slopeSideAngle;
     private Vector2 slopeNormalPerp;
     private float slopeDownAngle;
     private float lastSlopeAngle;
-    private float maxSlopeAngle = 30f;
+    private float maxSlopeAngle = 90f;
     private bool canWalkOnSlope;
     Vector2 newVelocity = Vector2.zero;
     public PhysicsMaterial2D fullFriction;
@@ -156,6 +156,7 @@ public class Bear : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(slopeSideAngle);
         Physics2D.SyncTransforms();
         playerPosition = transform.position;
 
@@ -371,13 +372,11 @@ public class Bear : MonoBehaviour
                             playerRB.linearVelocityY = 0;
                         }
 
-                        Debug.Log("bruh");
                         playerRB.AddForce(Vector2.up * jumpForce);
 
                     }
                     else
                     {
-                        Debug.Log("bruh");
                         StartCoroutine("JumpOffMGround");
                     }
 
@@ -391,7 +390,6 @@ public class Bear : MonoBehaviour
                     }
                     else
                     {
-                        Debug.Log("bruh");
                         GetComponent<CapsuleCollider2D>().enabled = false;
                         playerRB.AddForce(Vector2.up * jumpForce);
                         GetComponent<CapsuleCollider2D>().enabled = true;
