@@ -272,7 +272,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.05, y: -0.78, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7930736720437067242}
@@ -351,7 +351,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 10
-  m_GravityScale: 1
+  m_GravityScale: 0.75
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -376,12 +376,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHP: 10
-  playerSpeedI: 5
+  playerSpeedI: 1
   climbingTimerI: 5
   jumpAmountI: 1
   rollMaxVelocity: 20
   clawSpeed: 20
-  jumpForce: 400
+  jumpForce: 200
   swimUpForce: 200
   slopeVelocityMult: 1.1
   waterGravity: 0.5
