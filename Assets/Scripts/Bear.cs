@@ -156,7 +156,6 @@ public class Bear : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(slopeSideAngle);
         Physics2D.SyncTransforms();
         playerPosition = transform.position;
 
@@ -258,7 +257,7 @@ public class Bear : MonoBehaviour
             if (isClimbing == false)
             {
                 
-                Vector2 checkPos = transform.position - (Vector3)new Vector2(0.0f, GetComponent<CapsuleCollider2D>().size.y / 2);
+                Vector2 checkPos = transform.position - (Vector3)new Vector2(0.0f, GetComponent<CapsuleCollider2D>().size.y/ 2);
                 SlopeCheckHorizontal(checkPos);
                 SlopeCheckVertical(checkPos);
 
@@ -530,10 +529,10 @@ public class Bear : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
 
 
-        if (playerRB.linearVelocityY >= 0)
+        if (playerRB.linearVelocityY > 0.1f)
         {
             
-            playerRB.linearVelocityY = playerRB.linearVelocityY + 1;
+            playerRB.linearVelocityY = playerRB.linearVelocityY + 0.5f;
         }
         else
         {
@@ -551,7 +550,7 @@ public class Bear : MonoBehaviour
             playerRB.linearVelocityY = 0;
         }*/
 
-        playerRB.linearVelocityY = playerRB.linearVelocityY + 1;
+        playerRB.linearVelocityY = playerRB.linearVelocityY + 0.5f;
 
 
         yield return new WaitForSeconds(0.1f);
@@ -562,7 +561,7 @@ public class Bear : MonoBehaviour
         }
         else
         {
-            playerRB.AddForce(Vector2.up * (jumpForce + 175));
+            playerRB.AddForce(Vector2.up * (jumpForce + 40));
         }
         
 
@@ -662,6 +661,11 @@ public class Bear : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+
+        if (collision.transform.parent != null && collision.transform.parent.GetComponent<MovingGround>() != null)
+        {
+            whereToClone = collision.transform.parent.GetComponent<MovingGround>().whereTo;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -688,6 +692,7 @@ public class Bear : MonoBehaviour
             {
                 isOnMGround = false;
                 myMGround = null;
+                whereToClone = 0;
             }
 
         }
@@ -696,6 +701,7 @@ public class Bear : MonoBehaviour
 
     public GameObject myMGround;
     bool isOnFallingP = false;
+    int whereToClone;
     private void OnCollisionStay2D(Collision2D collision)
     {
         foreach (ContactPoint2D hitPos in collision.contacts)
@@ -716,6 +722,12 @@ public class Bear : MonoBehaviour
                             myMGround = collision.gameObject;
                             playerRB.AddRelativeForceY(-10 * collision.transform.parent.GetComponent<MovingGround>().moveSpeed);
                             isOnMGround = true;
+
+                            if (whereToClone != collision.transform.parent.GetComponent<MovingGround>().whereTo)
+                            {
+                                playerRB.linearVelocityY = 0;
+                                whereToClone = collision.transform.parent.GetComponent<MovingGround>().whereTo;
+                            }
                         }
 
                         if (collision.transform.GetComponent<FallingPlatform>() != null && collision.transform.GetComponent<FallingPlatform>().readyToFall == true)
@@ -740,6 +752,13 @@ public class Bear : MonoBehaviour
                         myMGround = collision.gameObject;
                         playerRB.AddRelativeForceY(-10 * collision.transform.parent.GetComponent<MovingGround>().moveSpeed);
                         isOnMGround = true;
+
+                        if (whereToClone != collision.transform.parent.GetComponent<MovingGround>().whereTo)
+                        {
+                            playerRB.Sleep();
+                            playerRB.WakeUp();
+                            whereToClone = collision.transform.parent.GetComponent<MovingGround>().whereTo;
+                        }
                     }
                 }
                 else
