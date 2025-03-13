@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      raccoonfinalizingPNG_0: -1884701423190137557
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
