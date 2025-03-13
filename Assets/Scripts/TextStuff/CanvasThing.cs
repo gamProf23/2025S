@@ -1,10 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
-using Unity.VisualScripting.Dependencies.NCalc;
-using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class CanvasThing : MonoBehaviour
 {
@@ -200,7 +198,13 @@ public class CanvasThing : MonoBehaviour
 
     void ExitButton()
     {
-        Application.Quit();
+        Time.timeScale = 1;
+        SceneManager.LoadScene("TitleScreen");
+
+        FindAnyObjectByType<SceneInfo>().ToTitleScreen();
+        Destroy(FindAnyObjectByType<Bear>().gameObject);
+        Destroy(FindAnyObjectByType<CamFollow>().gameObject);
+        Destroy(gameObject);
     }
 
     public void AddBerry()
