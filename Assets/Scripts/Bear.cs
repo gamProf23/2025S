@@ -21,8 +21,8 @@ public class Bear : MonoBehaviour
 
     public int playerHP = 10;
 
-    public int playerSpeedI; //5
-    int playerSpeed;
+    public float playerSpeedI; //5
+    float playerSpeed;
 
     //In Seconds
     public float climbingTimerI; //2
@@ -95,7 +95,7 @@ public class Bear : MonoBehaviour
 
     [Header("Slope Stuff: DO NOT TOUCH")]
 
-    private float slopeCheckDistance = 3f;
+    private float slopeCheckDistance = 0.5f;
     public bool isOnSlope = false;
     private float slopeSideAngle;
     private Vector2 slopeNormalPerp;
@@ -144,13 +144,13 @@ public class Bear : MonoBehaviour
     {
         if (movingRight == false)
         {
-            myClaw.transform.position = new Vector2(transform.position.x - 2.25f, transform.position.y + 1.75f);
-            myRoar.transform.position = new Vector2(transform.position.x - (GetComponent<SpriteRenderer>().size.x * 0.5f) - 2.5f, transform.position.y);
+            myClaw.transform.position = new Vector2(transform.position.x - (2.25f/6), transform.position.y + (1.75f/6));
+            myRoar.transform.position = new Vector2(transform.position.x - (GetComponent<SpriteRenderer>().size.x * 0.5f) - (2.5f/6), transform.position.y);
         }
         else
         {
-            myClaw.transform.position = new Vector2(transform.position.x + 2.25f, transform.position.y + 1.75f);
-            myRoar.transform.position = new Vector2(transform.position.x + (GetComponent<SpriteRenderer>().size.x * 0.5f) + 2.5f, transform.position.y);
+            myClaw.transform.position = new Vector2(transform.position.x + (2.25f/6), transform.position.y + (1.75f/6));
+            myRoar.transform.position = new Vector2(transform.position.x + (GetComponent<SpriteRenderer>().size.x * 0.5f) + (2.5f/6), transform.position.y);
         }
     }
 
@@ -183,16 +183,16 @@ public class Bear : MonoBehaviour
 
         swipePointsL = new List<Vector3>() 
         {
-            new Vector2(transform.position.x - 2.25f, transform.position.y + 1.75f),
-            new Vector2(transform.position.x - 3f, transform.position.y),
-            new Vector2(transform.position.x - 2.25f, transform.position.y - 1.75f)
+            new Vector2(transform.position.x - (2.25f/6), transform.position.y + (1.75f/6)),
+            new Vector2(transform.position.x - (3f/6), transform.position.y),
+            new Vector2(transform.position.x - (2.25f/6), transform.position.y - (1.75f/6))
         };
 
         swipePointsR = new List<Vector3>()
         {
-            new Vector2(transform.position.x + 2.25f, transform.position.y + 1.75f),
-            new Vector2(transform.position.x + 3f, transform.position.y),
-            new Vector2(transform.position.x + 2.25f, transform.position.y - 1.75f)
+            new Vector2(transform.position.x + (2.25f/6), transform.position.y + (1.75f/6)),
+            new Vector2(transform.position.x + (3f/6), transform.position.y),
+            new Vector2(transform.position.x + (2.25f/6), transform.position.y - (1.75f/6))
         };
 
         //Debug.Log (playerRB.velocity);
@@ -201,8 +201,8 @@ public class Bear : MonoBehaviour
         {
             if (isSwiping == false)
             {
-                myClaw.transform.position = new Vector2(transform.position.x - 2.25f, transform.position.y + 1.75f);
-                myRoar.transform.position = new Vector2(transform.position.x - (GetComponent<SpriteRenderer>().size.x * 0.5f) - 2.5f, transform.position.y + 1);
+                myClaw.transform.position = new Vector2(transform.position.x - (2.25f/6), transform.position.y + (1.75f/6));
+                myRoar.transform.position = new Vector2(transform.position.x - (GetComponent<SpriteRenderer>().size.x * 0.5f) - (2.5f/6), transform.position.y + (1f/6));
 
                 if (isClimbing == false)
                 {
@@ -217,8 +217,8 @@ public class Bear : MonoBehaviour
         {
             if (isSwiping == false)
             {
-                myClaw.transform.position = new Vector2(transform.position.x + 2.25f, transform.position.y + 1.75f);
-                myRoar.transform.position = new Vector2(transform.position.x + (GetComponent<SpriteRenderer>().size.x * 0.5f) + 2.5f, transform.position.y + 1f);
+                myClaw.transform.position = new Vector2(transform.position.x + (2.25f/6), transform.position.y + (1.75f/6));
+                myRoar.transform.position = new Vector2(transform.position.x + (GetComponent<SpriteRenderer>().size.x * 0.5f) + (2.5f/6), transform.position.y + (1f/6));
 
                 if (isClimbing == false)
                 {
@@ -233,8 +233,15 @@ public class Bear : MonoBehaviour
         //Roaring
         if (Input.GetKey(roarKey))
         {
+
+            if (isRoaring == false)
+            {
+                myAnimations.Play("BearRoar");
+            }
+            
             if (isBall == false)
             {
+                
                 myRoar.SetActive(true);
                 isRoaring = true;
             }
@@ -252,12 +259,22 @@ public class Bear : MonoBehaviour
             isRoaring = false;
         }
 
+
+        if (isClimbing == false && isBall == false)
+        {
+            WallTouching();
+        }
+        else
+        {
+            playerSpeed = playerSpeedI;
+        }
+
         if (isBall == false)
         {
             if (isClimbing == false)
             {
                 
-                Vector2 checkPos = transform.position - (Vector3)new Vector2(0.0f, GetComponent<CapsuleCollider2D>().size.y / 2);
+                Vector2 checkPos = transform.position - (Vector3)new Vector2(0.0f, GetComponent<CapsuleCollider2D>().size.y/ 2);
                 SlopeCheckHorizontal(checkPos);
                 SlopeCheckVertical(checkPos);
 
@@ -357,6 +374,11 @@ public class Bear : MonoBehaviour
             myAnimations.SetBool("AmJumping", false);
         }
 
+        if (isOnFallingP == true)
+        {
+            playerRB.AddForceY(-10);
+        }
+
         //Jump
         if (Input.GetKeyDown(jumpKey) && ((jumpAmount > 0) || (isClimbing == true)) && isTalking == false)
         {
@@ -368,9 +390,9 @@ public class Bear : MonoBehaviour
                     {
                         if (isOnFallingP == true)
                         {
-                            playerRB.linearVelocityY = 0;
+                            playerRB.linearVelocityY = 2.1f;
                         }
-                        
+
                         playerRB.AddForce(Vector2.up * jumpForce);
 
                     }
@@ -382,9 +404,17 @@ public class Bear : MonoBehaviour
                 }
                 else
                 {
-                    GetComponent<CapsuleCollider2D>().enabled = false;
-                    playerRB.AddForce(Vector2.up * jumpForce);
-                    GetComponent<CapsuleCollider2D>().enabled = true;
+                    if (isBall == true)
+                    {
+                        
+                        playerRB.AddForce(Vector2.up * jumpForce);
+                    }
+                    else
+                    {
+                        GetComponent<CapsuleCollider2D>().enabled = false;
+                        playerRB.AddForce(Vector2.up * jumpForce);
+                        GetComponent<CapsuleCollider2D>().enabled = true;
+                    }
                 }
 
                 myAnimations.SetBool("AmJumping", true);
@@ -455,14 +485,7 @@ public class Bear : MonoBehaviour
             }
         }
 
-        if (isClimbing == false)
-        {
-            WallTouching();
-        }
-        else
-        {
-            playerSpeed = playerSpeedI;
-        }
+        
 
         //Animation Stuff
         if ((translationX > 0.01f || translationX < -0.01f) && isBall == false && isGrounded == true)
@@ -521,10 +544,10 @@ public class Bear : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
 
 
-        if (playerRB.linearVelocityY > 0)
+        if (playerRB.linearVelocityY > 0.1f)
         {
             
-            playerRB.linearVelocityY = playerRB.linearVelocityY + 1;
+            playerRB.linearVelocityY = playerRB.linearVelocityY + 0.5f;
         }
         else
         {
@@ -542,7 +565,7 @@ public class Bear : MonoBehaviour
             playerRB.linearVelocityY = 0;
         }*/
 
-        playerRB.linearVelocityY = playerRB.linearVelocityY + 1;
+        playerRB.linearVelocityY = playerRB.linearVelocityY + 0.5f;
 
 
         yield return new WaitForSeconds(0.1f);
@@ -553,7 +576,7 @@ public class Bear : MonoBehaviour
         }
         else
         {
-            playerRB.AddForce(Vector2.up * (jumpForce + 175));
+            playerRB.AddForce(Vector2.up * (jumpForce + 40));
         }
         
 
@@ -617,22 +640,32 @@ public class Bear : MonoBehaviour
         if (movingRight == true)
         {
             startPos = gameObject.transform.position;
-            endPos = gameObject.transform.right * 2f;
+            endPos = gameObject.transform.right * (2f/6);
         }
         else
         {
             startPos = gameObject.transform.position;
-            endPos = gameObject.transform.right * -2f ;
+            endPos = gameObject.transform.right * (-2f/6);
         }
 
         Debug.DrawRay(startPos, endPos);
 
-        hit = Physics2D.Raycast(startPos, endPos, 2f);
+        hit = Physics2D.Raycast(startPos, endPos, (2f /6));
 
         if (hit.transform != null && hit.transform.tag == "Ground")
         {
             //Debug.Log("Bruh");
             playerSpeed = 0;
+            playerRB.linearVelocityX = 0;
+            
+            if (movingRight == true)
+            {
+                transform.position = new Vector3(transform.position.x - 0.001f, transform.position.y);
+            }
+            else if (movingRight == false)
+            {
+                transform.position = new Vector3(transform.position.x + 0.001f, transform.position.y);
+            }
         }
         else
         {
@@ -652,6 +685,11 @@ public class Bear : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+        }
+
+        if (collision.transform.parent != null && collision.transform.parent.GetComponent<MovingGround>() != null)
+        {
+            whereToClone = collision.transform.parent.GetComponent<MovingGround>().whereTo;
         }
     }
 
@@ -679,6 +717,7 @@ public class Bear : MonoBehaviour
             {
                 isOnMGround = false;
                 myMGround = null;
+                whereToClone = 0;
             }
 
         }
@@ -687,6 +726,7 @@ public class Bear : MonoBehaviour
 
     public GameObject myMGround;
     bool isOnFallingP = false;
+    int whereToClone;
     private void OnCollisionStay2D(Collision2D collision)
     {
         foreach (ContactPoint2D hitPos in collision.contacts)
@@ -705,8 +745,14 @@ public class Bear : MonoBehaviour
                         {
                             GetComponent<Rigidbody2D>().MovePosition(Vector2.MoveTowards(transform.position, new Vector2(collision.transform.position.x, collision.transform.position.y + collision.gameObject.GetComponent<Collider2D>().bounds.size.y / 2), collision.transform.parent.GetComponent<MovingGround>().moveSpeed * Time.deltaTime));
                             myMGround = collision.gameObject;
-                            playerRB.AddRelativeForceY(-20 * collision.transform.parent.GetComponent<MovingGround>().moveSpeed);
+                            playerRB.AddRelativeForceY(-10 * collision.transform.parent.GetComponent<MovingGround>().moveSpeed);
                             isOnMGround = true;
+
+                            if (whereToClone != collision.transform.parent.GetComponent<MovingGround>().whereTo)
+                            {
+                                playerRB.linearVelocityY = 0;
+                                whereToClone = collision.transform.parent.GetComponent<MovingGround>().whereTo;
+                            }
                         }
 
                         if (collision.transform.GetComponent<FallingPlatform>() != null && collision.transform.GetComponent<FallingPlatform>().readyToFall == true)
@@ -729,8 +775,15 @@ public class Bear : MonoBehaviour
                     {
                         GetComponent<Rigidbody2D>().MovePosition(Vector2.MoveTowards(transform.position, new Vector2(collision.transform.position.x, collision.transform.position.y + collision.gameObject.GetComponent<Collider2D>().bounds.size.y / 2), collision.transform.parent.GetComponent<MovingGround>().moveSpeed * Time.deltaTime));
                         myMGround = collision.gameObject;
-                        playerRB.AddRelativeForceY(-20 * collision.transform.parent.GetComponent<MovingGround>().moveSpeed);
+                        playerRB.AddRelativeForceY(-10 * collision.transform.parent.GetComponent<MovingGround>().moveSpeed);
                         isOnMGround = true;
+
+                        if (whereToClone != collision.transform.parent.GetComponent<MovingGround>().whereTo)
+                        {
+                            playerRB.Sleep();
+                            playerRB.WakeUp();
+                            whereToClone = collision.transform.parent.GetComponent<MovingGround>().whereTo;
+                        }
                     }
                 }
                 else

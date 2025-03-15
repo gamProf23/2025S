@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 263aaa140372b934e958a8d5faa91c11
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3727270313655985474
+    second: ForPrefabs_0
+  - first:
+      213: 850363882284573655
+    second: ForPrefabs_1
+  - first:
+      213: 2352522609936977290
+    second: ForPrefabs_2
+  - first:
+      213: -1575268416490572816
+    second: ForPrefabs_3
+  - first:
+      213: 5357094256554317815
+    second: ForPrefabs_4
+  - first:
+      213: -3687748732550903770
+    second: ForPrefabs_5
+  - first:
+      213: 2492054740511372375
+    second: ForPrefabs_6
+  - first:
+      213: -5264218302807684288
+    second: ForPrefabs_7
+  - first:
+      213: 7255978064278254142
+    second: ForPrefabs_8
+  - first:
+      213: -339614180613702711
+    second: ForPrefabs_9
+  - first:
+      213: 3174000038618759386
+    second: ForPrefabs_10
+  - first:
+      213: 7590689743560260484
+    second: ForPrefabs_11
+  - first:
+      213: -279249854408784762
+    second: ForPrefabs_12
+  - first:
+      213: 8680747658107680328
+    second: ForPrefabs_13
+  - first:
+      213: 2010772840132862643
+    second: ForPrefabs_14
+  - first:
+      213: -1540697544058840772
+    second: ForPrefabs_15
+  - first:
+      213: 2698534493794992467
+    second: ForPrefabs_16
+  - first:
+      213: 6958967480671909487
+    second: ForPrefabs_17
+  - first:
+      213: 6155811533149084
+    second: ForPrefabs_18
+  - first:
+      213: 839128139338201175
+    second: ForPrefabs_19
+  - first:
+      213: -3672097485978504985
+    second: ForPrefabs_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ForPrefabs_0
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 95
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 245e2533a9ce9b330800000000000000
+      internalID: 3727270313655985474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 96
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d3e46d02791dcb00800000000000000
+      internalID: 850363882284573655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_2
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d4e5b79d6d5a020800000000000000
+      internalID: 2352522609936977290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_3
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 69
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3ff29a8b5832ae0800000000000000
+      internalID: -1575268416490572816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_4
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 0
+        width: 17
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f7943ed7d8385a40800000000000000
+      internalID: 5357094256554317815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_5
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 43
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6280867f01c72dcc0800000000000000
+      internalID: -3687748732550903770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_6
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 77
+        width: 54
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7543201459e859220800000000000000
+      internalID: 2492054740511372375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_7
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 61
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04bc909385db1f6b0800000000000000
+      internalID: -5264218302807684288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_8
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 61
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32f45b0b9962b460800000000000000
+      internalID: 7255978064278254142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 62
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cbb5dbb3b2794bf0800000000000000
+      internalID: -339614180613702711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_10
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 34
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad082f2f7305c0c20800000000000000
+      internalID: 3174000038618759386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_11
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 46
+        width: 84
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b3c15ca1c875960800000000000000
+      internalID: 7590689743560260484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_12
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 23
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6848268acb7ef1cf0800000000000000
+      internalID: -279249854408784762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_13
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 25
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 846ff42a006387870800000000000000
+      internalID: 8680747658107680328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_14
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 26
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b26f1c9e33b7eb10800000000000000
+      internalID: 2010772840132862643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_15
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 27
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c395e042fb75e9ae0800000000000000
+      internalID: -1540697544058840772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_16
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 4
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3510acc13de137520800000000000000
+      internalID: 2698534493794992467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_17
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 5
+        width: 86
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f66b1f0bd08339060800000000000000
+      internalID: 6958967480671909487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_18
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 12
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93dcbf8daed51000800000000000000
+      internalID: 6155811533149084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_19
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 13
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 758b94ac89e25ab00800000000000000
+      internalID: 839128139338201175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForPrefabs_20
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 15
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e075a7cac61a0dc0800000000000000
+      internalID: -3672097485978504985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ForPrefabs_0: 3727270313655985474
+      ForPrefabs_1: 850363882284573655
+      ForPrefabs_10: 3174000038618759386
+      ForPrefabs_11: 7590689743560260484
+      ForPrefabs_12: -279249854408784762
+      ForPrefabs_13: 8680747658107680328
+      ForPrefabs_14: 2010772840132862643
+      ForPrefabs_15: -1540697544058840772
+      ForPrefabs_16: 2698534493794992467
+      ForPrefabs_17: 6958967480671909487
+      ForPrefabs_18: 6155811533149084
+      ForPrefabs_19: 839128139338201175
+      ForPrefabs_2: 2352522609936977290
+      ForPrefabs_20: -3672097485978504985
+      ForPrefabs_3: -1575268416490572816
+      ForPrefabs_4: 5357094256554317815
+      ForPrefabs_5: -3687748732550903770
+      ForPrefabs_6: 2492054740511372375
+      ForPrefabs_7: -5264218302807684288
+      ForPrefabs_8: 7255978064278254142
+      ForPrefabs_9: -339614180613702711
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

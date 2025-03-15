@@ -47,7 +47,7 @@ public class CanvasThing : MonoBehaviour
         textBoxText = textBox.transform.GetChild(0).GetComponent<TMP_Text>();
         textBoxPortrait = textBox.transform.GetChild(1).GetComponent<Image>();
 
-        pauseMenu = transform.GetChild(4).GetComponent<Image>();
+        pauseMenu = transform.GetChild(5).GetComponent<Image>();
         backButton = pauseMenu.transform.GetChild(1).GetComponent<Button>();
         mapButton = pauseMenu.transform.GetChild(2).GetComponent<Button>();
         exitButton = pauseMenu.transform.GetChild(3).GetComponent<Button>();
@@ -56,7 +56,7 @@ public class CanvasThing : MonoBehaviour
         mapButton.onClick.AddListener(MapButton);
         exitButton.onClick.AddListener(ExitButton);
 
-        tbInteraction = transform.GetChild(5).GetComponent<Image>();
+        tbInteraction = transform.GetChild(4).GetComponent<Image>();
         yText = tbInteraction.transform.GetChild(0).GetComponent<TMP_Text>();
         nText = tbInteraction.transform.GetChild(1).GetComponent<TMP_Text>();
         ySel = tbInteraction.transform.GetChild(2).GetComponent<Image>();
