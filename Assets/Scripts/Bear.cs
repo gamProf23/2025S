@@ -233,8 +233,15 @@ public class Bear : MonoBehaviour
         //Roaring
         if (Input.GetKey(roarKey))
         {
+
+            if (isRoaring == false)
+            {
+                myAnimations.Play("BearRoar");
+            }
+            
             if (isBall == false)
             {
+                
                 myRoar.SetActive(true);
                 isRoaring = true;
             }
@@ -250,6 +257,16 @@ public class Bear : MonoBehaviour
         {
             myRoar.SetActive(false);
             isRoaring = false;
+        }
+
+
+        if (isClimbing == false && isBall == false)
+        {
+            WallTouching();
+        }
+        else
+        {
+            playerSpeed = playerSpeedI;
         }
 
         if (isBall == false)
@@ -357,6 +374,11 @@ public class Bear : MonoBehaviour
             myAnimations.SetBool("AmJumping", false);
         }
 
+        if (isOnFallingP == true)
+        {
+            playerRB.AddForceY(-10);
+        }
+
         //Jump
         if (Input.GetKeyDown(jumpKey) && ((jumpAmount > 0) || (isClimbing == true)) && isTalking == false)
         {
@@ -368,7 +390,7 @@ public class Bear : MonoBehaviour
                     {
                         if (isOnFallingP == true)
                         {
-                            playerRB.linearVelocityY = 0;
+                            playerRB.linearVelocityY = 2.1f;
                         }
 
                         playerRB.AddForce(Vector2.up * jumpForce);
@@ -463,14 +485,7 @@ public class Bear : MonoBehaviour
             }
         }
 
-        if (isClimbing == false)
-        {
-            WallTouching();
-        }
-        else
-        {
-            playerSpeed = playerSpeedI;
-        }
+        
 
         //Animation Stuff
         if ((translationX > 0.01f || translationX < -0.01f) && isBall == false && isGrounded == true)
@@ -641,6 +656,16 @@ public class Bear : MonoBehaviour
         {
             //Debug.Log("Bruh");
             playerSpeed = 0;
+            playerRB.linearVelocityX = 0;
+            
+            if (movingRight == true)
+            {
+                transform.position = new Vector3(transform.position.x - 0.001f, transform.position.y);
+            }
+            else if (movingRight == false)
+            {
+                transform.position = new Vector3(transform.position.x + 0.001f, transform.position.y);
+            }
         }
         else
         {

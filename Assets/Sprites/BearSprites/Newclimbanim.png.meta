@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 7bfde8f361012a34cbb0d95f072e189d
+guid: 1697238bfc5ce0840974e37912990aeb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8232083148972534492
-    second: BearClimbTemp2_0
+      213: -4151981356183450032
+    second: Newclimbanim_0
+  - first:
+      213: -9203005064534346630
+    second: Newclimbanim_1
+  - first:
+      213: 5172805883217001257
+    second: Newclimbanim_2
+  - first:
+      213: -7237611036648384654
+    second: Newclimbanim_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BearClimbTemp2_0
+      name: Newclimbanim_0
       rect:
         serializedVersion: 2
-        x: 135
-        y: 54
-        width: 111
-        height: 72
+        x: 29
+        y: 50
+        width: 59
+        height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4255300ddf3c1cd80800000000000000
-      internalID: -8232083148972534492
+      spriteID: 05e04a664f23166c0800000000000000
+      internalID: -4151981356183450032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newclimbanim_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 52
+        width: 60
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a743f4647ab584080800000000000000
+      internalID: -9203005064534346630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newclimbanim_2
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 53
+        width: 56
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b33394b8f79c740800000000000000
+      internalID: 5172805883217001257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newclimbanim_3
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 46
+        width: 53
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2775022db17de8b90800000000000000
+      internalID: -7237611036648384654
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f8db161ea49e79c4f97e914c313171e4
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -134,8 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      BearClimbTemp2_0: -8232083148972534492
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
