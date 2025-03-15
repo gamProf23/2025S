@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Newclimbanim_0: -4151981356183450032
+      Newclimbanim_1: -9203005064534346630
+      Newclimbanim_2: 5172805883217001257
+      Newclimbanim_3: -7237611036648384654
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
