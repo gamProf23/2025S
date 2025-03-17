@@ -93,6 +93,8 @@ public class Bear : MonoBehaviour
 
     Vector3 ogScale;
 
+    float ogGrav;
+
     [Header("Slope Stuff: DO NOT TOUCH")]
 
     private float slopeCheckDistance = 0.5f;
@@ -124,6 +126,7 @@ public class Bear : MonoBehaviour
         myAnimations = GetComponent<Animator>();
         scaleX = transform.localScale.x;
         scaleXNeg = transform.localScale.x * -1;
+        ogGrav = GetComponent<Rigidbody2D>().gravityScale;
 
         transform.localScale = new Vector3(scaleXNeg, transform.localScale.y, 1);
 
@@ -392,10 +395,18 @@ public class Bear : MonoBehaviour
                     {
                         if (isOnFallingP == true)
                         {
-                            playerRB.linearVelocityY = 2.1f;
+                            playerRB.linearVelocityY = 2.5f;
                         }
 
-                        playerRB.AddForce(Vector2.up * jumpForce);
+                        if (isSwiming == true)
+                        {
+                            playerRB.AddForce(Vector2.up * jumpForce/1.5f);
+                        }
+                        else
+                        {
+                            playerRB.AddForce(Vector2.up * jumpForce);
+                        }
+                        
 
                     }
                     else
@@ -860,7 +871,7 @@ public class Bear : MonoBehaviour
     {
         if (collision.gameObject.tag == "Water")
         {
-            playerRB.gravityScale = 1;
+            playerRB.gravityScale = ogGrav;
             isSwiming = false;
             myAnimations.SetBool("AmSwiming", false);
 

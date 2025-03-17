@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Salmon : MonoBehaviour
+public class JumpingFish : MonoBehaviour
 {
     bool firstFrame = true;
     public float upDistance;

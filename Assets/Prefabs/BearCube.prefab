@@ -382,10 +382,10 @@ MonoBehaviour:
   rollMaxVelocity: 20
   clawSpeed: 20
   jumpForce: 200
-  swimUpForce: 200
+  swimUpForce: 75
   slopeVelocityMult: 1.1
-  waterGravity: 0.5
-  outOfWaterUpForce: 75
+  waterGravity: 0.25
+  outOfWaterUpForce: 25
   jumpKey: 32
   clawKey: 106
   rollKey: 108
@@ -403,6 +403,7 @@ MonoBehaviour:
   myBall: {fileID: 2259868932977037174}
   isBall: 0
   myClaw: {fileID: 5971424291894822041}
+  isSwiping: 0
   isGrounded: 0
   movingRight: 1
   isTalking: 0
@@ -664,14 +665,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.31764707, a: 1}
+  m_Color: {r: 0, g: 0.5597484, b: 0.1778024, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -880,8 +881,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 4913096391265609413, guid: b54f8b5e1f37293428e444211b22c5b4, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
