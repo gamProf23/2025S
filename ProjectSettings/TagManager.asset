@@ -15,6 +15,7 @@ TagManager:
   - Honey
   - Collectable
   - OneWayPlatform
+  - ClimbPass
   layers:
   - Default
   - TransparentFX

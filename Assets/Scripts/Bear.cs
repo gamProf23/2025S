@@ -74,7 +74,7 @@ public class Bear : MonoBehaviour
     public bool isBall = false;
 
     public GameObject myClaw;
-    bool isSwiping = false;
+    public bool isSwiping = false;
 
     bool isOnMGround = false;
 
@@ -308,10 +308,12 @@ public class Bear : MonoBehaviour
                     if (transform.position.x < whatImClimbing.transform.position.x)
                     {
                         transform.position = new Vector2(whatImClimbing.transform.position.x - GetComponent<Collider2D>().bounds.size.x, transform.position.y);
+                        transform.localScale = new Vector3(scaleXNeg, transform.localScale.y, 1);
                     }
                     else if (transform.position.x > whatImClimbing.transform.position.x)
                     {
                         transform.position = new Vector2(whatImClimbing.transform.position.x + GetComponent<Collider2D>().bounds.size.x, transform.position.y);
+                        transform.localScale = new Vector3(scaleX, transform.localScale.y, 1);
                     }
 
                     playerRB.Sleep();
@@ -835,6 +837,7 @@ public class Bear : MonoBehaviour
         }
     }
 
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Water")
@@ -843,6 +846,11 @@ public class Bear : MonoBehaviour
             isSwiming = true;
             myAnimations.SetBool("AmSwiming", true);
             climbingTimer = climbingTimerI;
+        }
+
+        if (collision.gameObject.tag == "ClimbPass")
+        {
+            collision.GetComponent<Climbable>().GetOnMe();
         }
     }
 
