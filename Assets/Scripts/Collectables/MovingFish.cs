@@ -31,6 +31,7 @@ public class MovingFish : MonoBehaviour
         {
             transform.Translate(Vector2.right * fishSpeed * Time.deltaTime);
         }
+
     }
 
     void ChangeDirection()
@@ -67,5 +68,24 @@ public class MovingFish : MonoBehaviour
                 transform.localScale = new Vector3(scaleX, transform.localScale.y, 1);
             }
         }
+    }
+
+    public void ChangeDirectionOOW()
+    {
+        if (movingRight == false)
+        {
+            movingRight = true;
+            transform.localScale = new Vector3(scaleXNeg, transform.localScale.y, 1);
+        }
+        else
+        {
+            movingRight = false;
+            transform.localScale = new Vector3(scaleX, transform.localScale.y, 1);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+       
     }
 }

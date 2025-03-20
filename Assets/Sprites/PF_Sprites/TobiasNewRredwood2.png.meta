@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 8ba004b2b1d0a0f42a6cc947e9c91521
+guid: 2bfe4e1a2927fbc42acd643ba3aede11
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3760904039659256456
-    second: 46beceee-62ee-470d-8ac0-e829c68b165b_0
+      213: -8309472747639752680
+    second: TobiasNewRredwood2_0
+  - first:
+      213: 6436727308622844528
+    second: TobiasNewRredwood2_1
+  - first:
+      213: -4302463884326646258
+    second: TobiasNewRredwood2_2
+  - first:
+      213: -6598709648140573884
+    second: TobiasNewRredwood2_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 46beceee-62ee-470d-8ac0-e829c68b165b_0
+      name: TobiasNewRredwood2_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 0
-        width: 27
-        height: 30
+        x: 0
+        y: 8
+        width: 73
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87547c9b3b59ecbc0800000000000000
-      internalID: -3760904039659256456
+      spriteID: 818b42ebf82deac80800000000000000
+      internalID: -8309472747639752680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TobiasNewRredwood2_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 4
+        width: 227
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072558a4269d35950800000000000000
+      internalID: 6436727308622844528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TobiasNewRredwood2_2
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 49
+        width: 83
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e43c384e39a44c0800000000000000
+      internalID: -4302463884326646258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TobiasNewRredwood2_3
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 14
+        width: 70
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44363a6598cac64a0800000000000000
+      internalID: -6598709648140573884
       vertices: []
       indices: 
       edges: []
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      46beceee-62ee-470d-8ac0-e829c68b165b_0: -3760904039659256456
+      TobiasNewRredwood2_0: -8309472747639752680
+      TobiasNewRredwood2_1: 6436727308622844528
+      TobiasNewRredwood2_2: -4302463884326646258
+      TobiasNewRredwood2_3: -6598709648140573884
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
