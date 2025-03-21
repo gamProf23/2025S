@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Fish : MonoBehaviour
@@ -27,7 +28,7 @@ public class Fish : MonoBehaviour
     {
         if (collision.gameObject.tag == "Claw")
         {
-            fishClone = Instantiate(myFish, transform.position, transform.rotation);
+            fishClone = Instantiate(myFish, transform.position, Quaternion.Euler(Vector3.zero));
             FindAnyObjectByType<SceneInfo>().AddToCDList(gameObject.name);
             Destroy(gameObject);
         }

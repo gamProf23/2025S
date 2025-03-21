@@ -45,7 +45,7 @@ public class FallingPlatform : MonoBehaviour
                 StartCoroutine(WaitToRespawn());
             }
 
-            GetComponent<SpriteRenderer>().enabled = false;
+            //GetComponent<SpriteRenderer>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
             GetComponent<Rigidbody2D>().linearVelocity = Vector3.zero;
             GetComponent<Rigidbody2D>().gravityScale = 0;
@@ -60,7 +60,7 @@ public class FallingPlatform : MonoBehaviour
     {
         yield return new WaitForSeconds(respawnTimer);
 
-        GetComponent<SpriteRenderer>().enabled = true;
+        //GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<BoxCollider2D>().enabled = true;
         transform.position = ogPos;
         timeTillFall = timeTillFallI;
@@ -83,8 +83,8 @@ public class FallingPlatform : MonoBehaviour
                 if (timeTillFall < 0)
                 {
                     readyToFall = true;
-                    GetComponent<Rigidbody2D>().gravityScale = 1;
-                    GetComponent<Rigidbody2D>().mass = 1;
+                    GetComponent<Rigidbody2D>().gravityScale = 0.5f;
+                    GetComponent<Rigidbody2D>().mass = 100;
                     GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
                     GetComponent<Rigidbody2D>().freezeRotation = true;
                 }

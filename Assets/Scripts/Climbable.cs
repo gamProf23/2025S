@@ -28,6 +28,18 @@ public class Climbable : MonoBehaviour
             FindAnyObjectByType<Bear>().isClimbing = true;
             FindAnyObjectByType<Bear>().whatImClimbing = gameObject;
         }
+
         
+
+
+    }
+
+    public void GetOnMe()
+    {
+        if (FindAnyObjectByType<Bear>().isSwiping == true && FindAnyObjectByType<Bear>().isGrounded == false)
+        {
+            FindAnyObjectByType<Bear>().isClimbing = true;
+            FindAnyObjectByType<Bear>().whatImClimbing = gameObject;
+        }
     }
 }

@@ -3,12 +3,15 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using System.Xml;
+using UnityEngine.UI;
 
 public class SceneInfo : MonoBehaviour
 {
     public Bear myPlayerPrefab;
     public CamFollow myCameraPrefab;
     public Canvas myCanvasPrefab;
+    public Sprite myBackGround;
 
     public static bool hasLoadedPrefab = false;
 
@@ -122,6 +125,8 @@ public class SceneInfo : MonoBehaviour
     private void Awake()
     {
         FindExits();
+
+        
         
         //Debug.Log(previousScene);
 
@@ -139,7 +144,12 @@ public class SceneInfo : MonoBehaviour
             player = FindAnyObjectByType<Bear>();
         }
 
-        
+        if (myBackGround != null)
+        {
+            transform.GetChild(0).GetComponent<Image>().sprite = myBackGround;
+            transform.GetChild(0).GetComponent<Image>().color = new Color(255, 255, 255, 255);
+            transform.GetChild(0).GetComponent<Canvas>().worldCamera = FindAnyObjectByType<CamFollow>().GetComponent<Camera>();
+        }
     }
 
     public void ToTitleScreen()

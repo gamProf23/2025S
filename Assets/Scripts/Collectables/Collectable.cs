@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Collectable : MonoBehaviour
@@ -32,6 +33,14 @@ public class Collectable : MonoBehaviour
             }
 
             Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Water")
+        {
+            GetComponent<Rigidbody2D>().gravityScale = 0;
         }
     }
 }

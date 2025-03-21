@@ -23,9 +23,9 @@ public class CamFollow : MonoBehaviour
 
     public float camZ; // The variable that wll hold the camera's position in the Z axis.
 
-    public float offsetX = 17.75f;
+    public float offsetX; //17
 
-    public float offsetY = 10;
+    public float offsetY; //10
 
     float textBoxOffset = 5f;
 
@@ -49,6 +49,7 @@ public class CamFollow : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate() // Changes the update to wait until all the physics calculations are complete.
     {
+        
         if (setMeUp == true)
         {
             //Debug.Log("Bruh");
@@ -62,9 +63,9 @@ public class CamFollow : MonoBehaviour
 
         if (POI == null) return;
 
+
         // Assigns the POI position to the destination variable.
         Vector3 destination = POI.transform.position;
-
 
         if (destination.x < camLimitL.x + offsetX)
         {
@@ -105,9 +106,7 @@ public class CamFollow : MonoBehaviour
 
         transform.position = destination; // Aligns the camera position with the POI X and Y position values.
 
-
-
-        Camera.main.orthographicSize = 10;  // Zooms out the camera to keep the ground in view when the projectile elevates too high.
+        //Camera.main.orthographicSize = 10/6;  // Zooms out the camera to keep the ground in view when the projectile elevates too high.
     }
 
     public void SetUpCam()

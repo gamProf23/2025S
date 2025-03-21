@@ -7,7 +7,8 @@ public class MovingGround : MonoBehaviour
     GameObject movingThing;
     public float moveSpeed;
 
-    int whereTo = 1;
+    [HideInInspector]
+    public int whereTo = 1;
 
     private void Awake()
     {
