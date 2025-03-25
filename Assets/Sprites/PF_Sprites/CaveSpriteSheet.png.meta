@@ -484,7 +484,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CaveSpriteSheet_0: -1417743609270058578
+      CaveSpriteSheet_1: 3184133813637563965
+      CaveSpriteSheet_10: -5409675973903497144
+      CaveSpriteSheet_11: 5166062011889045319
+      CaveSpriteSheet_12: 2996786962487511642
+      CaveSpriteSheet_13: 4154029277427966501
+      CaveSpriteSheet_14: 7079248238271369688
+      CaveSpriteSheet_2: 7041674734157399655
+      CaveSpriteSheet_3: 7906289183517054470
+      CaveSpriteSheet_4: -765205208381995640
+      CaveSpriteSheet_5: -8471399934540767564
+      CaveSpriteSheet_6: 7048266203228844250
+      CaveSpriteSheet_7: 461342456840532176
+      CaveSpriteSheet_8: -4380122240922640376
+      CaveSpriteSheet_9: 4495800226740248288
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
