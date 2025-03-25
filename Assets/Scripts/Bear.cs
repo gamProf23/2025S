@@ -52,6 +52,10 @@ public class Bear : MonoBehaviour
     public KeyCode rollKey; //Shift
     public KeyCode roarKey; //Period
 
+    [Header("Sound Stuff")]
+
+    public AudioClip roarSound;
+
     [Header("DO NOT TOUCH")]
 
     public float climbingTimer;
@@ -94,6 +98,9 @@ public class Bear : MonoBehaviour
     Vector3 ogScale;
 
     float ogGrav;
+    
+    
+
 
     [Header("Slope Stuff: DO NOT TOUCH")]
 
@@ -236,7 +243,6 @@ public class Bear : MonoBehaviour
         //Roaring
         if (Input.GetKey(roarKey))
         {
-
             if (isRoaring == false)
             {
                 myAnimations.Play("BearRoar");
@@ -254,6 +260,13 @@ public class Bear : MonoBehaviour
                 isRoaring = false;
             }
             
+        }
+
+        if (Input.GetKeyDown(roarKey))
+        {
+            GetComponent<AudioSource>().clip = roarSound;
+            GetComponent<AudioSource>().Play();
+            //GetComponent<AudioSource>().clip = null;
         }
         
         if (Input.GetKeyUp(roarKey))
