@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -24,11 +25,19 @@ public class Fish : MonoBehaviour
         
     }
 
+    bool hasBeenHit = false;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         if (collision.gameObject.tag == "Claw")
         {
-            fishClone = Instantiate(myFish, transform.position, Quaternion.Euler(Vector3.zero));
+            if (myFish != null)
+            {
+                fishClone = Instantiate(myFish, transform.position, Quaternion.Euler(Vector3.zero));
+            }
+            
+            myFish = null;
             FindAnyObjectByType<SceneInfo>().AddToCDList(gameObject.name);
             Destroy(gameObject);
         }

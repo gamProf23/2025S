@@ -18,7 +18,6 @@ public class FishOOW : MonoBehaviour
     {
         if(collision.transform.tag == "Water")
         {
-            Debug.Log("Bruh");
             transform.parent.GetComponent<MovingFish>().ChangeDirectionOOW();
         }
     }
