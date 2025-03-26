@@ -213,6 +213,7 @@ public class Bear : MonoBehaviour
             {
                 myClaw.transform.position = new Vector2(transform.position.x - (2.25f/6), transform.position.y + (1.75f/6));
                 myRoar.transform.position = new Vector2(transform.position.x - (GetComponent<SpriteRenderer>().size.x * 0.5f) - (2.5f/6), transform.position.y + (1f/6));
+                
 
                 if (isClimbing == false)
                 {
@@ -258,6 +259,17 @@ public class Bear : MonoBehaviour
             {
                 myRoar.SetActive(false);
                 isRoaring = false;
+            }
+
+            if (movingRight == false)
+            {
+                myRoar.transform.GetChild(0).transform.gameObject.SetActive(true);
+                myRoar.transform.GetChild(1).transform.gameObject.SetActive(false);
+            }
+            else
+            {
+                myRoar.transform.GetChild(0).transform.gameObject.SetActive(false);
+                myRoar.transform.GetChild(1).transform.gameObject.SetActive(true);
             }
             
         }
