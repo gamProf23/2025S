@@ -284,7 +284,7 @@ public class Bear : MonoBehaviour
                 if (isOnSlope == true && isGrounded == true)
                 {
                     newVelocity.Set(playerSpeed * slopeNormalPerp.x * -translationX, playerSpeed * slopeNormalPerp.y * -translationX);
-                    
+
                     if (isGrounded == false)
                     {
                         playerRB.linearVelocity = newVelocity;
@@ -379,10 +379,10 @@ public class Bear : MonoBehaviour
             myAnimations.SetBool("AmJumping", false);
         }
 
-        if (isOnFallingP == true)
+        /*if (isOnFallingP == true)
         {
             playerRB.AddForceY(-10);
-        }
+        }*/
 
         //Jump
         if (Input.GetKeyDown(jumpKey) && ((jumpAmount > 0) || (isClimbing == true)) && isTalking == false)
@@ -393,14 +393,14 @@ public class Bear : MonoBehaviour
                 {
                     if (isOnMGround == false)
                     {
-                        if (isOnFallingP == true)
-                        {
-                            playerRB.linearVelocityY = 2.5f;
-                        }
 
                         if (isSwiming == true)
                         {
                             playerRB.AddForce(Vector2.up * jumpForce/1.5f);
+                        }
+                        else if (isOnFallingP == true)
+                        {
+                            StartCoroutine("JumpOffMGround");
                         }
                         else
                         {
@@ -589,7 +589,15 @@ public class Bear : MonoBehaviour
         }
         else
         {
-            playerRB.AddForce(Vector2.up * (jumpForce + 40));
+            if (isOnFallingP == true)
+            {
+                playerRB.AddForce(Vector2.up * (jumpForce));
+            }
+            else
+            {
+                playerRB.AddForce(Vector2.up * (jumpForce + 40));
+            }
+            
         }
         
 
