@@ -380,7 +380,7 @@ MonoBehaviour:
   playerSpeedI: 1
   climbingTimerI: 5
   jumpAmountI: 1
-  rollMaxVelocity: 20
+  rollMaxVelocity: 10
   clawSpeed: 20
   jumpForce: 200
   swimUpForce: 75

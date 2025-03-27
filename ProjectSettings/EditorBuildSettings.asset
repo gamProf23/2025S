@@ -80,5 +80,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MasterScenes/MountainTopL_1.unity
     guid: e518a24806081fc48aa51927888a211e
+  - enabled: 1
+    path: Assets/Scenes/MasterScenes/Plains_1.unity
+    guid: 78a8b33541f711543befae32b17ed41c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
