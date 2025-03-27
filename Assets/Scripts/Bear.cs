@@ -52,6 +52,10 @@ public class Bear : MonoBehaviour
     public KeyCode rollKey; //Shift
     public KeyCode roarKey; //Period
 
+    [Header("Sound Stuff")]
+
+    public AudioClip roarSound;
+
     [Header("DO NOT TOUCH")]
 
     public float climbingTimer;
@@ -94,6 +98,9 @@ public class Bear : MonoBehaviour
     Vector3 ogScale;
 
     float ogGrav;
+    
+    
+
 
     [Header("Slope Stuff: DO NOT TOUCH")]
 
@@ -206,6 +213,7 @@ public class Bear : MonoBehaviour
             {
                 myClaw.transform.position = new Vector2(transform.position.x - (2.25f/6), transform.position.y + (1.75f/6));
                 myRoar.transform.position = new Vector2(transform.position.x - (GetComponent<SpriteRenderer>().size.x * 0.5f) - (2.5f/6), transform.position.y + (1f/6));
+                
 
                 if (isClimbing == false)
                 {
@@ -236,7 +244,6 @@ public class Bear : MonoBehaviour
         //Roaring
         if (Input.GetKey(roarKey))
         {
-
             if (isRoaring == false)
             {
                 myAnimations.Play("BearRoar");
@@ -253,7 +260,25 @@ public class Bear : MonoBehaviour
                 myRoar.SetActive(false);
                 isRoaring = false;
             }
+
+            if (movingRight == false)
+            {
+                myRoar.transform.GetChild(0).transform.gameObject.SetActive(true);
+                myRoar.transform.GetChild(1).transform.gameObject.SetActive(false);
+            }
+            else
+            {
+                myRoar.transform.GetChild(0).transform.gameObject.SetActive(false);
+                myRoar.transform.GetChild(1).transform.gameObject.SetActive(true);
+            }
             
+        }
+
+        if (Input.GetKeyDown(roarKey))
+        {
+            GetComponent<AudioSource>().clip = roarSound;
+            GetComponent<AudioSource>().Play();
+            //GetComponent<AudioSource>().clip = null;
         }
         
         if (Input.GetKeyUp(roarKey))
@@ -284,7 +309,7 @@ public class Bear : MonoBehaviour
                 if (isOnSlope == true && isGrounded == true)
                 {
                     newVelocity.Set(playerSpeed * slopeNormalPerp.x * -translationX, playerSpeed * slopeNormalPerp.y * -translationX);
-                    
+
                     if (isGrounded == false)
                     {
                         playerRB.linearVelocity = newVelocity;
@@ -379,10 +404,10 @@ public class Bear : MonoBehaviour
             myAnimations.SetBool("AmJumping", false);
         }
 
-        if (isOnFallingP == true)
+        /*if (isOnFallingP == true)
         {
             playerRB.AddForceY(-10);
-        }
+        }*/
 
         //Jump
         if (Input.GetKeyDown(jumpKey) && ((jumpAmount > 0) || (isClimbing == true)) && isTalking == false)
@@ -393,14 +418,14 @@ public class Bear : MonoBehaviour
                 {
                     if (isOnMGround == false)
                     {
-                        if (isOnFallingP == true)
-                        {
-                            playerRB.linearVelocityY = 2.5f;
-                        }
 
                         if (isSwiming == true)
                         {
                             playerRB.AddForce(Vector2.up * jumpForce/1.5f);
+                        }
+                        else if (isOnFallingP == true)
+                        {
+                            StartCoroutine("JumpOffMGround");
                         }
                         else
                         {
@@ -589,7 +614,15 @@ public class Bear : MonoBehaviour
         }
         else
         {
-            playerRB.AddForce(Vector2.up * (jumpForce + 40));
+            if (isOnFallingP == true)
+            {
+                playerRB.AddForce(Vector2.up * (jumpForce));
+            }
+            else
+            {
+                playerRB.AddForce(Vector2.up * (jumpForce + 40));
+            }
+            
         }
         
 

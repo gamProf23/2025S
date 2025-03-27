@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ffd14a09ddd6e9a4683439dd14dae818
+guid: 4ccd3e7329fd9b541adc6d0cac6e2e36
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6758157544278552697
-    second: TF_ZZcavetemp_0
+      213: 2537685197468019960
+    second: Carp_Pickup_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TF_ZZcavetemp_0
+      name: Carp_Pickup_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 620
-        height: 360
+        x: 1
+        y: 4
+        width: 13
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 97079d2fa7cc9cd50800000000000000
-      internalID: 6758157544278552697
+      spriteID: 8fc29daed3ba73320800000000000000
+      internalID: 2537685197468019960
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Stan_Smith_0: 633579875539843216
+      Carp_Pickup_0: 2537685197468019960
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
