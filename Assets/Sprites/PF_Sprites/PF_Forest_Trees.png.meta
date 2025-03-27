@@ -484,7 +484,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PF_Forest_Trees_0: -9157382242729612349
+      PF_Forest_Trees_1: -4707404306653690619
+      PF_Forest_Trees_10: 3681998507641355025
+      PF_Forest_Trees_11: -675657997928878893
+      PF_Forest_Trees_12: 4348624147807787161
+      PF_Forest_Trees_13: -5835341941597133175
+      PF_Forest_Trees_14: 2729340304303406411
+      PF_Forest_Trees_2: 6173502923457705048
+      PF_Forest_Trees_3: -1417117969572566795
+      PF_Forest_Trees_4: 2771812310135661551
+      PF_Forest_Trees_5: -6019692131777005291
+      PF_Forest_Trees_6: -1175502272554016290
+      PF_Forest_Trees_7: -1456731821553574415
+      PF_Forest_Trees_8: 7228455680898029460
+      PF_Forest_Trees_9: -8827647036942808935
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

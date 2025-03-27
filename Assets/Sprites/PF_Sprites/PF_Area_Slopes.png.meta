@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PF_Area_Slopes_0: -38057577210422442
+      PF_Area_Slopes_1: -5523255743442242519
+      PF_Area_Slopes_2: 7616557279404137460
+      PF_Area_Slopes_3: -419217681103538507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
