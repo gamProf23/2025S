@@ -6,7 +6,7 @@ public class FallingPlatform : MonoBehaviour
     
 
     public float timeTillFallI;
-    float timeTillFall;
+    
 
     public float fallDistance;
     Vector2 ogPos;
@@ -17,7 +17,10 @@ public class FallingPlatform : MonoBehaviour
     public bool readyToFall = false;
     bool playerOnMe = false;
 
-    
+    [HideInInspector]
+    public float timeTillFall;
+
+
 
     private void Awake()
     {
@@ -45,7 +48,16 @@ public class FallingPlatform : MonoBehaviour
                 StartCoroutine(WaitToRespawn());
             }
 
-            //GetComponent<SpriteRenderer>().enabled = false;
+            
+            if (transform.childCount != 0)
+            {
+                transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
+            }
+            else
+            {
+                GetComponent<SpriteRenderer>().enabled = false;
+            }
+
             GetComponent<BoxCollider2D>().enabled = false;
             GetComponent<Rigidbody2D>().linearVelocity = Vector3.zero;
             GetComponent<Rigidbody2D>().gravityScale = 0;
@@ -60,7 +72,15 @@ public class FallingPlatform : MonoBehaviour
     {
         yield return new WaitForSeconds(respawnTimer);
 
-        //GetComponent<SpriteRenderer>().enabled = true;
+        if (transform.childCount != 0)
+        {
+            transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().enabled = true;
+        }
+
         GetComponent<BoxCollider2D>().enabled = true;
         transform.position = ogPos;
         timeTillFall = timeTillFallI;
@@ -72,7 +92,6 @@ public class FallingPlatform : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        
         foreach (ContactPoint2D hitPos in collision.contacts)
         {
             if (hitPos.normal.y < 0 && collision.transform.tag == "Player" && readyToFall == false)

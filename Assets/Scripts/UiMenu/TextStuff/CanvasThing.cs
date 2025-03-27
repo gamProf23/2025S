@@ -30,6 +30,9 @@ public class CanvasThing : MonoBehaviour
     Image ySel;
     Image nSel;
 
+    Image map;
+    Button mapBackButton;
+
     int sel = 0;
     NPCThing npcThing;
 
@@ -61,6 +64,11 @@ public class CanvasThing : MonoBehaviour
         nText = tbInteraction.transform.GetChild(1).GetComponent<TMP_Text>();
         ySel = tbInteraction.transform.GetChild(2).GetComponent<Image>();
         nSel = tbInteraction.transform.GetChild(3).GetComponent<Image>();
+
+        map = transform.GetChild(6).GetComponent<Image>();
+        mapBackButton = map.transform.GetChild(0).GetComponent<Button>();
+        mapBackButton.onClick.AddListener(MapBackButton);
+
 
         DontDestroyOnLoad(gameObject);
     }
@@ -193,7 +201,8 @@ public class CanvasThing : MonoBehaviour
 
     void MapButton()
     {
-        //put map stuff here
+        map.transform.gameObject.SetActive(true);
+
     }
 
     void ExitButton()
@@ -205,6 +214,11 @@ public class CanvasThing : MonoBehaviour
         Destroy(FindAnyObjectByType<Bear>().gameObject);
         Destroy(FindAnyObjectByType<CamFollow>().gameObject);
         Destroy(gameObject);
+    }
+
+    void MapBackButton()
+    {
+        map.transform.gameObject.SetActive(false);
     }
 
     public void AddBerry()
