@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 15fe1eefbe22467408beb5c1cc16a40b
+guid: 4458476967c0deb49bc9a994ebeef7cb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3600283599656425866
-    second: Bat_Icon_0
+      213: 6221289261144408211
+    second: rollable_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bat_Icon_0
+      name: rollable_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 9
-        height: 9
+        x: 1
+        y: 9
+        width: 56
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a899f28dbd6c6f130800000000000000
-      internalID: 3600283599656425866
+      spriteID: 39007770f95765650800000000000000
+      internalID: 6221289261144408211
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Bat_Icon_0: 3600283599656425866
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
