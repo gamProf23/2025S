@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 0f511462684b5df458c41609535c6911
+guid: 77c1864bb23b6864a914139b998074bd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2905657612453972316
-    second: BG_Forest_Fall_0
+      213: -38057577210422442
+    second: PF_Area_Slopes_0
+  - first:
+      213: -5523255743442242519
+    second: PF_Area_Slopes_1
+  - first:
+      213: 7616557279404137460
+    second: PF_Area_Slopes_2
+  - first:
+      213: -419217681103538507
+    second: PF_Area_Slopes_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BG_Forest_Fall_0
+      name: PF_Area_Slopes_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1000
-        height: 640
+        x: 1
+        y: 274
+        width: 76
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c598a352438f25820800000000000000
-      internalID: 2905657612453972316
+      spriteID: 65b5c5dc5dac87ff0800000000000000
+      internalID: -38057577210422442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Area_Slopes_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 274
+        width: 99
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9243d703a247953b0800000000000000
+      internalID: -5523255743442242519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Area_Slopes_2
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 143
+        width: 130
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb9c4acd7273b960800000000000000
+      internalID: 7616557279404137460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Area_Slopes_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 141
+        width: 151
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b6b24a7db3ae2af0800000000000000
+      internalID: -419217681103538507
       vertices: []
       indices: 
       edges: []
@@ -134,8 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      BG_Forest_Fall_0: 2905657612453972316
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

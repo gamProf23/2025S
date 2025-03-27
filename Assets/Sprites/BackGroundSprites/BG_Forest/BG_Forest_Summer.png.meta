@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BG_Forest_Summer_0: 4605590639213742158
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

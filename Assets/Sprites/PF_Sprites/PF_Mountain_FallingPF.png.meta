@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 0f511462684b5df458c41609535c6911
+guid: 19f5f791bf3bbc94cb3bbb968df205c8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2905657612453972316
-    second: BG_Forest_Fall_0
+      213: 6213258156398115795
+    second: PF_Mountain_FallingPF_0
+  - first:
+      213: 8603168854181592100
+    second: PF_Mountain_FallingPF_1
+  - first:
+      213: 8250330450469171374
+    second: PF_Mountain_FallingPF_2
+  - first:
+      213: -9103178881147519021
+    second: PF_Mountain_FallingPF_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BG_Forest_Fall_0
+      name: PF_Mountain_FallingPF_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1000
-        height: 640
+        x: 7
+        y: 130
+        width: 98
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c598a352438f25820800000000000000
-      internalID: 2905657612453972316
+      spriteID: 3db78edbf5de93650800000000000000
+      internalID: 6213258156398115795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Mountain_FallingPF_1
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 133
+        width: 98
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42cb238cd78946770800000000000000
+      internalID: 8603168854181592100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Mountain_FallingPF_2
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 134
+        width: 98
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea0bdc325df0f7270800000000000000
+      internalID: 8250330450469171374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Mountain_FallingPF_3
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 82
+        width: 98
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df3d5ec9030ba180800000000000000
+      internalID: -9103178881147519021
       vertices: []
       indices: 
       edges: []
@@ -134,8 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      BG_Forest_Fall_0: 2905657612453972316
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
