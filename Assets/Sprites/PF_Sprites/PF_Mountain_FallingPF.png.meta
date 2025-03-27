@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PF_Mountain_FallingPF_0: 6213258156398115795
+      PF_Mountain_FallingPF_1: 8603168854181592100
+      PF_Mountain_FallingPF_2: 8250330450469171374
+      PF_Mountain_FallingPF_3: -9103178881147519021
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
