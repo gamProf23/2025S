@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 324ef3482a67b0048b7e97d50a01ca9c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9157382242729612349
+    second: PF_Forest_Trees_0
+  - first:
+      213: -4707404306653690619
+    second: PF_Forest_Trees_1
+  - first:
+      213: 6173502923457705048
+    second: PF_Forest_Trees_2
+  - first:
+      213: -1417117969572566795
+    second: PF_Forest_Trees_3
+  - first:
+      213: 2771812310135661551
+    second: PF_Forest_Trees_4
+  - first:
+      213: -6019692131777005291
+    second: PF_Forest_Trees_5
+  - first:
+      213: -1175502272554016290
+    second: PF_Forest_Trees_6
+  - first:
+      213: -1456731821553574415
+    second: PF_Forest_Trees_7
+  - first:
+      213: 7228455680898029460
+    second: PF_Forest_Trees_8
+  - first:
+      213: -8827647036942808935
+    second: PF_Forest_Trees_9
+  - first:
+      213: 3681998507641355025
+    second: PF_Forest_Trees_10
+  - first:
+      213: -675657997928878893
+    second: PF_Forest_Trees_11
+  - first:
+      213: 4348624147807787161
+    second: PF_Forest_Trees_12
+  - first:
+      213: -5835341941597133175
+    second: PF_Forest_Trees_13
+  - first:
+      213: 2729340304303406411
+    second: PF_Forest_Trees_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PF_Forest_Trees_0
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 301
+        width: 251
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cba1ad3e517ae080800000000000000
+      internalID: -9157382242729612349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Forest_Trees_1
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 255
+        width: 147
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50543c759b0fbaeb0800000000000000
+      internalID: -4707404306653690619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Forest_Trees_2
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 225
+        width: 42
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85438844330bca550800000000000000
+      internalID: 6173502923457705048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Forest_Trees_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 279
+        width: 173
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8edc207b2655ce0800000000000000
+      internalID: -1417117969572566795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Forest_Trees_4
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 200
+        width: 38
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe3e0b14c94777620800000000000000
+      internalID: 2771812310135661551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Forest_Trees_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 207
+        width: 114
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519b73c56e1c57ca0800000000000000
+      internalID: -6019692131777005291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Forest_Trees_6
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 212
+        width: 145
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed1e0c349e6cfafe0800000000000000
+      internalID: -1175502272554016290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Forest_Trees_7
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 87
+        width: 32
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd9a4b5026a8cbe0800000000000000
+      internalID: -1456731821553574415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Forest_Trees_8
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 136
+        width: 24
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497d49ec422a05460800000000000000
+      internalID: 7228455680898029460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Forest_Trees_9
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 140
+        width: 187
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9988e707ac5ed7580800000000000000
+      internalID: -8827647036942808935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Forest_Trees_10
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 146
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b3b777226191330800000000000000
+      internalID: 3681998507641355025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Forest_Trees_11
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 7
+        width: 338
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc2cc371a49f96f0800000000000000
+      internalID: -675657997928878893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Forest_Trees_12
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 10
+        width: 117
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 998d4c75f9a695c30800000000000000
+      internalID: 4348624147807787161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Forest_Trees_13
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 3
+        width: 123
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9862a2ccb63b40fa0800000000000000
+      internalID: -5835341941597133175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF_Forest_Trees_14
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 6
+        width: 80
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4d392dcb8090e520800000000000000
+      internalID: 2729340304303406411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PF_Forest_Trees_0: -9157382242729612349
+      PF_Forest_Trees_1: -4707404306653690619
+      PF_Forest_Trees_10: 3681998507641355025
+      PF_Forest_Trees_11: -675657997928878893
+      PF_Forest_Trees_12: 4348624147807787161
+      PF_Forest_Trees_13: -5835341941597133175
+      PF_Forest_Trees_14: 2729340304303406411
+      PF_Forest_Trees_2: 6173502923457705048
+      PF_Forest_Trees_3: -1417117969572566795
+      PF_Forest_Trees_4: 2771812310135661551
+      PF_Forest_Trees_5: -6019692131777005291
+      PF_Forest_Trees_6: -1175502272554016290
+      PF_Forest_Trees_7: -1456731821553574415
+      PF_Forest_Trees_8: 7228455680898029460
+      PF_Forest_Trees_9: -8827647036942808935
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
