@@ -3322,6 +3322,7 @@ GameObject:
   - component: {fileID: 470091788}
   - component: {fileID: 470091787}
   - component: {fileID: 470091789}
+  - component: {fileID: 470091790}
   m_Layer: 0
   m_Name: PF_Forest_Trees_7 (2)
   m_TagString: ClimbPass
@@ -3411,6 +3412,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10d287b0fffbbee468c0ff27583524ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &470091790
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470091786}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &488149530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3643,6 +3671,7 @@ GameObject:
   - component: {fileID: 501092834}
   - component: {fileID: 501092833}
   - component: {fileID: 501092835}
+  - component: {fileID: 501092836}
   m_Layer: 0
   m_Name: PF_Forest_Trees_7 (1)
   m_TagString: ClimbPass
@@ -3732,6 +3761,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10d287b0fffbbee468c0ff27583524ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &501092836
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501092832}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &509591645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8944,6 +9000,7 @@ GameObject:
   - component: {fileID: 1158903143}
   - component: {fileID: 1158903142}
   - component: {fileID: 1158903144}
+  - component: {fileID: 1158903145}
   m_Layer: 0
   m_Name: PF_Forest_Trees_13
   m_TagString: ClimbPass
@@ -9033,6 +9090,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10d287b0fffbbee468c0ff27583524ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &1158903145
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158903141}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1159155897
 GameObject:
   m_ObjectHideFlags: 0
@@ -97526,6 +97610,7 @@ GameObject:
   - component: {fileID: 1463907743}
   - component: {fileID: 1463907742}
   - component: {fileID: 1463907744}
+  - component: {fileID: 1463907745}
   m_Layer: 0
   m_Name: PF_Forest_Trees_7
   m_TagString: ClimbPass
@@ -97615,6 +97700,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10d287b0fffbbee468c0ff27583524ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &1463907745
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463907741}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1473807901 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4800633004247443158, guid: 206eeb527d3219f4a9c6ec5829833a20, type: 3}
