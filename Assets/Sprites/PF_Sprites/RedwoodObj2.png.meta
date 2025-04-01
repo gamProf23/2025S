@@ -409,7 +409,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RedwoodObj2_0: 7820915160121558506
+      RedwoodObj2_1: 2429838040118527999
+      RedwoodObj2_10: -8641437953014974285
+      RedwoodObj2_11: -3701330447983551706
+      RedwoodObj2_2: 5427702957660971355
+      RedwoodObj2_3: -1573433599384214293
+      RedwoodObj2_4: -8986120665419047640
+      RedwoodObj2_5: 3197621684288581653
+      RedwoodObj2_6: -1805737298705157629
+      RedwoodObj2_7: -6654584808747606106
+      RedwoodObj2_8: 3753822466484712368
+      RedwoodObj2_9: 9195668307815455711
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
