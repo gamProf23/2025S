@@ -27,6 +27,7 @@ public class Climbable : MonoBehaviour
         {
             FindAnyObjectByType<Bear>().isClimbing = true;
             FindAnyObjectByType<Bear>().whatImClimbing = gameObject;
+            FindAnyObjectByType<Bear>().PlayClawSound();
         }
 
         

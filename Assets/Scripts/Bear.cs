@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.Loading;
 using Unity.VisualScripting;
 using UnityEditor;
@@ -52,9 +53,18 @@ public class Bear : MonoBehaviour
     public KeyCode rollKey; //Shift
     public KeyCode roarKey; //Period
 
+
     [Header("Sound Stuff")]
 
-    public AudioClip roarSound;
+    AudioSource track1;
+    AudioSource track2;
+
+    public List<AudioClip> roarSounds;
+    public List<AudioClip> clawSounds;
+    public List<AudioClip> walkSounds;
+    public List<AudioClip> jumpSounds;
+    public List<AudioClip> landingSounds;
+    System.Random randomSoundInt;
 
     [Header("DO NOT TOUCH")]
 
@@ -134,6 +144,9 @@ public class Bear : MonoBehaviour
         scaleX = transform.localScale.x;
         scaleXNeg = transform.localScale.x * -1;
         ogGrav = GetComponent<Rigidbody2D>().gravityScale;
+        randomSoundInt = new System.Random();
+        track1 = transform.GetChild(4).GetComponent<AudioSource>();
+        track2 = transform.GetChild(5).GetComponent<AudioSource>();
 
         transform.localScale = new Vector3(scaleXNeg, transform.localScale.y, 1);
 
@@ -209,6 +222,16 @@ public class Bear : MonoBehaviour
 
         if (translationX < 0 && isBall == false)
         {
+            if ((track2.time == 0 || track2.time == track2.clip.length) && isGrounded == true)
+            {
+                track2.clip = walkSounds[randomSoundInt.Next(walkSounds.Count)];
+                track2.Play();
+            }
+            else if (isGrounded == false)
+            {
+                track2.Stop();
+            }
+
             if (isSwiping == false)
             {
                 myClaw.transform.position = new Vector2(transform.position.x - (2.25f/6), transform.position.y + (1.75f/6));
@@ -226,6 +249,16 @@ public class Bear : MonoBehaviour
         }
         else if (translationX > 0)
         {
+            if ((track2.time == 0 || track2.time == track2.clip.length) && isGrounded == true)
+            {
+                track2.clip = walkSounds[randomSoundInt.Next(walkSounds.Count)];
+                track2.Play();
+            }
+            else if (isGrounded == false)
+            {
+                track2.Stop();
+            }
+
             if (isSwiping == false)
             {
                 myClaw.transform.position = new Vector2(transform.position.x + (2.25f/6), transform.position.y + (1.75f/6));
@@ -276,8 +309,8 @@ public class Bear : MonoBehaviour
 
         if (Input.GetKeyDown(roarKey))
         {
-            GetComponent<AudioSource>().clip = roarSound;
-            GetComponent<AudioSource>().Play();
+            track1.clip = roarSounds[randomSoundInt.Next(roarSounds.Count)];
+            track1.Play();
             //GetComponent<AudioSource>().clip = null;
         }
         
@@ -375,9 +408,12 @@ public class Bear : MonoBehaviour
             //Swipe Attack
             if (Input.GetKeyDown(clawKey) && isSwiping == false && isClimbing == false)
             {
+                track1.clip = jumpSounds[0];
+                track1.Play();
+
                 isSwiping = true;
 
-                if(movingRight == false)
+                if (movingRight == false)
                 {
                     StartCoroutine(ClawSwipe("Left"));
                     myAnimations.SetBool("AmSwiping", true);
@@ -437,7 +473,12 @@ public class Bear : MonoBehaviour
 
         //Jump
         if (Input.GetKeyDown(jumpKey) && ((jumpAmount > 0) || (isClimbing == true)) && isTalking == false)
-        {
+        {   
+            track1.clip = jumpSounds[randomSoundInt.Next(jumpSounds.Count)];
+            track1.Play();
+            
+            
+
             if (isClimbing == false)
             {
                 if (isOnSlope == false)
@@ -746,6 +787,12 @@ public class Bear : MonoBehaviour
         }
     }
 
+    public void PlayClawSound()
+    {
+        track1.clip = clawSounds[randomSoundInt.Next(clawSounds.Count)];
+        track1.Play();
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
@@ -908,7 +955,7 @@ public class Bear : MonoBehaviour
         }
     }
 
-    float waterSpeed = 0.5f;
+    float waterSpeed = 0.75f;
     float playerSpeedIHold = 1f;
     private void OnTriggerStay2D(Collider2D collision)
     {

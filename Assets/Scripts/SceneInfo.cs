@@ -86,7 +86,11 @@ public class SceneInfo : MonoBehaviour
             //Debug.Log("bruh");
         }
 
-        collectablesDestroyed[gameObject.scene.name].Add(objName);
+        if (collectablesDestroyed[gameObject.scene.name].Contains(objName) == false)
+        {
+            collectablesDestroyed[gameObject.scene.name].Add(objName);
+        }
+        
     }
 
     public Dictionary<string, List<string>> GetCDList()

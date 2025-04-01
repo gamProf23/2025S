@@ -31,6 +31,7 @@ public class Swipeable : MonoBehaviour
         if (collision.gameObject.tag == "Claw")
         {
             FindAnyObjectByType<SceneInfo>().AddToCDList(gameObject.name);
+            FindAnyObjectByType<Bear>().PlayClawSound();
             Destroy(gameObject);
         }
     }
