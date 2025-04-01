@@ -881,7 +881,8 @@ public class Bear : MonoBehaviour
         }
     }
 
-
+    float waterSpeed = 0.5f;
+    float playerSpeedIHold = 1f;
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Water")
@@ -890,6 +891,21 @@ public class Bear : MonoBehaviour
             isSwiming = true;
             myAnimations.SetBool("AmSwiming", true);
             climbingTimer = climbingTimerI;
+
+            if (playerSpeedI != waterSpeed)
+            {
+                playerSpeedIHold = playerSpeedI;
+            }
+            
+            if (isGrounded == false)
+            {
+                playerSpeedI = playerSpeedIHold;
+            }
+            else
+            {
+                playerSpeedI = waterSpeed;
+            }
+            
         }
 
         if (collision.gameObject.tag == "ClimbPass")
@@ -907,11 +923,16 @@ public class Bear : MonoBehaviour
             playerRB.gravityScale = ogGrav;
             isSwiming = false;
             myAnimations.SetBool("AmSwiming", false);
+            playerSpeedI = playerSpeedIHold;
 
-            if (collision.gameObject.transform.position.y + (collision.GetComponent<SpriteRenderer>().bounds.size.y * 0.5f) < transform.position.y)
+            if (playerRB.linearVelocityY > 0)
             {
                 playerRB.AddForce(Vector2.up * outOfWaterUpForce);
             }
+            /*if (collision.gameObject.transform.position.y + (collision.GetComponent<Collider2D>().bounds.size.y * 0.5f) < transform.position.y)
+            {
+                playerRB.AddForce(Vector2.up * outOfWaterUpForce);
+            }*/
         }
     }
 

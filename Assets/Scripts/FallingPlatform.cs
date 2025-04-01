@@ -43,7 +43,7 @@ public class FallingPlatform : MonoBehaviour
 
         if (readyToFall == true && transform.position.y <= ogPos.y - fallDistance)
         {
-            if (willRespawn == true)
+            if (willRespawn == true && crRunning == false)
             {
                 StartCoroutine(WaitToRespawn());
             }
@@ -68,8 +68,10 @@ public class FallingPlatform : MonoBehaviour
         }
     }
 
+    bool crRunning = false;
     IEnumerator WaitToRespawn()
     {
+        crRunning = true;
         yield return new WaitForSeconds(respawnTimer);
 
         if (transform.childCount != 0)
@@ -86,7 +88,7 @@ public class FallingPlatform : MonoBehaviour
         timeTillFall = timeTillFallI;
         playerOnMe = false;
         readyToFall = false;
-
+        crRunning = false;
         
     }
 
