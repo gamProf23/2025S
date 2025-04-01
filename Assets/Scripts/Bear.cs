@@ -381,19 +381,45 @@ public class Bear : MonoBehaviour
                 {
                     StartCoroutine(ClawSwipe("Left"));
                     myAnimations.SetBool("AmSwiping", true);
-                    myAnimations.Play("BearSwipe");
+
+                    if (translationX == 0)
+                    {
+                        myAnimations.Play("BearSwipe");
+                    }
+                    else
+                    {
+                        myAnimations.Play("BearSwipeMove");
+                    }
+                    
                 }
                 else
                 {
                     StartCoroutine(ClawSwipe("Right"));
                     myAnimations.SetBool("AmSwiping", true);
-                    myAnimations.Play("BearSwipe");
+
+                    if (translationX == 0)
+                    {
+                        myAnimations.Play("BearSwipe");
+                    }
+                    else
+                    {
+                        myAnimations.Play("BearSwipeMove");
+                    }
                 }
 
                 if (isSwiming == true)
                 {
                     playerRB.linearVelocity = new Vector2(playerRB.linearVelocity.x, 0);
-                    playerRB.AddForce(Vector2.up * swimUpForce);
+                    
+                    if (isGrounded == false)
+                    {
+                        playerRB.AddForce(Vector2.up * swimUpForce);
+                    }
+                    else
+                    {
+                        playerRB.AddForce(Vector2.up * (swimUpForce + 100));
+                    }
+                    
                 }
             }
 
@@ -670,6 +696,7 @@ public class Bear : MonoBehaviour
         }
 
         myClaw.GetComponent<Collider2D>().enabled = false;
+
         myAnimations.SetBool("AmSwiping", false);
         isSwiping = false;
 
