@@ -58,6 +58,7 @@ public class Bear : MonoBehaviour
 
     AudioSource track1;
     AudioSource track2;
+    AudioSource track3;
 
     public List<AudioClip> roarSounds;
     public List<AudioClip> clawSounds;
@@ -153,6 +154,7 @@ public class Bear : MonoBehaviour
         randomSoundInt = new System.Random();
         track1 = transform.GetChild(4).GetComponent<AudioSource>();
         track2 = transform.GetChild(5).GetComponent<AudioSource>();
+        track3 = transform.GetChild(6).GetComponent<AudioSource>();
 
         transform.localScale = new Vector3(scaleXNeg, transform.localScale.y, 1);
 
@@ -805,7 +807,8 @@ public class Bear : MonoBehaviour
 
     public void PlayCollectionSound()
     {
-
+        track1.clip = collectionSounds[randomSoundInt.Next(collectionSounds.Count)];
+        track1.Play();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

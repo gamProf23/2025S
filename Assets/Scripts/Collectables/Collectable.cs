@@ -32,6 +32,8 @@ public class Collectable : MonoBehaviour
                 FindAnyObjectByType<CanvasThing>().AddHoney();
             }
 
+            FindAnyObjectByType<Bear>().PlayCollectionSound();
+
             Destroy(gameObject);
         }
     }
