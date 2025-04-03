@@ -133907,6 +133907,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3171529675835553559, guid: a3740609a4b3e024283f227cadf45c53, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6860035774502694134, guid: a3740609a4b3e024283f227cadf45c53, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.790321
@@ -138517,7 +138521,7 @@ GameObject:
   - component: {fileID: 1821215176}
   - component: {fileID: 1821215175}
   m_Layer: 0
-  m_Name: Peter_Griffin_0
+  m_Name: Princess_NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138535,18 +138539,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9769af462c1c8f94a92a35cb438d5a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myText: []
-  myPortrait: {fileID: 0}
-  myInteractionYSel: 
-  myInteractionNSel: 
-  myInteractionText: 
-  berryCondition: 0
+  myText:
+  - SwitchP
+  - Hey Princess how's it going?
+  - SwitchP
+  - What do you want?
+  - SwitchP
+  - Just checkin wit ya
+  - SwitchP
+  - I haven't had berries in like an hour
+  - So heyyyyyyyyy
+  - SwitchP
+  - So you want me to get you berries?
+  - SwitchP
+  - How could you possibly know?
+  - SwitchP
+  - ...
+  - Fine but in return I-
+  - SwitchP
+  - THANK YOU
+  - Interaction
+  myPortrait: {fileID: -1884701423190137557, guid: 1f7f95803b430dc47b25da35f8f338a5, type: 3}
+  myInteractionYSel: Yes
+  myInteractionNSel: No
+  myInteractionText: (Will you give Princess the Berries)
+  berryCondition: 3
   fishCondition: 0
   honeyCondition: 0
-  myInteractionYText: []
-  myInteractionNText: []
+  myInteractionYText:
+  - Lemme see! Lemme see!
+  myInteractionNText:
+  - What's taking you so long!
   myInteractionFailText: []
-  conditionMetText: []
+  conditionMetText:
+  - 'Thanks [Bears Name]'
+  - SwitchP
+  - As I was saying
+  - Pass it forward
+  - SwitchP
+  - Why would I do that?
+  - SwitchP
+  - Cause it's the right thing to do.
+  - ...
   conditionIsMet: 0
 --- !u!212 &1821215176
 SpriteRenderer:
@@ -139390,7 +139424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: R1SceneName
-      value: RedwoodPlaceholder
+      value: Redwood_1
       objectReference: {fileID: 0}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: U1SceneName
