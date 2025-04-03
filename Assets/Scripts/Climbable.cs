@@ -23,7 +23,7 @@ public class Climbable : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "BearClaw" && FindAnyObjectByType<Bear>().isGrounded == false)
+        if (collision.gameObject.name == "BearClaw" && FindAnyObjectByType<Bear>().isGrounded == false && FindAnyObjectByType<Bear>().isSwiping == true)
         {
             FindAnyObjectByType<Bear>().isClimbing = true;
             FindAnyObjectByType<Bear>().whatImClimbing = gameObject;

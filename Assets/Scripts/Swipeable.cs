@@ -28,7 +28,7 @@ public class Swipeable : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Claw")
+        if (collision.gameObject.tag == "Claw" && FindAnyObjectByType<Bear>().isSwiping == true)
         {
             FindAnyObjectByType<SceneInfo>().AddToCDList(gameObject.name);
             FindAnyObjectByType<Bear>().PlayClawSound();

@@ -704,7 +704,7 @@ public class Bear : MonoBehaviour
     IEnumerator ClawSwipe(string whichWay)
     {
         
-        myClaw.GetComponent<Collider2D>().enabled = true;
+        //myClaw.GetComponent<Collider2D>().enabled = true;
         if (whichWay == "Left")
         {
             while (Vector2.Distance(myClaw.transform.position, swipePointsL[1]) > 0.1f)
@@ -741,7 +741,7 @@ public class Bear : MonoBehaviour
 
         }
 
-        myClaw.GetComponent<Collider2D>().enabled = false;
+        //myClaw.GetComponent<Collider2D>().enabled = false;
 
         myAnimations.SetBool("AmSwiping", false);
         isSwiping = false;
@@ -987,14 +987,13 @@ public class Bear : MonoBehaviour
         }
     }
 
-    bool jeff2 = false;
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.tag == "Water" && jeff2 == false)
+        if (collision.transform.tag == "Water")
         {
             track1.clip = splashSounds[randomSoundInt.Next(splashSounds.Count)];
             track1.Play();
-            jeff2 = true;
         }
     }
 
