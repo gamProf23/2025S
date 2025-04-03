@@ -64,6 +64,10 @@ public class Bear : MonoBehaviour
     public List<AudioClip> walkSounds;
     public List<AudioClip> jumpSounds;
     public List<AudioClip> landingSounds;
+    public List<AudioClip> splashSounds;
+    public List<AudioClip> swimingSounds;
+    public List<AudioClip> rollingSounds;
+    public List<AudioClip> climbingSounds;
     System.Random randomSoundInt;
 
     [Header("DO NOT TOUCH")]
@@ -222,7 +226,7 @@ public class Bear : MonoBehaviour
 
         if (translationX < 0 && isBall == false)
         {
-            if ((track2.time == 0 || track2.time == track2.clip.length) && isGrounded == true)
+            if ((track2.time == 0 || track2.time == track2.clip.length) && isGrounded == true && isBall == false)
             {
                 track2.clip = walkSounds[randomSoundInt.Next(walkSounds.Count)];
                 track2.Play();
@@ -249,7 +253,7 @@ public class Bear : MonoBehaviour
         }
         else if (translationX > 0)
         {
-            if ((track2.time == 0 || track2.time == track2.clip.length) && isGrounded == true)
+            if ((track2.time == 0 || track2.time == track2.clip.length) && isGrounded == true && isBall == false)
             {
                 track2.clip = walkSounds[randomSoundInt.Next(walkSounds.Count)];
                 track2.Play();
@@ -332,6 +336,7 @@ public class Bear : MonoBehaviour
 
         if (isBall == false)
         {
+            track1.pitch = 1;
             if (isClimbing == false)
             {
                 
@@ -453,7 +458,7 @@ public class Bear : MonoBehaviour
                     }
                     else
                     {
-                        playerRB.AddForce(Vector2.up * (swimUpForce + 100));
+                        playerRB.AddForce(Vector2.up * (swimUpForce));
                     }
                     
                 }
@@ -811,6 +816,12 @@ public class Bear : MonoBehaviour
         {
             whereToClone = collision.transform.parent.GetComponent<MovingGround>().whereTo;
         }
+
+        if (collision.gameObject.tag == "Ground")
+        {
+            track2.clip = landingSounds[randomSoundInt.Next(landingSounds.Count)];
+            track2.Play();
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -847,6 +858,7 @@ public class Bear : MonoBehaviour
     public GameObject myMGround;
     bool isOnFallingP = false;
     int whereToClone;
+    bool jeff1 = false;
     private void OnCollisionStay2D(Collision2D collision)
     {
         foreach (ContactPoint2D hitPos in collision.contacts)
@@ -922,6 +934,11 @@ public class Bear : MonoBehaviour
 
         if (collision.gameObject.tag == "Slope" && isBall == true)
         {
+            if (jeff1 == false)
+            {
+                StartCoroutine("RollingSounds");
+            }
+
             /*if (playerRB.linearVelocity.y >= 0)
             {
                 
@@ -950,8 +967,34 @@ public class Bear : MonoBehaviour
             {
                 playerRB.linearVelocity = playerRB.linearVelocity * slopeVelocityMult;
             }
-            
+
             //Debug.Log(playerRB.linearVelocityX);
+            
+            
+        }
+    }
+
+    IEnumerator RollingSounds()
+    {
+        jeff1 = true;
+        if(playerRB.linearVelocityX != 0)
+        {
+            yield return new WaitForSeconds(0.2f);
+            track1.clip = rollingSounds[randomSoundInt.Next(rollingSounds.Count)];
+            track1.pitch = track1.pitch + 0.1f;
+            track1.Play();
+            jeff1 = false;
+        }
+    }
+
+    bool jeff2 = false;
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "Water" && jeff2 == false)
+        {
+            track1.clip = splashSounds[randomSoundInt.Next(splashSounds.Count)];
+            track1.Play();
+            jeff2 = true;
         }
     }
 
@@ -1001,6 +1044,7 @@ public class Bear : MonoBehaviour
 
             if (playerRB.linearVelocityY > 0)
             {
+                Debug.Log("bruh");
                 playerRB.AddForce(Vector2.up * outOfWaterUpForce);
             }
             /*if (collision.gameObject.transform.position.y + (collision.GetComponent<Collider2D>().bounds.size.y * 0.5f) < transform.position.y)

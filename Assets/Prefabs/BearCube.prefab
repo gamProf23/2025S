@@ -538,7 +538,16 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7db6fda8d44b5a24b87c027f6e45495d, type: 3}
   - {fileID: 8300000, guid: dadb8401fa196fe4da83c8004e8e115b, type: 3}
   - {fileID: 8300000, guid: c7b124f966921894bb1e2f7e1fad7fad, type: 3}
-  landingSounds: []
+  landingSounds:
+  - {fileID: 8300000, guid: 69e0a08ea8b373c4889aae3bd034c4e2, type: 3}
+  - {fileID: 8300000, guid: d035eefc0609ca4429e1290cab63d31e, type: 3}
+  - {fileID: 8300000, guid: 524782db85eec9d4481a58f7b8148394, type: 3}
+  splashSounds:
+  - {fileID: 8300000, guid: 1940fd2e35cf0354981560342be11435, type: 3}
+  swimingSounds: []
+  rollingSounds:
+  - {fileID: 8300000, guid: bfa9b2f6d667146498e7a26025a19818, type: 3}
+  climbingSounds: []
   climbingTimer: 0
   playerObject: {fileID: 0}
   playerRB: {fileID: 0}
