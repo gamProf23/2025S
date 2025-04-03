@@ -30,21 +30,23 @@ public class Fish : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
-        if (collision.gameObject.tag == "Claw")
+        
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Claw" && FindAnyObjectByType<Bear>().isSwiping == true)
         {
             if (myFish != null)
             {
                 fishClone = Instantiate(myFish, transform.position, Quaternion.Euler(Vector3.zero));
             }
-            
+
             myFish = null;
             FindAnyObjectByType<SceneInfo>().AddToCDList(gameObject.name);
             Destroy(gameObject);
         }
-    }
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
         if (collision.gameObject.tag == "Water")
         {
             GetComponent<Rigidbody2D>().gravityScale = 0;
