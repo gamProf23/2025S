@@ -545,6 +545,8 @@ MonoBehaviour:
   splashSounds:
   - {fileID: 8300000, guid: 1940fd2e35cf0354981560342be11435, type: 3}
   swimingSounds: []
+  turningBallSounds:
+  - {fileID: 8300000, guid: 5b78d36b8d4ab544a8352a262fc903e4, type: 3}
   rollingSounds:
   - {fileID: 8300000, guid: bfa9b2f6d667146498e7a26025a19818, type: 3}
   climbingSounds: []

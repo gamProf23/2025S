@@ -66,6 +66,7 @@ public class Bear : MonoBehaviour
     public List<AudioClip> landingSounds;
     public List<AudioClip> splashSounds;
     public List<AudioClip> swimingSounds;
+    public List<AudioClip> turningBallSounds;
     public List<AudioClip> rollingSounds;
     public List<AudioClip> climbingSounds;
     System.Random randomSoundInt;
@@ -251,7 +252,7 @@ public class Bear : MonoBehaviour
 
             movingRight = false;
         }
-        else if (translationX > 0)
+        else if (translationX > 0 && isBall == false)
         {
             if ((track2.time == 0 || track2.time == track2.clip.length) && isGrounded == true && isBall == false)
             {
@@ -556,8 +557,11 @@ public class Bear : MonoBehaviour
         //Transforms bear in and out of ball form
         if (isSwiping == false)
         {
+
             if (Input.GetKeyDown(rollKey))
             {
+                track2.clip = turningBallSounds[randomSoundInt.Next(turningBallSounds.Count)];
+                track2.Play();
                 playerRB.linearVelocity = new Vector2(playerRB.linearVelocity.x * 2f, playerRB.linearVelocity.y);
                 playerRB.mass = 1;
                 GetComponent<CapsuleCollider2D>().enabled = false;
@@ -817,7 +821,7 @@ public class Bear : MonoBehaviour
             whereToClone = collision.transform.parent.GetComponent<MovingGround>().whereTo;
         }
 
-        if (collision.gameObject.tag == "Ground")
+        if (collision.gameObject.tag == "Ground" && isBall == false)
         {
             track2.clip = landingSounds[randomSoundInt.Next(landingSounds.Count)];
             track2.Play();
@@ -990,7 +994,7 @@ public class Bear : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.tag == "Water")
+        if (collision.transform.tag == "Water" && splashSounds.Contains(track1.clip) == false && isRoaring == false && isBall == false)
         {
             track1.clip = splashSounds[randomSoundInt.Next(splashSounds.Count)];
             track1.Play();

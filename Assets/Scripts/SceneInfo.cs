@@ -12,6 +12,7 @@ public class SceneInfo : MonoBehaviour
     public CamFollow myCameraPrefab;
     public Canvas myCanvasPrefab;
     public Sprite myBackGround;
+    public AudioClip myMusic;
 
     public static bool hasLoadedPrefab = false;
 
@@ -130,9 +131,8 @@ public class SceneInfo : MonoBehaviour
     {
         FindExits();
 
-        
-        
         //Debug.Log(previousScene);
+        
 
         if (hasLoadedPrefab == false)
         {
@@ -142,10 +142,22 @@ public class SceneInfo : MonoBehaviour
             cameraClone = Instantiate(myCameraPrefab);
             canvasClone = Instantiate(myCanvasPrefab);
 
+            if (myMusic != null)
+            {
+                FindAnyObjectByType<CamFollow>().GetComponent<AudioSource>().clip = myMusic;
+                FindAnyObjectByType<CamFollow>().GetComponent<AudioSource>().Play();
+            }
+
         }
         else
         {
             player = FindAnyObjectByType<Bear>();
+
+            if (lastMusic != myMusic)
+            {
+                FindAnyObjectByType<CamFollow>().GetComponent<AudioSource>().clip = myMusic;
+                FindAnyObjectByType<CamFollow>().GetComponent<AudioSource>().Play();
+            }
         }
 
         if (myBackGround != null)
@@ -154,6 +166,8 @@ public class SceneInfo : MonoBehaviour
             transform.GetChild(0).GetComponent<Image>().color = new Color(255, 255, 255, 255);
             transform.GetChild(0).GetComponent<Canvas>().worldCamera = FindAnyObjectByType<CamFollow>().GetComponent<Camera>();
         }
+
+        
     }
 
     public void ToTitleScreen()
@@ -267,9 +281,11 @@ public class SceneInfo : MonoBehaviour
         }
     }
 
+    public static AudioClip lastMusic;
     private void OnDestroy()
     {
         previousScene = gameObject.scene.name;
+        lastMusic = myMusic;
     }
 
     void SwitchSceneLeftOrRight(string sceneName, Exit exit, ExitDirections ed)
@@ -701,6 +717,7 @@ public class SceneInfo : MonoBehaviour
         }
 
     }
+
     
 
     public static partial class SceneHelper
