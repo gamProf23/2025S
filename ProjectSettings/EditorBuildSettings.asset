@@ -83,5 +83,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MasterScenes/Plains_1.unity
     guid: 78a8b33541f711543befae32b17ed41c
+  - enabled: 1
+    path: Assets/Scenes/MasterScenes/RedWood_1.unity
+    guid: d7423d44977a9a34f89ec60fe53c537d
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
