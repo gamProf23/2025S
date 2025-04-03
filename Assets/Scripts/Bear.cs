@@ -69,6 +69,7 @@ public class Bear : MonoBehaviour
     public List<AudioClip> turningBallSounds;
     public List<AudioClip> rollingSounds;
     public List<AudioClip> climbingSounds;
+    public List<AudioClip> collectionSounds;
     System.Random randomSoundInt;
 
     [Header("DO NOT TOUCH")]
@@ -800,6 +801,11 @@ public class Bear : MonoBehaviour
     {
         track1.clip = clawSounds[randomSoundInt.Next(clawSounds.Count)];
         track1.Play();
+    }
+
+    public void PlayCollectionSound()
+    {
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
