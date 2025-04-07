@@ -45,7 +45,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -550,7 +550,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5b78d36b8d4ab544a8352a262fc903e4, type: 3}
   rollingSounds:
   - {fileID: 8300000, guid: bfa9b2f6d667146498e7a26025a19818, type: 3}
-  climbingSounds: []
+  climbingSounds:
+  - {fileID: 8300000, guid: 431c762596dca0a429463918cc1c9dd3, type: 3}
   collectionSounds:
   - {fileID: 8300000, guid: 61a396aebde318245adb75e91f11be32, type: 3}
   climbingTimer: 0
@@ -691,7 +692,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1329,7 +1330,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
