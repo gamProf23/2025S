@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText:
-  - What's Hanging?
+  - '*ECHOES* What''s Hanging?'
   - SwitchP
   - ....
   - SwitchP

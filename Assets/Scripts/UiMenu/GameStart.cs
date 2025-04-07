@@ -20,4 +20,10 @@ public class GameStart : MonoBehaviour
         
         SceneManager.LoadScene("TutorialLvlDesign");
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+        Debug.Log("ClientClosed");
+    }
 }

@@ -282,6 +282,19 @@ public class Bear : MonoBehaviour
             movingRight = true;
         }
 
+        if (isClimbing == true)
+        {
+            if ((track3.time == 0 || track3.time == track3.clip.length) && translationY != 0 && isBall == false)
+            {
+                track3.clip = climbingSounds[randomSoundInt.Next(climbingSounds.Count)];
+                track3.Play();
+            }
+            else if (translationY == 0)
+            {
+                track3.Stop();
+            }
+        }
+
         //Roaring
         if (Input.GetKey(roarKey))
         {
@@ -1056,7 +1069,6 @@ public class Bear : MonoBehaviour
 
             if (playerRB.linearVelocityY > 0)
             {
-                Debug.Log("bruh");
                 playerRB.AddForce(Vector2.up * outOfWaterUpForce);
             }
             /*if (collision.gameObject.transform.position.y + (collision.GetComponent<Collider2D>().bounds.size.y * 0.5f) < transform.position.y)

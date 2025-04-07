@@ -2467,6 +2467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TheBoss
       objectReference: {fileID: 0}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: door2SceneName
+      value: Forest_1
+      objectReference: {fileID: 0}
     - target: {fileID: 7578924285782844394, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
