@@ -1069,7 +1069,6 @@ public class Bear : MonoBehaviour
 
             if (playerRB.linearVelocityY > 0)
             {
-                Debug.Log("bruh");
                 playerRB.AddForce(Vector2.up * outOfWaterUpForce);
             }
             /*if (collision.gameObject.transform.position.y + (collision.GetComponent<Collider2D>().bounds.size.y * 0.5f) < transform.position.y)
