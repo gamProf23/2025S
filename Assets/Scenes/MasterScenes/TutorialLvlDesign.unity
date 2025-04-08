@@ -146,7 +146,7 @@ PrefabInstance:
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: myBackGround
       value: 
-      objectReference: {fileID: 6758157544278552697, guid: ffd14a09ddd6e9a4683439dd14dae818, type: 3}
+      objectReference: {fileID: 3494147957342564343, guid: 86260edfe3e2b3c4f8fab03f2e28823d, type: 3}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: leftExitScene
       value: 
