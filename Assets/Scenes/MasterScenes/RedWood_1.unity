@@ -3523,6 +3523,10 @@ PrefabInstance:
       propertyPath: L1SceneName
       value: Forest_1
       objectReference: {fileID: 0}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: myBackGround
+      value: 
+      objectReference: {fileID: 546637909817329575, guid: d44b6d98cc7137c47a993993cc17f973, type: 3}
     - target: {fileID: 7578924285782844394, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.264175

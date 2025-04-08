@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BG_RedWood_Season_0: 546637909817329575
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
