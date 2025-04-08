@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 4de1f1e416c2c684c96c01f1e6faf89c
+guid: 0f7f89aef52140c45a1e417c96bbc89e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6464869995595449900
-    second: Adobe Express - file (1)_0
-  - first:
-      213: 701328073563689374
-    second: Adobe Express - file (1)_1
-  - first:
-      213: 4071079466991981241
-    second: Adobe Express - file (1)_2
+      213: -3513698313128839025
+    second: Title_Ts_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Adobe Express - file (1)_0
+      name: Title_Ts_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 4
-        width: 60
-        height: 43
+        x: 97
+        y: 45
+        width: 280
+        height: 208
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,52 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d9b379cdfa2846a0800000000000000
-      internalID: -6464869995595449900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Adobe Express - file (1)_1
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 33
-        width: 58
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e91d5c7ca2e9bb900800000000000000
-      internalID: 701328073563689374
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Adobe Express - file (1)_2
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 2
-        width: 58
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9b2917aa4316f7830800000000000000
-      internalID: 4071079466991981241
+      spriteID: f88f0162006dc3fc0800000000000000
+      internalID: -3513698313128839025
       vertices: []
       indices: 
       edges: []
@@ -185,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Adobe Express - file (1)_0: -6464869995595449900
-      Adobe Express - file (1)_1: 701328073563689374
-      Adobe Express - file (1)_2: 4071079466991981241
+      Title_Ts_0: -3513698313128839025
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
