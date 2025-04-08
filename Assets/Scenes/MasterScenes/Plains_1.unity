@@ -19869,6 +19869,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: myBackGround
+      value: 
+      objectReference: {fileID: -5395834679716117661, guid: 70f513c2664605f4db05372fca6bbffb, type: 3}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: door1SceneName
       value: Lake_1
       objectReference: {fileID: 0}
