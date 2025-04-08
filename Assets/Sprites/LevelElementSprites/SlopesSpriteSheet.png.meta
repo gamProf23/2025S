@@ -334,7 +334,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SlopesSpriteSheet_0: 5567316519875184109
+      SlopesSpriteSheet_1: -7451591067290215155
+      SlopesSpriteSheet_2: -371674625046120188
+      SlopesSpriteSheet_3: 1369855357630803972
+      SlopesSpriteSheet_4: -4008502517105782866
+      SlopesSpriteSheet_5: 5800209235680856259
+      SlopesSpriteSheet_6: 1023065288118221715
+      SlopesSpriteSheet_7: 9080767627973270498
+      SlopesSpriteSheet_8: 3513137199797808619
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
