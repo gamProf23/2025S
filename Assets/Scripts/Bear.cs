@@ -296,7 +296,7 @@ public class Bear : MonoBehaviour
         }
 
         //Roaring
-        if (Input.GetKey(roarKey))
+        if (Input.GetKey(roarKey) && isTalking == false)
         {
             if (isRoaring == false)
             {
@@ -328,14 +328,14 @@ public class Bear : MonoBehaviour
             
         }
 
-        if (Input.GetKeyDown(roarKey))
+        if (Input.GetKeyDown(roarKey) && isTalking == false)
         {
             track1.clip = roarSounds[randomSoundInt.Next(roarSounds.Count)];
             track1.Play();
             //GetComponent<AudioSource>().clip = null;
         }
         
-        if (Input.GetKeyUp(roarKey))
+        if (Input.GetKeyUp(roarKey) && isTalking == false)
         {
             myRoar.SetActive(false);
             isRoaring = false;

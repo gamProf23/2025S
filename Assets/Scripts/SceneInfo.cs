@@ -172,7 +172,10 @@ public class SceneInfo : MonoBehaviour
 
     public void ToTitleScreen()
     {
+        collectablesDestroyed = new Dictionary<string, List<string>>();
+        conditionsMet = new Dictionary<string, List<string>>();
         hasLoadedPrefab = false;
+
     }
 
     void Start()

@@ -120,7 +120,7 @@ public class CanvasThing : MonoBehaviour
                 }
             }
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.J))
             {
                 tbInteraction.gameObject.SetActive(false);
 

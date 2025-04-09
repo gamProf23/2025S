@@ -27,7 +27,7 @@ public class CanDesRoll : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player" && (collision.relativeVelocity.x > velocityToKill || collision.relativeVelocity.x < velocityToKill * -1))
+        if (collision.gameObject.tag == "Player" && (collision.relativeVelocity.x > velocityToKill || collision.relativeVelocity.x < velocityToKill * -1) && FindAnyObjectByType<Bear>().isBall == true)
         {
             collision.gameObject.GetComponent<Rigidbody2D>().linearVelocity = collision.relativeVelocity;
             FindAnyObjectByType<SceneInfo>().AddToCDList(gameObject.name);
