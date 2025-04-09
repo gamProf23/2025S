@@ -533,8 +533,15 @@ public class Bear : MonoBehaviour
                 {
                     if (isBall == true)
                     {
+                        if (isOnSlope == true)
+                        {
+                            StartCoroutine("JumpOffSGround");
+                        }
+                        else
+                        {
+                            playerRB.AddForce(Vector2.up * jumpForce);
+                        }
                         
-                        playerRB.AddForce(Vector2.up * jumpForce);
                     }
                     else
                     {
@@ -667,6 +674,33 @@ public class Bear : MonoBehaviour
 
         
        
+    }
+
+    IEnumerator JumpOffSGround()
+    {
+        Debug.Log("ajiufshiuash");
+        //GetComponent<CircleCollider2D>().enabled = false;
+
+        if (playerRB.linearVelocityY < -1f)
+        {
+            playerRB.linearVelocityY = 0;
+        }
+        
+
+        yield return new WaitForSeconds(0.1f);
+
+        if (Math.Abs(playerRB.linearVelocityX) > 3)
+        {
+            playerRB.AddForce(Vector2.up * (jumpForce / 2));
+        }
+        else
+        {
+            playerRB.AddForce(Vector2.up * (jumpForce / 1));
+        }
+        
+
+        //GetComponent<CircleCollider2D>().enabled = true;
+        isOnSlope = false;
     }
 
     IEnumerator JumpOffMGround()
@@ -960,6 +994,7 @@ public class Bear : MonoBehaviour
 
         if (collision.gameObject.tag == "Slope" && isBall == true)
         {
+            isOnSlope = true;
             if (jeff1 == false)
             {
                 StartCoroutine("RollingSounds");

@@ -515,7 +515,7 @@ MonoBehaviour:
   clawSpeed: 20
   jumpForce: 200
   swimUpForce: 75
-  slopeVelocityMult: 1.1
+  slopeVelocityMult: 1.05
   waterGravity: 0.25
   outOfWaterUpForce: 25
   jumpKey: 32
