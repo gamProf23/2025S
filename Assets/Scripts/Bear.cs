@@ -115,6 +115,8 @@ public class Bear : MonoBehaviour
     Vector3 ogScale;
 
     float ogGrav;
+
+    public int roarSwitch = 1;
     
     
 
@@ -333,6 +335,15 @@ public class Bear : MonoBehaviour
             track1.clip = roarSounds[randomSoundInt.Next(roarSounds.Count)];
             track1.Play();
             //GetComponent<AudioSource>().clip = null;
+
+            if (roarSwitch == 1)
+            {
+                roarSwitch = 2;
+            }
+            else if (roarSwitch == 2)
+            {
+                roarSwitch = 1;
+            }
         }
         
         if (Input.GetKeyUp(roarKey) && isTalking == false)
