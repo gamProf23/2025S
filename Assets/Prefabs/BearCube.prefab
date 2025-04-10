@@ -572,6 +572,7 @@ MonoBehaviour:
   movingRight: 1
   isTalking: 0
   myAnimations: {fileID: 0}
+  roarSwitch: 1
   isOnSlope: 0
   fullFriction: {fileID: 6200000, guid: 31e29a6c59e869d4c88539519cb3ac48, type: 2}
   noFriction: {fileID: 6200000, guid: deb2069a617c797498df91c3ef63964a, type: 2}
