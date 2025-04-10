@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MovingGround : MonoBehaviour
@@ -6,6 +7,7 @@ public class MovingGround : MonoBehaviour
     Vector3 mp2;
     GameObject movingThing;
     public float moveSpeed;
+    public bool stopOnRoar;
 
     [HideInInspector]
     public int whereTo = 1;
@@ -32,7 +34,17 @@ public class MovingGround : MonoBehaviour
 
         if (whereTo == 1)
         {
-            movingThing.GetComponent<Rigidbody2D>().MovePosition(Vector2.MoveTowards(movingThing.transform.position, mp1, moveSpeed * Time.deltaTime));
+            if (stopOnRoar == false)
+            {
+                movingThing.GetComponent<Rigidbody2D>().MovePosition(Vector2.MoveTowards(movingThing.transform.position, mp1, moveSpeed * Time.deltaTime));
+            }
+            else
+            {
+                if(FindAnyObjectByType<Bear>().isRoaring == false)
+                {
+                    movingThing.GetComponent<Rigidbody2D>().MovePosition(Vector2.MoveTowards(movingThing.transform.position, mp1, moveSpeed * Time.deltaTime));
+                }
+            }
 
             if (Vector2.Distance(movingThing.transform.position, mp1) < 0.01f)
             {
@@ -51,7 +63,17 @@ public class MovingGround : MonoBehaviour
         }
         else if (whereTo == 2)
         {
-            movingThing.GetComponent<Rigidbody2D>().MovePosition(Vector2.MoveTowards(movingThing.transform.position, mp2, moveSpeed * Time.deltaTime));
+            if (stopOnRoar == false)
+            {
+                movingThing.GetComponent<Rigidbody2D>().MovePosition(Vector2.MoveTowards(movingThing.transform.position, mp2, moveSpeed * Time.deltaTime));
+            }
+            else
+            {
+                if (FindAnyObjectByType<Bear>().isRoaring == false)
+                {
+                    movingThing.GetComponent<Rigidbody2D>().MovePosition(Vector2.MoveTowards(movingThing.transform.position, mp2, moveSpeed * Time.deltaTime));
+                }
+            }
 
             if (Vector2.Distance(movingThing.transform.position, mp2) < 0.01f)
             {

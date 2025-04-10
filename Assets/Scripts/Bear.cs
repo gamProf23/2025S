@@ -89,7 +89,7 @@ public class Bear : MonoBehaviour
     public bool isSwiming = false;
 
     public GameObject myRoar;
-    bool isRoaring = false;
+    public bool isRoaring = false;
 
     public GameObject myBall;
     public bool isBall = false;
