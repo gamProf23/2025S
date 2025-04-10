@@ -24,9 +24,9 @@ public class BearOneWayPlatform : MonoBehaviour
             playerCollider = GetComponent<CapsuleCollider2D>();
         }
 
-        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+        if ((Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)))
         {
-            if (currentOneWayPlatform != null)
+            if (currentOneWayPlatform != null && FindAnyObjectByType<Bear>().transform.position.y > currentOneWayPlatform.transform.position.y + (currentOneWayPlatform.GetComponent<Collider2D>().bounds.size.y/2))
             {
                 StartCoroutine(DisableCollision());
             }
@@ -54,7 +54,7 @@ public class BearOneWayPlatform : MonoBehaviour
         BoxCollider2D platformCollider = currentOneWayPlatform.GetComponent<BoxCollider2D>();
 
         Physics2D.IgnoreCollision(playerCollider, platformCollider);
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(0.8f);
         Physics2D.IgnoreCollision(playerCollider, platformCollider, false);
     }
 }

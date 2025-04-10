@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.Loading;
 using Unity.VisualScripting;
 using UnityEditor;
@@ -52,9 +53,25 @@ public class Bear : MonoBehaviour
     public KeyCode rollKey; //Shift
     public KeyCode roarKey; //Period
 
+
     [Header("Sound Stuff")]
 
-    public AudioClip roarSound;
+    AudioSource track1;
+    AudioSource track2;
+    AudioSource track3;
+
+    public List<AudioClip> roarSounds;
+    public List<AudioClip> clawSounds;
+    public List<AudioClip> walkSounds;
+    public List<AudioClip> jumpSounds;
+    public List<AudioClip> landingSounds;
+    public List<AudioClip> splashSounds;
+    public List<AudioClip> swimingSounds;
+    public List<AudioClip> turningBallSounds;
+    public List<AudioClip> rollingSounds;
+    public List<AudioClip> climbingSounds;
+    public List<AudioClip> collectionSounds;
+    System.Random randomSoundInt;
 
     [Header("DO NOT TOUCH")]
 
@@ -134,6 +151,10 @@ public class Bear : MonoBehaviour
         scaleX = transform.localScale.x;
         scaleXNeg = transform.localScale.x * -1;
         ogGrav = GetComponent<Rigidbody2D>().gravityScale;
+        randomSoundInt = new System.Random();
+        track1 = transform.GetChild(4).GetComponent<AudioSource>();
+        track2 = transform.GetChild(5).GetComponent<AudioSource>();
+        track3 = transform.GetChild(6).GetComponent<AudioSource>();
 
         transform.localScale = new Vector3(scaleXNeg, transform.localScale.y, 1);
 
@@ -209,6 +230,16 @@ public class Bear : MonoBehaviour
 
         if (translationX < 0 && isBall == false)
         {
+            if ((track2.time == 0 || track2.time == track2.clip.length) && isGrounded == true && isBall == false)
+            {
+                track2.clip = walkSounds[randomSoundInt.Next(walkSounds.Count)];
+                track2.Play();
+            }
+            else if (isGrounded == false)
+            {
+                track2.Stop();
+            }
+
             if (isSwiping == false)
             {
                 myClaw.transform.position = new Vector2(transform.position.x - (2.25f/6), transform.position.y + (1.75f/6));
@@ -224,8 +255,18 @@ public class Bear : MonoBehaviour
 
             movingRight = false;
         }
-        else if (translationX > 0)
+        else if (translationX > 0 && isBall == false)
         {
+            if ((track2.time == 0 || track2.time == track2.clip.length) && isGrounded == true && isBall == false)
+            {
+                track2.clip = walkSounds[randomSoundInt.Next(walkSounds.Count)];
+                track2.Play();
+            }
+            else if (isGrounded == false)
+            {
+                track2.Stop();
+            }
+
             if (isSwiping == false)
             {
                 myClaw.transform.position = new Vector2(transform.position.x + (2.25f/6), transform.position.y + (1.75f/6));
@@ -241,8 +282,21 @@ public class Bear : MonoBehaviour
             movingRight = true;
         }
 
+        if (isClimbing == true)
+        {
+            if ((track3.time == 0 || track3.time == track3.clip.length) && translationY != 0 && isBall == false)
+            {
+                track3.clip = climbingSounds[randomSoundInt.Next(climbingSounds.Count)];
+                track3.Play();
+            }
+            else if (translationY == 0)
+            {
+                track3.Stop();
+            }
+        }
+
         //Roaring
-        if (Input.GetKey(roarKey))
+        if (Input.GetKey(roarKey) && isTalking == false)
         {
             if (isRoaring == false)
             {
@@ -274,14 +328,14 @@ public class Bear : MonoBehaviour
             
         }
 
-        if (Input.GetKeyDown(roarKey))
+        if (Input.GetKeyDown(roarKey) && isTalking == false)
         {
-            GetComponent<AudioSource>().clip = roarSound;
-            GetComponent<AudioSource>().Play();
+            track1.clip = roarSounds[randomSoundInt.Next(roarSounds.Count)];
+            track1.Play();
             //GetComponent<AudioSource>().clip = null;
         }
         
-        if (Input.GetKeyUp(roarKey))
+        if (Input.GetKeyUp(roarKey) && isTalking == false)
         {
             myRoar.SetActive(false);
             isRoaring = false;
@@ -299,6 +353,7 @@ public class Bear : MonoBehaviour
 
         if (isBall == false)
         {
+            track1.pitch = 1;
             if (isClimbing == false)
             {
                 
@@ -375,9 +430,12 @@ public class Bear : MonoBehaviour
             //Swipe Attack
             if (Input.GetKeyDown(clawKey) && isSwiping == false && isClimbing == false)
             {
+                track1.clip = jumpSounds[0];
+                track1.Play();
+
                 isSwiping = true;
 
-                if(movingRight == false)
+                if (movingRight == false)
                 {
                     StartCoroutine(ClawSwipe("Left"));
                     myAnimations.SetBool("AmSwiping", true);
@@ -417,7 +475,7 @@ public class Bear : MonoBehaviour
                     }
                     else
                     {
-                        playerRB.AddForce(Vector2.up * (swimUpForce + 100));
+                        playerRB.AddForce(Vector2.up * (swimUpForce));
                     }
                     
                 }
@@ -437,7 +495,12 @@ public class Bear : MonoBehaviour
 
         //Jump
         if (Input.GetKeyDown(jumpKey) && ((jumpAmount > 0) || (isClimbing == true)) && isTalking == false)
-        {
+        {   
+            track1.clip = jumpSounds[randomSoundInt.Next(jumpSounds.Count)];
+            track1.Play();
+            
+            
+
             if (isClimbing == false)
             {
                 if (isOnSlope == false)
@@ -470,8 +533,15 @@ public class Bear : MonoBehaviour
                 {
                     if (isBall == true)
                     {
+                        if (isOnSlope == true)
+                        {
+                            StartCoroutine("JumpOffSGround");
+                        }
+                        else
+                        {
+                            playerRB.AddForce(Vector2.up * jumpForce);
+                        }
                         
-                        playerRB.AddForce(Vector2.up * jumpForce);
                     }
                     else
                     {
@@ -510,8 +580,11 @@ public class Bear : MonoBehaviour
         //Transforms bear in and out of ball form
         if (isSwiping == false)
         {
+
             if (Input.GetKeyDown(rollKey))
             {
+                track2.clip = turningBallSounds[randomSoundInt.Next(turningBallSounds.Count)];
+                track2.Play();
                 playerRB.linearVelocity = new Vector2(playerRB.linearVelocity.x * 2f, playerRB.linearVelocity.y);
                 playerRB.mass = 1;
                 GetComponent<CapsuleCollider2D>().enabled = false;
@@ -603,6 +676,33 @@ public class Bear : MonoBehaviour
        
     }
 
+    IEnumerator JumpOffSGround()
+    {
+        Debug.Log("ajiufshiuash");
+        //GetComponent<CircleCollider2D>().enabled = false;
+
+        if (playerRB.linearVelocityY < -1f)
+        {
+            playerRB.linearVelocityY = 0;
+        }
+        
+
+        yield return new WaitForSeconds(0.1f);
+
+        if (Math.Abs(playerRB.linearVelocityX) > 3)
+        {
+            playerRB.AddForce(Vector2.up * (jumpForce / 2));
+        }
+        else
+        {
+            playerRB.AddForce(Vector2.up * (jumpForce / 1));
+        }
+        
+
+        //GetComponent<CircleCollider2D>().enabled = true;
+        isOnSlope = false;
+    }
+
     IEnumerator JumpOffMGround()
     {
         GetComponent<Collider2D>().enabled = false;
@@ -658,7 +758,7 @@ public class Bear : MonoBehaviour
     IEnumerator ClawSwipe(string whichWay)
     {
         
-        myClaw.GetComponent<Collider2D>().enabled = true;
+        //myClaw.GetComponent<Collider2D>().enabled = true;
         if (whichWay == "Left")
         {
             while (Vector2.Distance(myClaw.transform.position, swipePointsL[1]) > 0.1f)
@@ -695,7 +795,7 @@ public class Bear : MonoBehaviour
 
         }
 
-        myClaw.GetComponent<Collider2D>().enabled = false;
+        //myClaw.GetComponent<Collider2D>().enabled = false;
 
         myAnimations.SetBool("AmSwiping", false);
         isSwiping = false;
@@ -746,6 +846,18 @@ public class Bear : MonoBehaviour
         }
     }
 
+    public void PlayClawSound()
+    {
+        track1.clip = clawSounds[randomSoundInt.Next(clawSounds.Count)];
+        track1.Play();
+    }
+
+    public void PlayCollectionSound()
+    {
+        track1.clip = collectionSounds[randomSoundInt.Next(collectionSounds.Count)];
+        track1.Play();
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
@@ -763,6 +875,12 @@ public class Bear : MonoBehaviour
         if (collision.transform.parent != null && collision.transform.parent.GetComponent<MovingGround>() != null)
         {
             whereToClone = collision.transform.parent.GetComponent<MovingGround>().whereTo;
+        }
+
+        if (collision.gameObject.tag == "Ground" && isBall == false)
+        {
+            track2.clip = landingSounds[randomSoundInt.Next(landingSounds.Count)];
+            track2.Play();
         }
     }
 
@@ -800,6 +918,7 @@ public class Bear : MonoBehaviour
     public GameObject myMGround;
     bool isOnFallingP = false;
     int whereToClone;
+    bool jeff1 = false;
     private void OnCollisionStay2D(Collision2D collision)
     {
         foreach (ContactPoint2D hitPos in collision.contacts)
@@ -875,6 +994,12 @@ public class Bear : MonoBehaviour
 
         if (collision.gameObject.tag == "Slope" && isBall == true)
         {
+            isOnSlope = true;
+            if (jeff1 == false)
+            {
+                StartCoroutine("RollingSounds");
+            }
+
             /*if (playerRB.linearVelocity.y >= 0)
             {
                 
@@ -903,12 +1028,37 @@ public class Bear : MonoBehaviour
             {
                 playerRB.linearVelocity = playerRB.linearVelocity * slopeVelocityMult;
             }
-            
+
             //Debug.Log(playerRB.linearVelocityX);
+            
+            
         }
     }
 
-    float waterSpeed = 0.5f;
+    IEnumerator RollingSounds()
+    {
+        jeff1 = true;
+        if(playerRB.linearVelocityX != 0)
+        {
+            yield return new WaitForSeconds(0.2f);
+            track1.clip = rollingSounds[randomSoundInt.Next(rollingSounds.Count)];
+            track1.pitch = track1.pitch + 0.1f;
+            track1.Play();
+            jeff1 = false;
+        }
+    }
+
+    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "Water" && splashSounds.Contains(track1.clip) == false && isRoaring == false && isBall == false)
+        {
+            track1.clip = splashSounds[randomSoundInt.Next(splashSounds.Count)];
+            track1.Play();
+        }
+    }
+
+    float waterSpeed = 0.75f;
     float playerSpeedIHold = 1f;
     private void OnTriggerStay2D(Collider2D collision)
     {
