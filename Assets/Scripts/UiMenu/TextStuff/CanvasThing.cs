@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -32,6 +33,13 @@ public class CanvasThing : MonoBehaviour
 
     Image map;
     Button mapBackButton;
+
+    Image seasonTimer;
+    Image seasonTimerMarker;
+    float markerStart = -96;
+    float markerEnd = 96;
+    float timeLimit = 900;
+    float currentTime;
 
     int sel = 0;
     NPCThing npcThing;
@@ -69,6 +77,8 @@ public class CanvasThing : MonoBehaviour
         mapBackButton = map.transform.GetChild(0).GetComponent<Button>();
         mapBackButton.onClick.AddListener(MapBackButton);
 
+        seasonTimer = transform.GetChild(7).GetComponent<Image>();
+        seasonTimerMarker = seasonTimer.transform.GetChild(0).GetComponent<Image>();
 
         DontDestroyOnLoad(gameObject);
     }
@@ -161,6 +171,32 @@ public class CanvasThing : MonoBehaviour
                 npcThing = null;
             }
         }
+
+        float distanceBetween = Math.Abs(markerStart) + Math.Abs(markerEnd);
+
+        if (FindAnyObjectByType<Bear>().isTalking == true)
+        {
+            seasonTimer.enabled = false;
+            seasonTimerMarker.enabled = false;
+        }
+        else if (seasonTimer.enabled == false)
+        {
+            seasonTimer.enabled = true;
+            seasonTimerMarker.enabled = true;
+        }
+
+        if (pauseMenu.transform.gameObject.activeSelf == false && FindAnyObjectByType<Bear>().isTalking == false)
+        {
+            currentTime = currentTime + Time.deltaTime;
+
+            seasonTimerMarker.transform.localPosition = new Vector3(markerStart + ((currentTime/timeLimit) * distanceBetween), 0, 0);
+
+            if(Math.Abs(seasonTimerMarker.transform.localPosition.x) > markerEnd)
+            {
+                //Stuff for season transition
+            }
+        }
+        
     }
 
 
@@ -169,7 +205,7 @@ public class CanvasThing : MonoBehaviour
     {
 
 
-        if (FindAnyObjectByType<Bear>().GetComponent<Rigidbody2D>().linearVelocityX != 0 && pauseMenu.transform.gameObject.activeSelf == false)
+        if ((FindAnyObjectByType<Bear>().GetComponent<Rigidbody2D>().linearVelocityX != 0  || FindAnyObjectByType<Bear>().isClimbing == true) && pauseMenu.transform.gameObject.activeSelf == false)
         {
             berryText.color = Color.Lerp(berryText.color, new Color(berryText.color.r, berryText.color.g, berryText.color.b, 0.25f), changeSpeed);
             berryText.transform.GetChild(0).GetComponent<Image>().color = Color.Lerp(berryText.transform.GetChild(0).GetComponent<Image>().color, new Color(255, 255, 255, 0.25f), changeSpeed);
@@ -179,6 +215,9 @@ public class CanvasThing : MonoBehaviour
 
             honeyText.color = Color.Lerp(honeyText.color, new Color(honeyText.color.r, honeyText.color.g, honeyText.color.b, 0.25f), changeSpeed);
             honeyText.transform.GetChild(0).GetComponent<Image>().color = Color.Lerp(honeyText.transform.GetChild(0).GetComponent<Image>().color, new Color(255, 255, 255, 0.25f), changeSpeed);
+
+            seasonTimer.color = Color.Lerp(seasonTimer.color, new Color(seasonTimer.color.r, seasonTimer.color.g, seasonTimer.color.b, 0.25f), changeSpeed);
+            seasonTimerMarker.color = Color.Lerp(seasonTimerMarker.color, new Color(seasonTimerMarker.color.r, seasonTimerMarker.color.g, seasonTimerMarker.color.b, 0.25f), changeSpeed);
         }
         else
         {
@@ -191,6 +230,9 @@ public class CanvasThing : MonoBehaviour
 
             honeyText.color = Color.Lerp(honeyText.color, new Color(honeyText.color.r, honeyText.color.g, honeyText.color.b, 1), changeSpeed);
             honeyText.transform.GetChild(0).GetComponent<Image>().color = Color.Lerp(honeyText.transform.GetChild(0).GetComponent<Image>().color, new Color(255, 255, 255, 1), changeSpeed);
+
+            seasonTimer.color = Color.Lerp(seasonTimer.color, new Color(seasonTimer.color.r, seasonTimer.color.g, seasonTimer.color.b, 1f), changeSpeed);
+            seasonTimerMarker.color = Color.Lerp(seasonTimerMarker.color, new Color(seasonTimerMarker.color.r, seasonTimerMarker.color.g, seasonTimerMarker.color.b, 1f), changeSpeed);
         }
     }
     void BackButton()
