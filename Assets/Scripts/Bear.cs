@@ -678,7 +678,6 @@ public class Bear : MonoBehaviour
 
     IEnumerator JumpOffSGround()
     {
-        Debug.Log("ajiufshiuash");
         //GetComponent<CircleCollider2D>().enabled = false;
 
         if (playerRB.linearVelocityY < -1f)
