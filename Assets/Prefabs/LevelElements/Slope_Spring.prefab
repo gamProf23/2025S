@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5279010765982123634}
   - component: {fileID: 8017420108560773797}
   m_Layer: 0
-  m_Name: Slope_Profile
+  m_Name: Slope_Spring
   m_TagString: Slope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
