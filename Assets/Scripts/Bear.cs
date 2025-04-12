@@ -118,7 +118,7 @@ public class Bear : MonoBehaviour
     public int roarSwitch = 1;
 
     public List<KeyCode> keys = new List<KeyCode>();
-    static bool defaultKeysHaveBeenSet = false;
+    bool defaultKeysHaveBeenSet = false;
     CanvasThing canvasThing;
 
     public AudioSource track1;
