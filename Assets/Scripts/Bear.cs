@@ -1080,6 +1080,10 @@ public class Bear : MonoBehaviour
             
             
         }
+        else
+        {
+            isOnSlope = false;
+        }
     }
 
     IEnumerator RollingSounds()
