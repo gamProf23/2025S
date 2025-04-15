@@ -65,6 +65,9 @@ public class CanvasThing : MonoBehaviour
     public Sprite bearPortrait;
     bool keyPressed = false;
 
+    public AudioClip animalTalk;
+    public AudioClip bearTalk;
+
     private void Awake()
     {
         berryText = transform.GetChild(0).GetComponent<TMP_Text>();
@@ -377,6 +380,7 @@ public class CanvasThing : MonoBehaviour
         textBox.transform.gameObject.SetActive(true);
         textBoxPortrait.sprite = image;
         keyPressed = false;
+        GetComponent<AudioSource>().clip = animalTalk;
 
         foreach (string s in text)
         {
@@ -389,6 +393,15 @@ public class CanvasThing : MonoBehaviour
                 else if(textBoxPortrait.sprite == bearPortrait)
                 {
                     textBoxPortrait.sprite = image;
+                }
+
+                if(GetComponent<AudioSource>().clip == animalTalk)
+                {
+                    GetComponent<AudioSource>().clip = bearTalk;
+                }
+                else
+                {
+                    GetComponent<AudioSource>().clip = animalTalk;
                 }
 
                 continue;
@@ -405,6 +418,13 @@ public class CanvasThing : MonoBehaviour
                 emptyText += c;
                 textBoxText.text = emptyText;
                 Input.ResetInputAxes();
+
+                if (s.IndexOf(c) % 2 == 0)
+                {
+                    GetComponent<AudioSource>().Stop();
+                    GetComponent<AudioSource>().volume = 0.25f * soundSlider.value;
+                    GetComponent<AudioSource>().Play();
+                }
 
                 yield return new WaitForSeconds(0.05f);
 
