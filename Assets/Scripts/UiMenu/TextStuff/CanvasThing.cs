@@ -24,6 +24,7 @@ public class CanvasThing : MonoBehaviour
     Button backButton;
     Button mapButton;
     Button exitButton;
+    Button optionsButton;
 
     Image tbInteraction;
     TMP_Text yText;
@@ -40,6 +41,21 @@ public class CanvasThing : MonoBehaviour
     float markerEnd = 96;
     float timeLimit = 900;
     float currentTime;
+
+    Image optionsMenu;
+    Image soundOptions;
+    public Image controlOptions;
+
+    public Slider soundSlider;
+
+    public TMP_Dropdown jumpDrop;
+    public TMP_Dropdown rollDrop;
+    public TMP_Dropdown roarDrop;
+    public TMP_Dropdown clawDrop;
+
+    Button soundButton;
+    Button controlButton;
+    Button optionBackButton;
 
     int sel = 0;
     NPCThing npcThing;
@@ -62,10 +78,12 @@ public class CanvasThing : MonoBehaviour
         backButton = pauseMenu.transform.GetChild(1).GetComponent<Button>();
         mapButton = pauseMenu.transform.GetChild(2).GetComponent<Button>();
         exitButton = pauseMenu.transform.GetChild(3).GetComponent<Button>();
+        optionsButton = pauseMenu.transform.GetChild(4).GetComponent<Button>();
 
         backButton.onClick.AddListener(BackButton);
         mapButton.onClick.AddListener(MapButton);
         exitButton.onClick.AddListener(ExitButton);
+        optionsButton.onClick.AddListener(OptionsButton);
 
         tbInteraction = transform.GetChild(4).GetComponent<Image>();
         yText = tbInteraction.transform.GetChild(0).GetComponent<TMP_Text>();
@@ -80,15 +98,38 @@ public class CanvasThing : MonoBehaviour
         seasonTimer = transform.GetChild(7).GetComponent<Image>();
         seasonTimerMarker = seasonTimer.transform.GetChild(0).GetComponent<Image>();
 
+        optionsMenu = transform.GetChild(8).GetComponent<Image>();
+
+        soundOptions = optionsMenu.transform.GetChild(0).GetComponent<Image>();
+        soundSlider = soundOptions.transform.GetChild(0).transform.GetChild(0).GetComponent<Slider>();
+        soundSlider.onValueChanged.AddListener(delegate { SoundSliderChanged(); });
+
+        controlOptions = optionsMenu.transform.GetChild(1).GetComponent<Image>();
+        jumpDrop = controlOptions.transform.GetChild(0).GetComponent<TMP_Dropdown>();
+        rollDrop = controlOptions.transform.GetChild(1).GetComponent<TMP_Dropdown>();
+        roarDrop = controlOptions.transform.GetChild(2).GetComponent<TMP_Dropdown>();
+        clawDrop = controlOptions.transform.GetChild(3).GetComponent<TMP_Dropdown>();
+
+        soundButton = optionsMenu.transform.GetChild(2).GetComponent<Button>();
+        controlButton = optionsMenu.transform.GetChild(3).GetComponent<Button>();
+        optionBackButton = optionsMenu.transform.GetChild(4).GetComponent<Button>();
+
+        soundButton.onClick.AddListener(SoundButton);
+        controlButton.onClick.AddListener(ControlButton);
+        optionBackButton.onClick.AddListener(OptionBackButton);
+
         DontDestroyOnLoad(gameObject);
     }
+
     void Start()
     {
-
+        
     }
+
     void Update()
     {
         ReduceBFH();
+
         if (Input.anyKeyDown == true)
         {
             keyPressed = true;
@@ -258,11 +299,49 @@ public class CanvasThing : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void OptionsButton()
+    {
+        optionsMenu.gameObject.SetActive(true);
+        controlOptions.gameObject.SetActive(true);
+        soundOptions.gameObject.SetActive(false);
+    }
+
+    void SoundButton()
+    {
+        soundOptions.gameObject.SetActive(true);
+        controlOptions.gameObject.SetActive(false);
+    }
+
+    void SoundSliderChanged()
+    {
+        Bear bear = FindAnyObjectByType<Bear>();
+
+        bear.track1.volume = 0.25f * soundSlider.value;
+        bear.track2.volume = 0.25f * soundSlider.value;
+        bear.track3.volume = 0.25f * soundSlider.value;
+
+
+        CamFollow cam = FindAnyObjectByType<CamFollow>();
+        cam.GetComponent<AudioSource>().volume = 0.1f * soundSlider.value;
+
+
+    }
+
+    void ControlButton()
+    {
+        soundOptions.gameObject.SetActive(false);
+        controlOptions.gameObject.SetActive(true);
+    }
+
+    void OptionBackButton()
+    {
+        optionsMenu.gameObject.SetActive(false);
+    }
+
     void MapBackButton()
     {
         map.transform.gameObject.SetActive(false);
     }
-
     public void AddBerry()
     {
         berryCount++;
