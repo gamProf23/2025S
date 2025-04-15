@@ -1929,7 +1929,7 @@ GameObject:
   - component: {fileID: 1141340128}
   - component: {fileID: 1141340127}
   - component: {fileID: 1141340129}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bat_NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1979,13 +1979,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
-  m_Sprite: {fileID: 1312007011681886316, guid: ccb439afa93984048b62f344fe56dff6, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -63408700, guid: 41ee6b5694341424caf99a1f892393e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.49, y: 3.5}
+  m_Size: {x: 0.18, y: 0.37}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2026,7 +2026,7 @@ MonoBehaviour:
   - Too Soon?
   - Anyway, could you snag some sweet red berries for me?
   - I'll let you in on a little secret if so.
-  myPortrait: {fileID: 0}
+  myPortrait: {fileID: -5625881231707511812, guid: 11574fcd032553c46b02c8ea2937954f, type: 3}
   myInteractionYSel: 
   myInteractionNSel: 
   myInteractionText: 
