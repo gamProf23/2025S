@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1f7f95803b430dc47b25da35f8f338a5
+guid: 11574fcd032553c46b02c8ea2937954f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1884701423190137557
-    second: raccoonfinalizingPNG_0
+      213: -5625881231707511812
+    second: PortraitBat_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: raccoonfinalizingPNG_0
+      name: PortraitBat_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 4
         y: 0
-        width: 128
-        height: 120
+        width: 119
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b25241b8a0238d5e0800000000000000
-      internalID: -1884701423190137557
+      spriteID: cf36983b3dadce1b0800000000000000
+      internalID: -5625881231707511812
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      raccoonfinalizingPNG_0: -1884701423190137557
+      PortraitBat_0: -5625881231707511812
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
