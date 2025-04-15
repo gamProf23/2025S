@@ -89,5 +89,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MasterScenes/Lake_1.unity
     guid: d260be0fa46fb4343b5b0713d633e38c
+  - enabled: 1
+    path: Assets/Scenes/MasterScenes/Canopy_1.unity
+    guid: 4ae4c3182cabcce438e075c0f1d45f43
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

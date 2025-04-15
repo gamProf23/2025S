@@ -6,7 +6,8 @@ using Unity.Loading;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
+//using UnityEngine.UIElements;
 
 //using UnityEngine.Windows;
 using static UnityEngine.RuleTile.TilingRuleOutput;
@@ -56,9 +57,7 @@ public class Bear : MonoBehaviour
 
     [Header("Sound Stuff")]
 
-    AudioSource track1;
-    AudioSource track2;
-    AudioSource track3;
+   
 
     public List<AudioClip> roarSounds;
     public List<AudioClip> clawSounds;
@@ -89,7 +88,7 @@ public class Bear : MonoBehaviour
     public bool isSwiming = false;
 
     public GameObject myRoar;
-    bool isRoaring = false;
+    public bool isRoaring = false;
 
     public GameObject myBall;
     public bool isBall = false;
@@ -115,8 +114,17 @@ public class Bear : MonoBehaviour
     Vector3 ogScale;
 
     float ogGrav;
-    
-    
+
+    public int roarSwitch = 1;
+
+    public List<KeyCode> keys = new List<KeyCode>();
+    bool defaultKeysHaveBeenSet = false;
+    CanvasThing canvasThing;
+
+    public AudioSource track1;
+    public AudioSource track2;
+    public AudioSource track3;
+
 
 
     [Header("Slope Stuff: DO NOT TOUCH")]
@@ -155,6 +163,7 @@ public class Bear : MonoBehaviour
         track1 = transform.GetChild(4).GetComponent<AudioSource>();
         track2 = transform.GetChild(5).GetComponent<AudioSource>();
         track3 = transform.GetChild(6).GetComponent<AudioSource>();
+        
 
         transform.localScale = new Vector3(scaleXNeg, transform.localScale.y, 1);
 
@@ -166,13 +175,24 @@ public class Bear : MonoBehaviour
         {
             transform.position = Vector2.zero;
         }
-        
+
+        foreach (KeyCode keycode in Enum.GetValues(typeof(KeyCode)))
+        {
+            if (keycode.ToString().Contains("Joy") == false)
+            {
+                keys.Add(keycode);
+            }
+
+        }
+
         DontDestroyOnLoad(gameObject);
     }
 
 
     void Start()
     {
+
+        canvasThing = FindAnyObjectByType<CanvasThing>();
         if (movingRight == false)
         {
             myClaw.transform.position = new Vector2(transform.position.x - (2.25f/6), transform.position.y + (1.75f/6));
@@ -185,10 +205,29 @@ public class Bear : MonoBehaviour
         }
     }
 
+
     void Update()
     {
+        
         Physics2D.SyncTransforms();
         playerPosition = transform.position;
+
+        //Controls Stuff
+        if (canvasThing.controlOptions.isActiveAndEnabled == true && defaultKeysHaveBeenSet == false)
+        {
+            canvasThing.jumpDrop.value = keys.IndexOf(jumpKey);
+            canvasThing.rollDrop.value = keys.IndexOf(rollKey);
+            canvasThing.roarDrop.value = keys.IndexOf(roarKey);
+            canvasThing.clawDrop.value = keys.IndexOf(clawKey);
+            defaultKeysHaveBeenSet = true;
+        }
+        else if (canvasThing.controlOptions.isActiveAndEnabled == true)
+        {
+            jumpKey = keys[canvasThing.jumpDrop.value];
+            rollKey = keys[canvasThing.rollDrop.value];
+            roarKey = keys[canvasThing.roarDrop.value];
+            clawKey = keys[canvasThing.clawDrop.value];
+        }
 
         if (isTalking == false)
         {
@@ -333,6 +372,15 @@ public class Bear : MonoBehaviour
             track1.clip = roarSounds[randomSoundInt.Next(roarSounds.Count)];
             track1.Play();
             //GetComponent<AudioSource>().clip = null;
+
+            if (roarSwitch == 1)
+            {
+                roarSwitch = 2;
+            }
+            else if (roarSwitch == 2)
+            {
+                roarSwitch = 1;
+            }
         }
         
         if (Input.GetKeyUp(roarKey) && isTalking == false)
@@ -678,7 +726,6 @@ public class Bear : MonoBehaviour
 
     IEnumerator JumpOffSGround()
     {
-        Debug.Log("ajiufshiuash");
         //GetComponent<CircleCollider2D>().enabled = false;
 
         if (playerRB.linearVelocityY < -1f)

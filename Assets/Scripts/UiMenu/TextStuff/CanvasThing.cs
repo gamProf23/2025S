@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -23,6 +24,7 @@ public class CanvasThing : MonoBehaviour
     Button backButton;
     Button mapButton;
     Button exitButton;
+    Button optionsButton;
 
     Image tbInteraction;
     TMP_Text yText;
@@ -32,6 +34,28 @@ public class CanvasThing : MonoBehaviour
 
     Image map;
     Button mapBackButton;
+
+    Image seasonTimer;
+    Image seasonTimerMarker;
+    float markerStart = -96;
+    float markerEnd = 96;
+    float timeLimit = 900;
+    float currentTime;
+
+    Image optionsMenu;
+    Image soundOptions;
+    public Image controlOptions;
+
+    public Slider soundSlider;
+
+    public TMP_Dropdown jumpDrop;
+    public TMP_Dropdown rollDrop;
+    public TMP_Dropdown roarDrop;
+    public TMP_Dropdown clawDrop;
+
+    Button soundButton;
+    Button controlButton;
+    Button optionBackButton;
 
     int sel = 0;
     NPCThing npcThing;
@@ -54,10 +78,12 @@ public class CanvasThing : MonoBehaviour
         backButton = pauseMenu.transform.GetChild(1).GetComponent<Button>();
         mapButton = pauseMenu.transform.GetChild(2).GetComponent<Button>();
         exitButton = pauseMenu.transform.GetChild(3).GetComponent<Button>();
+        optionsButton = pauseMenu.transform.GetChild(4).GetComponent<Button>();
 
         backButton.onClick.AddListener(BackButton);
         mapButton.onClick.AddListener(MapButton);
         exitButton.onClick.AddListener(ExitButton);
+        optionsButton.onClick.AddListener(OptionsButton);
 
         tbInteraction = transform.GetChild(4).GetComponent<Image>();
         yText = tbInteraction.transform.GetChild(0).GetComponent<TMP_Text>();
@@ -69,16 +95,41 @@ public class CanvasThing : MonoBehaviour
         mapBackButton = map.transform.GetChild(0).GetComponent<Button>();
         mapBackButton.onClick.AddListener(MapBackButton);
 
+        seasonTimer = transform.GetChild(7).GetComponent<Image>();
+        seasonTimerMarker = seasonTimer.transform.GetChild(0).GetComponent<Image>();
+
+        optionsMenu = transform.GetChild(8).GetComponent<Image>();
+
+        soundOptions = optionsMenu.transform.GetChild(0).GetComponent<Image>();
+        soundSlider = soundOptions.transform.GetChild(0).transform.GetChild(0).GetComponent<Slider>();
+        soundSlider.onValueChanged.AddListener(delegate { SoundSliderChanged(); });
+
+        controlOptions = optionsMenu.transform.GetChild(1).GetComponent<Image>();
+        jumpDrop = controlOptions.transform.GetChild(0).GetComponent<TMP_Dropdown>();
+        rollDrop = controlOptions.transform.GetChild(1).GetComponent<TMP_Dropdown>();
+        roarDrop = controlOptions.transform.GetChild(2).GetComponent<TMP_Dropdown>();
+        clawDrop = controlOptions.transform.GetChild(3).GetComponent<TMP_Dropdown>();
+
+        soundButton = optionsMenu.transform.GetChild(2).GetComponent<Button>();
+        controlButton = optionsMenu.transform.GetChild(3).GetComponent<Button>();
+        optionBackButton = optionsMenu.transform.GetChild(4).GetComponent<Button>();
+
+        soundButton.onClick.AddListener(SoundButton);
+        controlButton.onClick.AddListener(ControlButton);
+        optionBackButton.onClick.AddListener(OptionBackButton);
 
         DontDestroyOnLoad(gameObject);
     }
+
     void Start()
     {
-
+        
     }
+
     void Update()
     {
         ReduceBFH();
+
         if (Input.anyKeyDown == true)
         {
             keyPressed = true;
@@ -161,6 +212,32 @@ public class CanvasThing : MonoBehaviour
                 npcThing = null;
             }
         }
+
+        float distanceBetween = Math.Abs(markerStart) + Math.Abs(markerEnd);
+
+        if (FindAnyObjectByType<Bear>().isTalking == true)
+        {
+            seasonTimer.enabled = false;
+            seasonTimerMarker.enabled = false;
+        }
+        else if (seasonTimer.enabled == false)
+        {
+            seasonTimer.enabled = true;
+            seasonTimerMarker.enabled = true;
+        }
+
+        if (pauseMenu.transform.gameObject.activeSelf == false && FindAnyObjectByType<Bear>().isTalking == false)
+        {
+            currentTime = currentTime + Time.deltaTime;
+
+            seasonTimerMarker.transform.localPosition = new Vector3(markerStart + ((currentTime/timeLimit) * distanceBetween), 0, 0);
+
+            if(Math.Abs(seasonTimerMarker.transform.localPosition.x) > markerEnd)
+            {
+                //Stuff for season transition
+            }
+        }
+        
     }
 
 
@@ -169,7 +246,7 @@ public class CanvasThing : MonoBehaviour
     {
 
 
-        if (FindAnyObjectByType<Bear>().GetComponent<Rigidbody2D>().linearVelocityX != 0 && pauseMenu.transform.gameObject.activeSelf == false)
+        if ((FindAnyObjectByType<Bear>().GetComponent<Rigidbody2D>().linearVelocityX != 0  || FindAnyObjectByType<Bear>().isClimbing == true) && pauseMenu.transform.gameObject.activeSelf == false)
         {
             berryText.color = Color.Lerp(berryText.color, new Color(berryText.color.r, berryText.color.g, berryText.color.b, 0.25f), changeSpeed);
             berryText.transform.GetChild(0).GetComponent<Image>().color = Color.Lerp(berryText.transform.GetChild(0).GetComponent<Image>().color, new Color(255, 255, 255, 0.25f), changeSpeed);
@@ -179,6 +256,9 @@ public class CanvasThing : MonoBehaviour
 
             honeyText.color = Color.Lerp(honeyText.color, new Color(honeyText.color.r, honeyText.color.g, honeyText.color.b, 0.25f), changeSpeed);
             honeyText.transform.GetChild(0).GetComponent<Image>().color = Color.Lerp(honeyText.transform.GetChild(0).GetComponent<Image>().color, new Color(255, 255, 255, 0.25f), changeSpeed);
+
+            seasonTimer.color = Color.Lerp(seasonTimer.color, new Color(seasonTimer.color.r, seasonTimer.color.g, seasonTimer.color.b, 0.25f), changeSpeed);
+            seasonTimerMarker.color = Color.Lerp(seasonTimerMarker.color, new Color(seasonTimerMarker.color.r, seasonTimerMarker.color.g, seasonTimerMarker.color.b, 0.25f), changeSpeed);
         }
         else
         {
@@ -191,6 +271,9 @@ public class CanvasThing : MonoBehaviour
 
             honeyText.color = Color.Lerp(honeyText.color, new Color(honeyText.color.r, honeyText.color.g, honeyText.color.b, 1), changeSpeed);
             honeyText.transform.GetChild(0).GetComponent<Image>().color = Color.Lerp(honeyText.transform.GetChild(0).GetComponent<Image>().color, new Color(255, 255, 255, 1), changeSpeed);
+
+            seasonTimer.color = Color.Lerp(seasonTimer.color, new Color(seasonTimer.color.r, seasonTimer.color.g, seasonTimer.color.b, 1f), changeSpeed);
+            seasonTimerMarker.color = Color.Lerp(seasonTimerMarker.color, new Color(seasonTimerMarker.color.r, seasonTimerMarker.color.g, seasonTimerMarker.color.b, 1f), changeSpeed);
         }
     }
     void BackButton()
@@ -216,11 +299,49 @@ public class CanvasThing : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void OptionsButton()
+    {
+        optionsMenu.gameObject.SetActive(true);
+        controlOptions.gameObject.SetActive(true);
+        soundOptions.gameObject.SetActive(false);
+    }
+
+    void SoundButton()
+    {
+        soundOptions.gameObject.SetActive(true);
+        controlOptions.gameObject.SetActive(false);
+    }
+
+    void SoundSliderChanged()
+    {
+        Bear bear = FindAnyObjectByType<Bear>();
+
+        bear.track1.volume = 0.25f * soundSlider.value;
+        bear.track2.volume = 0.25f * soundSlider.value;
+        bear.track3.volume = 0.25f * soundSlider.value;
+
+
+        CamFollow cam = FindAnyObjectByType<CamFollow>();
+        cam.GetComponent<AudioSource>().volume = 0.1f * soundSlider.value;
+
+
+    }
+
+    void ControlButton()
+    {
+        soundOptions.gameObject.SetActive(false);
+        controlOptions.gameObject.SetActive(true);
+    }
+
+    void OptionBackButton()
+    {
+        optionsMenu.gameObject.SetActive(false);
+    }
+
     void MapBackButton()
     {
         map.transform.gameObject.SetActive(false);
     }
-
     public void AddBerry()
     {
         berryCount++;

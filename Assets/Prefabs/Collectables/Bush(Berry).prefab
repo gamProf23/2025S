@@ -148,4 +148,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bushNoBerry: {fileID: -154101512186029906, guid: f81db90081e09a449bd98ede4c5e37bf, type: 3}
-  myBerry: {fileID: 7147409446330861517, guid: 4c03f28bc637f564cb64a1e03bba29ed, type: 3}
+  myBerry: {fileID: -212543471080407037, guid: 9651b177d604fe844a1d0a73d71eaf7b, type: 3}
