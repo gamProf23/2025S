@@ -334,6 +334,11 @@ public class Bear : MonoBehaviour
             }
         }
 
+        if(isClimbing == false && climbingSounds.Contains(track3.clip))
+        {
+            track3.Stop();
+        }
+
         //Roaring
         if (Input.GetKey(roarKey) && isTalking == false)
         {
