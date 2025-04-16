@@ -13,6 +13,12 @@ public class SceneInfo : MonoBehaviour
     public Canvas myCanvasPrefab;
     public Sprite myBackGround;
     public AudioClip myMusic;
+    public List<AudioClip> myAmbience;
+    
+    System.Random randomSoundInt;
+    float timeTillPlay;
+    float timeTillPlayI;
+    bool soundQueued = false;
 
     public static bool hasLoadedPrefab = false;
 
@@ -130,7 +136,7 @@ public class SceneInfo : MonoBehaviour
     private void Awake()
     {
         FindExits();
-
+        randomSoundInt = new System.Random();
         //Debug.Log(previousScene);
         
 
@@ -187,6 +193,28 @@ public class SceneInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (myAmbience.Count != 0)
+        {
+            GetComponent<AudioSource>().volume = 0.25f * FindAnyObjectByType<CanvasThing>().soundSlider.value;
+            if (soundQueued == false)
+            {
+                soundQueued = true;
+                timeTillPlayI = randomSoundInt.Next(5, 10);
+            }
+
+            if (soundQueued == true)
+            {
+                timeTillPlay = timeTillPlay + Time.deltaTime;
+
+                if (timeTillPlay >= timeTillPlayI)
+                {
+                    GetComponent<AudioSource>().clip = myAmbience[randomSoundInt.Next(myAmbience.Count)];
+                    GetComponent<AudioSource>().Play();
+                    timeTillPlay = 0;
+                    soundQueued = false;
+                }
+            }
+        }
 
         if (L1SceneName != "")
         {

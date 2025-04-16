@@ -174,7 +174,7 @@ public class CanvasThing : MonoBehaviour
                 }
             }
 
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.J))
+            if (Input.GetKeyDown(FindAnyObjectByType<Bear>().jumpKey) || Input.GetKeyDown(FindAnyObjectByType<Bear>().clawKey))
             {
                 tbInteraction.gameObject.SetActive(false);
 
