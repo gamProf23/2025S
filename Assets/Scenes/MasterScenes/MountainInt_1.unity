@@ -2653,9 +2653,17 @@ PrefabInstance:
       value: TheBoss
       objectReference: {fileID: 0}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: R1SceneName
+      value: MountainTopL_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: myBackGround
       value: 
       objectReference: {fileID: 6522210221282766960, guid: dccc443d34d815b4a80ad17e2804f064, type: 3}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: door2SceneName
+      value: Forest_1
+      objectReference: {fileID: 0}
     - target: {fileID: 7578924285782844394, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -21129,6 +21137,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1077257789}
+  - {fileID: 1726020785}
   - {fileID: 638098222}
   - {fileID: 133951768}
   - {fileID: 113205801}
@@ -21165,7 +21174,6 @@ SceneRoots:
   - {fileID: 1061385704}
   - {fileID: 2009646373}
   - {fileID: 1652414528}
-  - {fileID: 1726020785}
   - {fileID: 1227766579}
   - {fileID: 826744725}
   - {fileID: 117196383}
