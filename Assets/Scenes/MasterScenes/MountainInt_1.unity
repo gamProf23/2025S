@@ -1929,7 +1929,7 @@ GameObject:
   - component: {fileID: 1141340128}
   - component: {fileID: 1141340127}
   - component: {fileID: 1141340129}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bat_NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1979,7 +1979,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: -63408700, guid: 41ee6b5694341424caf99a1f892393e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2653,17 +2653,9 @@ PrefabInstance:
       value: TheBoss
       objectReference: {fileID: 0}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
-      propertyPath: R1SceneName
-      value: MountainTopL_1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: myBackGround
       value: 
       objectReference: {fileID: 6522210221282766960, guid: dccc443d34d815b4a80ad17e2804f064, type: 3}
-    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
-      propertyPath: door2SceneName
-      value: Forest_1
-      objectReference: {fileID: 0}
     - target: {fileID: 7578924285782844394, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -21137,7 +21129,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1077257789}
-  - {fileID: 1726020785}
   - {fileID: 638098222}
   - {fileID: 133951768}
   - {fileID: 113205801}
@@ -21174,6 +21165,7 @@ SceneRoots:
   - {fileID: 1061385704}
   - {fileID: 2009646373}
   - {fileID: 1652414528}
+  - {fileID: 1726020785}
   - {fileID: 1227766579}
   - {fileID: 826744725}
   - {fileID: 117196383}
