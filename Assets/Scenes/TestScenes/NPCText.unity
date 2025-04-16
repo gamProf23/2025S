@@ -363,13 +363,33 @@ PrefabInstance:
       value: TheBoss
       objectReference: {fileID: 0}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
-      propertyPath: myMusic
-      value: 
-      objectReference: {fileID: 8300000, guid: 13ef9443156798746839ce97236b297e, type: 3}
+      propertyPath: myAmbience.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
-      propertyPath: myBackGround
+      propertyPath: 'myAmbience.Array.data[0]'
       value: 
-      objectReference: {fileID: -6484041478135567464, guid: 7583ba31cb56b9645b870355cac3d599, type: 3}
+      objectReference: {fileID: 8300000, guid: bfa9b2f6d667146498e7a26025a19818, type: 3}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: 'myAmbience.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: df1e1efeef468a646a60dde8352bd5c1, type: 3}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: 'myAmbience.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 525ac1164e2800147985017031511dc0, type: 3}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: 'myAmbience.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 0bee9f7e08bba2f4fa9d87c316b04037, type: 3}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: 'myAmbience.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8300000, guid: ee56072ec8602eb46a5ab36d3d9f4d7f, type: 3}
+    - target: {fileID: 4809068048704026781, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7578924285782844394, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.403314
