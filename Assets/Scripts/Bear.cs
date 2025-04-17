@@ -203,6 +203,8 @@ public class Bear : MonoBehaviour
             myClaw.transform.position = new Vector2(transform.position.x + (2.25f/6), transform.position.y + (1.75f/6));
             myRoar.transform.position = new Vector2(transform.position.x + (GetComponent<SpriteRenderer>().size.x * 0.5f) + (2.5f/6), transform.position.y);
         }
+
+        
     }
 
 
@@ -369,7 +371,6 @@ public class Bear : MonoBehaviour
                 myRoar.transform.GetChild(0).transform.gameObject.SetActive(false);
                 myRoar.transform.GetChild(1).transform.gameObject.SetActive(true);
             }
-            
         }
 
         if (Input.GetKeyDown(roarKey) && isTalking == false)

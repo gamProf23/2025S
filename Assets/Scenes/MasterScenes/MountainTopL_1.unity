@@ -50462,6 +50462,10 @@ PrefabInstance:
       value: TheBoss
       objectReference: {fileID: 0}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: myMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: d28848a6b1584b844886311635b5f71e, type: 3}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: D1SceneName
       value: Forest_1
       objectReference: {fileID: 0}
@@ -50481,6 +50485,22 @@ PrefabInstance:
       propertyPath: door1SceneName
       value: Canopy_1
       objectReference: {fileID: 0}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: myAmbience.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: 'myAmbience.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 9abbe79e3da863d4e97920766ba189d1, type: 3}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: 'myAmbience.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: aba10600b16d47d4095fc98c958798de, type: 3}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: 'myAmbience.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 0bee9f7e08bba2f4fa9d87c316b04037, type: 3}
     - target: {fileID: 7578924285782844394, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.96926886

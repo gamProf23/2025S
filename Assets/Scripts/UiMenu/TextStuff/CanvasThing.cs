@@ -325,7 +325,7 @@ public class CanvasThing : MonoBehaviour
 
 
         CamFollow cam = FindAnyObjectByType<CamFollow>();
-        cam.GetComponent<AudioSource>().volume = 0.1f * soundSlider.value;
+        cam.GetComponent<AudioSource>().volume = 0.4f * soundSlider.value;
 
 
     }
