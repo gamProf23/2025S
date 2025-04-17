@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 5acef2ae2ce4d84428869b16aa417554
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 506429419958997706
+    second: ExrTzF2 (1)_0
+  - first:
+      213: 3718069788672306788
+    second: ExrTzF2 (1)_1
+  - first:
+      213: 6142016079082000830
+    second: ExrTzF2 (1)_2
+  - first:
+      213: -7970165402762933558
+    second: ExrTzF2 (1)_3
+  - first:
+      213: 5100693565592775122
+    second: ExrTzF2 (1)_4
+  - first:
+      213: -1639530590276963260
+    second: ExrTzF2 (1)_5
+  - first:
+      213: 9177420080755256201
+    second: ExrTzF2 (1)_6
+  - first:
+      213: 6594275068028553196
+    second: ExrTzF2 (1)_7
+  - first:
+      213: 5856442952890772530
+    second: ExrTzF2 (1)_8
+  - first:
+      213: -8996111766233138159
+    second: ExrTzF2 (1)_9
+  - first:
+      213: 3763263718006739763
+    second: ExrTzF2 (1)_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ExrTzF2 (1)_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 87
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac29670dfd2370700800000000000000
+      internalID: 506429419958997706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExrTzF2 (1)_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 89
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46eaceb06cc399330800000000000000
+      internalID: 3718069788672306788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExrTzF2 (1)_2
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 86
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb19b660513dc3550800000000000000
+      internalID: 6142016079082000830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExrTzF2 (1)_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 61
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca053f3bc8446190800000000000000
+      internalID: -7970165402762933558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExrTzF2 (1)_4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 63
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d92745f5cd49c640800000000000000
+      internalID: 5100693565592775122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExrTzF2 (1)_5
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 60
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444b7206d973f39e0800000000000000
+      internalID: -1639530590276963260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExrTzF2 (1)_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 39
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b24fb70febc5f70800000000000000
+      internalID: 9177420080755256201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExrTzF2 (1)_7
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 39
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce78e058c32938b50800000000000000
+      internalID: 6594275068028553196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExrTzF2 (1)_8
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 38
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23ce46e36d3464150800000000000000
+      internalID: 5856442952890772530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExrTzF2 (1)_9
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 24
+        width: 209
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c36f51304672380800000000000000
+      internalID: -8996111766233138159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExrTzF2 (1)_10
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 3
+        width: 209
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33358e3b96cc93430800000000000000
+      internalID: 3763263718006739763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ExrTzF2 (1)_0: 506429419958997706
+      ExrTzF2 (1)_1: 3718069788672306788
+      ExrTzF2 (1)_10: 3763263718006739763
+      ExrTzF2 (1)_2: 6142016079082000830
+      ExrTzF2 (1)_3: -7970165402762933558
+      ExrTzF2 (1)_4: 5100693565592775122
+      ExrTzF2 (1)_5: -1639530590276963260
+      ExrTzF2 (1)_6: 9177420080755256201
+      ExrTzF2 (1)_7: 6594275068028553196
+      ExrTzF2 (1)_8: 5856442952890772530
+      ExrTzF2 (1)_9: -8996111766233138159
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
