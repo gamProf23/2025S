@@ -990,7 +990,12 @@ public class Bear : MonoBehaviour
                         {
                             GetComponent<Rigidbody2D>().MovePosition(Vector2.MoveTowards(transform.position, new Vector2(collision.transform.position.x, collision.transform.position.y + collision.gameObject.GetComponent<Collider2D>().bounds.size.y / 2), collision.transform.parent.GetComponent<MovingGround>().moveSpeed * Time.deltaTime));
                             myMGround = collision.gameObject;
-                            playerRB.AddRelativeForceY(-10 * collision.transform.parent.GetComponent<MovingGround>().moveSpeed);
+
+                            if (collision.transform.parent.GetComponent<MovingGround>().stopOnRoar == false && isRoaring == false)
+                            {
+                                playerRB.AddRelativeForceY(-10 * collision.transform.parent.GetComponent<MovingGround>().moveSpeed);
+                            }
+                            
                             isOnMGround = true;
 
                             if (whereToClone != collision.transform.parent.GetComponent<MovingGround>().whereTo)
