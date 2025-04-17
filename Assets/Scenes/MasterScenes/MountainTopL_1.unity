@@ -50471,7 +50471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: R1SceneName
-      value: 
+      value: Canopy_1
       objectReference: {fileID: 0}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: myBackGround
@@ -50479,7 +50479,7 @@ PrefabInstance:
       objectReference: {fileID: 4987163775680167296, guid: e003a3c7c37d0eb4cb4a61b1d43d397f, type: 3}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: door1SceneName
-      value: Canopy_1
+      value: Waterfall_1
       objectReference: {fileID: 0}
     - target: {fileID: 7578924285782844394, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50942,7 +50942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4043748716290504024, guid: 52f96b5fbd281ab418d8c53be6774162, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 88.4
+      value: 89.23
       objectReference: {fileID: 0}
     - target: {fileID: 4043748716290504024, guid: 52f96b5fbd281ab418d8c53be6774162, type: 3}
       propertyPath: m_LocalPosition.y
