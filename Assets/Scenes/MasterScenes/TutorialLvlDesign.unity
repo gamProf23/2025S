@@ -163,6 +163,18 @@ PrefabInstance:
       propertyPath: rightExitScene
       value: PuzzleLvlDesign
       objectReference: {fileID: 0}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: myAmbience.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: 'myAmbience.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: e0171caabab2366439afbebe87a101f4, type: 3}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: 'myAmbience.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 442e718b7f1117e41a8893dede7f4061, type: 3}
     - target: {fileID: 7578924285782844394, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.96926886
