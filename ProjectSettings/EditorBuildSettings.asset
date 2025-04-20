@@ -92,5 +92,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MasterScenes/Canopy_1.unity
     guid: 4ae4c3182cabcce438e075c0f1d45f43
+  - enabled: 1
+    path: Assets/Scenes/MasterScenes/Waterfall_1.unity
+    guid: a681f36f1b18b0d48b54e43b2fa89a49
+  - enabled: 1
+    path: Assets/Scenes/MasterScenes/MountainTopR_1.unity
+    guid: e6193a992a2f19c4f9bce6e739514ca7
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
