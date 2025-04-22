@@ -31259,6 +31259,10 @@ PrefabInstance:
       value: TheBoss
       objectReference: {fileID: 0}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: myMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 72ba1ed7ec9b0804cb9b5a3b4ef6e11f, type: 3}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: L1SceneName
       value: 
       objectReference: {fileID: 0}
@@ -31278,6 +31282,26 @@ PrefabInstance:
       propertyPath: door3SceneName
       value: Forest_1
       objectReference: {fileID: 0}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: myAmbience.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: 'myAmbience.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: cbba23c2f172cb747af838544543f044, type: 3}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: 'myAmbience.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: ee56072ec8602eb46a5ab36d3d9f4d7f, type: 3}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: 'myAmbience.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 8abc790d42b93bf4780695646424373a, type: 3}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: 'myAmbience.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 525ac1164e2800147985017031511dc0, type: 3}
     - target: {fileID: 7578924285782844394, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.96926886
@@ -45420,11 +45444,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.98
+      value: 42.48
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.6
+      value: 7.93
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.z
