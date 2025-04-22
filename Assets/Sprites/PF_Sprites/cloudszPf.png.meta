@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: cc24b2f83ed1df64b89e1303f65bf2a1
+guid: 50dab03328a155c41845910a7e936269
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8793639957104055765
-    second: idle_0
+      213: 9083819416689574754
+    second: cloudszPf_0
   - first:
-      213: 6084859605308855041
-    second: idle_1
+      213: 8223324939585874189
+    second: cloudszPf_1
   - first:
-      213: 8603369663158992956
-    second: idle_2
+      213: -6962085840068804998
+    second: cloudszPf_2
+  - first:
+      213: 989989906944649803
+    second: cloudszPf_3
+  - first:
+      213: -3523567921566544043
+    second: cloudszPf_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -81,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,67 +112,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_0
+      name: cloudszPf_0
       rect:
         serializedVersion: 2
-        x: 317
-        y: 428
-        width: 68
-        height: 48
+        x: 5
+        y: 140
+        width: 132
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d55ed543f8490a70800000000000000
-      internalID: 8793639957104055765
+      spriteID: 263049f91a5301e70800000000000000
+      internalID: 9083819416689574754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_1
+      name: cloudszPf_1
       rect:
         serializedVersion: 2
-        x: 414
-        y: 428
-        width: 68
-        height: 48
+        x: 155
+        y: 47
+        width: 44
+        height: 124
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 103de827293c17450800000000000000
-      internalID: 6084859605308855041
+      spriteID: d0960a8a67e1f1270800000000000000
+      internalID: 8223324939585874189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_2
+      name: cloudszPf_2
       rect:
         serializedVersion: 2
-        x: 499
-        y: 428
-        width: 69
-        height: 48
+        x: 215
+        y: 45
+        width: 44
+        height: 124
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c30c6f3402f456770800000000000000
-      internalID: 8603369663158992956
+      spriteID: a7efbeea0d3b16f90800000000000000
+      internalID: -6962085840068804998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloudszPf_3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 79
+        width: 91
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a68ae33962dbd00800000000000000
+      internalID: 989989906944649803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloudszPf_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 34
+        width: 132
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f801dd4a5c91fc0800000000000000
+      internalID: -3523567921566544043
       vertices: []
       indices: 
       edges: []
@@ -175,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8758a4bb2d8400d4581021b61549387b
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -184,14 +234,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-<<<<<<<< HEAD:Assets/Sprites/BearSprites/idle.png.meta
-      idle_0: 8793639957104055765
-      idle_1: 6084859605308855041
-      idle_2: 8603369663158992956
-========
-      mntBG_0: -8447734269500405133
->>>>>>>> main:Assets/Sprites/BackGroundSprites/BG_MountainTopR/mntBG.png.meta
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
