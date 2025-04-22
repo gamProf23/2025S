@@ -36,7 +36,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BearIdle
-  m_Speed: 1000000
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 5467399018731762620}
@@ -53,7 +53,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 9ee0560d0d440a5468664f7d618a1153, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6bb70601ddf63754098a96e4d7835787, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -926,7 +926,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b7273fb596aa8434ca51092c26978ba3, type: 2}
+  m_Motion: {fileID: 7400000, guid: 95ab6b932c157a349a6529fd4314c73e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
