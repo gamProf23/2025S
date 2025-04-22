@@ -3160,10 +3160,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1946271159152423658, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.2632
@@ -3931,10 +3927,6 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 8329241196362546421, guid: 7271a1a82c751684f978721fa524f040, type: 3}
-      propertyPath: resetVelocityOnEnter
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8353572806735044173, guid: 7271a1a82c751684f978721fa524f040, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7781617
@@ -4247,11 +4239,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: L1SceneName
-      value: MountainTopL_1
+      value: MountainTopR_1
       objectReference: {fileID: 0}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: R1SceneName
-      value: MountainTopR_1
+      value: MountainTopL_1
       objectReference: {fileID: 0}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: door1SceneName
