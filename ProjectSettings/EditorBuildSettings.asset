@@ -78,7 +78,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MasterScenes/MountainInt_1.unity
     guid: 3f9c82fcacb296d46988b658315cdc05
   - enabled: 1
-    path: Assets/Scenes/MasterScenes/MountainTopL_1.unity
+    path: Assets/Scenes/MasterScenes/MountainTopR_1.unity
     guid: e518a24806081fc48aa51927888a211e
   - enabled: 1
     path: Assets/Scenes/MasterScenes/Plains_1.unity
@@ -96,7 +96,10 @@ EditorBuildSettings:
     path: Assets/Scenes/MasterScenes/Waterfall_1.unity
     guid: a681f36f1b18b0d48b54e43b2fa89a49
   - enabled: 1
-    path: Assets/Scenes/MasterScenes/MountainTopR_1.unity
+    path: Assets/Scenes/MasterScenes/MountainTopRL_1.unity
     guid: e6193a992a2f19c4f9bce6e739514ca7
+  - enabled: 1
+    path: Assets/Scenes/MasterScenes/MountainTopL_1.unity
+    guid: ec71dc98374bab7478ec6c5b98b40171
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
