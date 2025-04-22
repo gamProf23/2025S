@@ -98,5 +98,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MasterScenes/MountainTopR_1.unity
     guid: e6193a992a2f19c4f9bce6e739514ca7
+  - enabled: 1
+    path: Assets/Scenes/MasterScenes/PlayTestEnd.unity
+    guid: 753eff1282b446b4892d7b2fb53f1e6d
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -39,7 +39,7 @@ public class CanvasThing : MonoBehaviour
     Image seasonTimerMarker;
     float markerStart = -96;
     float markerEnd = 96;
-    float timeLimit = 900;
+    float timeLimit = 900; //900
     float currentTime;
 
     Image optionsMenu;
@@ -237,7 +237,8 @@ public class CanvasThing : MonoBehaviour
 
             if(Math.Abs(seasonTimerMarker.transform.localPosition.x) > markerEnd)
             {
-                //Stuff for season transition
+                FindAnyObjectByType<SceneInfo>().ToTitleScreen();
+                SceneManager.LoadScene("PlayTestEnd");
             }
         }
         
