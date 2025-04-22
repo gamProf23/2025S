@@ -234,7 +234,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cloudszPf_0: 9083819416689574754
+      cloudszPf_1: 8223324939585874189
+      cloudszPf_2: -6962085840068804998
+      cloudszPf_3: 989989906944649803
+      cloudszPf_4: -3523567921566544043
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

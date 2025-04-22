@@ -185,13 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<<< HEAD:Assets/Sprites/BearSprites/idle.png.meta
       idle_0: 8793639957104055765
       idle_1: 6084859605308855041
       idle_2: 8603369663158992956
-========
-      mntBG_0: -8447734269500405133
->>>>>>>> main:Assets/Sprites/BackGroundSprites/BG_MountainTopR/mntBG.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
