@@ -78983,7 +78983,7 @@ MonoBehaviour:
   - In the water. The fish ate them big bro.
   - Any chance you got some berries big bro?
   - Interaction
-  myPortrait: {fileID: 0}
+  myPortrait: {fileID: -787929728607765958, guid: ab945e19e75d8594dba6907ce989d2d3, type: 3}
   myInteractionYSel: Yes
   myInteractionNSel: No
   myInteractionText: Give the little guy some berries?
