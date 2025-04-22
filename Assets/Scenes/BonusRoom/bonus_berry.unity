@@ -1273,29 +1273,29 @@ MonoBehaviour:
   - SwitchP
   - Princess... what do you want this time?
   - SwitchP
-  - Heyyyyyyyyyyyyy :)
+  - Hmmmm...
   - SwitchP
   - ....berries?
   - SwitchP
   - Berries.
-  - There are () berries in this room. Bring them to me.
+  - There are 10 berries in this room. Bring them to me.
   - Also, this terrain seems to have a weird reaction to sounds.
   - Interaction
   myPortrait: {fileID: -1884701423190137557, guid: 1f7f95803b430dc47b25da35f8f338a5, type: 3}
   myInteractionYSel: Yes
   myInteractionNSel: No
-  myInteractionText: Give Princess all () berries found in this room?
+  myInteractionText: Give Princess all 10 berries found in this room?
   berryCondition: 10
   fishCondition: 0
   honeyCondition: 0
   myInteractionYText:
-  - Thank you.
+  - Thank youu
   myInteractionNText:
-  - How lazy can you be.
+  - How lazy can you be??
   myInteractionFailText:
   - If I wanted someone to disappoint me, I would've asked Moose.
   conditionMetText:
-  - Took you long enough.
+  - That was so fun to watch!
   conditionIsMet: 0
 --- !u!1001 &710455898
 PrefabInstance:
