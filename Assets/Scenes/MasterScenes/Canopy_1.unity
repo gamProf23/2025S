@@ -3178,11 +3178,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.82
+      value: 30.82
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.05
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4758,7 +4758,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -82002175123749754, guid: 0910e2a25db6c3941b6fc8a1c8687cf1, type: 3}
+  m_Sprite: {fileID: 7331609563332058413, guid: c64aaf92a6db8f6439ed2906902517b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4778,7 +4778,7 @@ Transform:
   m_GameObject: {fileID: 1074851473}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.678, y: 4.313, z: 0}
+  m_LocalPosition: {x: 5.605, y: 4.222, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4807,7 +4807,7 @@ MonoBehaviour:
   - "No tengo idea de lo que acabas de decir, pero \xBFtienes algo de comida? "
   - '*You have no clue what the bird is saying, but they are intently sniffing you*'
   - Interaction
-  myPortrait: {fileID: -82002175123749754, guid: 0910e2a25db6c3941b6fc8a1c8687cf1, type: 3}
+  myPortrait: {fileID: 7331609563332058413, guid: c64aaf92a6db8f6439ed2906902517b0, type: 3}
   myInteractionYSel: Yes
   myInteractionNSel: No
   myInteractionText: Give the strange bird a piece of all of your food?
