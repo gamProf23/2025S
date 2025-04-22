@@ -50251,7 +50251,7 @@ PrefabInstance:
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: myBackGround
       value: 
-      objectReference: {fileID: 4987163775680167296, guid: e003a3c7c37d0eb4cb4a61b1d43d397f, type: 3}
+      objectReference: {fileID: -8447734269500405133, guid: 10ef36ea3fdfd4e4a86cdb7a9009eeca, type: 3}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: door1SceneName
       value: Waterfall_1
