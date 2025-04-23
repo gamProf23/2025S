@@ -104,5 +104,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MasterScenes/MountainTopL_1.unity
     guid: ec71dc98374bab7478ec6c5b98b40171
+  - enabled: 1
+    path: Assets/Scenes/BonusRoom/bonus_berry.unity
+    guid: 38c3356a2156c7e45a74217cd2718b50
+  - enabled: 1
+    path: Assets/Scenes/BonusRoom/bonus_fish.unity
+    guid: f1903d45211bcfb4e8493fc3f0aebbb7
+  - enabled: 1
+    path: Assets/Scenes/BonusRoom/bonus_honey.unity
+    guid: f3107ee42752ea84eb0f90bffe557343
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
