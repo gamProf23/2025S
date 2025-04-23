@@ -47572,6 +47572,10 @@ PrefabInstance:
       value: TheBoss
       objectReference: {fileID: 0}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: myMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 34f67267ecfac9a4e910ebcbe4823262, type: 3}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: L1SceneName
       value: Forest_1
       objectReference: {fileID: 0}
@@ -49431,8 +49435,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.73, y: 1.69}
-    newSize: {x: 0.73, y: 1.69}
+    oldSize: {x: 0.73, y: 1.66}
+    newSize: {x: 0.73, y: 1.66}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -49483,15 +49487,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5384617776586704171, guid: bcb0161b2d2932a4296a97a11cc6625e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 5427702957660971355, guid: 72e2068dc315b0441af8b1b47a538e5e, type: 3}
+  m_Color: {r: 0.83066046, g: 1, b: 0.71383643, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.73, y: 1.69}
+  m_Size: {x: 0.73, y: 1.66}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &787141285
@@ -52569,8 +52573,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.49, y: 1.54}
-    newSize: {x: 0.49, y: 1.54}
+    oldSize: {x: 0.73, y: 3.52}
+    newSize: {x: 0.73, y: 3.52}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -52621,15 +52625,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7960308576544299148, guid: bcb0161b2d2932a4296a97a11cc6625e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 7820915160121558506, guid: 72e2068dc315b0441af8b1b47a538e5e, type: 3}
+  m_Color: {r: 0.8816134, g: 1, b: 0.6509433, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.49, y: 1.54}
+  m_Size: {x: 0.73, y: 3.52}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1279594489
@@ -77389,11 +77393,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 51.82
+      value: 37.3
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 42.55
+      value: 24.4
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.z
