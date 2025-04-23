@@ -365,11 +365,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4043748716290504024, guid: 52f96b5fbd281ab418d8c53be6774162, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.3735476
+      value: -2.061
       objectReference: {fileID: 0}
     - target: {fileID: 4043748716290504024, guid: 52f96b5fbd281ab418d8c53be6774162, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.92833096
+      value: 0.636
       objectReference: {fileID: 0}
     - target: {fileID: 4043748716290504024, guid: 52f96b5fbd281ab418d8c53be6774162, type: 3}
       propertyPath: m_LocalPosition.z
@@ -601,7 +601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: door1SceneName
-      value: MountainTopL_1
+      value: MountainTopR_1
       objectReference: {fileID: 0}
     - target: {fileID: 7578924285782844394, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: m_LocalPosition.x

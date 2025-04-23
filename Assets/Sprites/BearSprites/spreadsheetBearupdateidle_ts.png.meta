@@ -1,0 +1,1547 @@
+fileFormatVersion: 2
+guid: 45b49a03d9de0bc4487d0c276d541bd1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2372429218355637235
+    second: spreadsheetBearupdateidle_ts_0
+  - first:
+      213: 7739433894058819880
+    second: spreadsheetBearupdateidle_ts_1
+  - first:
+      213: 5784783058130719404
+    second: spreadsheetBearupdateidle_ts_2
+  - first:
+      213: 2872756089391306924
+    second: spreadsheetBearupdateidle_ts_3
+  - first:
+      213: -8892602882668470781
+    second: spreadsheetBearupdateidle_ts_4
+  - first:
+      213: 3341228589565647859
+    second: spreadsheetBearupdateidle_ts_5
+  - first:
+      213: -5348983042587377952
+    second: spreadsheetBearupdateidle_ts_6
+  - first:
+      213: -1018029611894481226
+    second: spreadsheetBearupdateidle_ts_7
+  - first:
+      213: 5087292053535461350
+    second: spreadsheetBearupdateidle_ts_8
+  - first:
+      213: -5363734636122248397
+    second: spreadsheetBearupdateidle_ts_9
+  - first:
+      213: -8184477580040450759
+    second: spreadsheetBearupdateidle_ts_10
+  - first:
+      213: -8858691916491930860
+    second: spreadsheetBearupdateidle_ts_11
+  - first:
+      213: 5112527759467417685
+    second: spreadsheetBearupdateidle_ts_12
+  - first:
+      213: 6746621011160673406
+    second: spreadsheetBearupdateidle_ts_13
+  - first:
+      213: -948648149669308550
+    second: spreadsheetBearupdateidle_ts_14
+  - first:
+      213: 5178607245553201708
+    second: spreadsheetBearupdateidle_ts_15
+  - first:
+      213: -424201988318918371
+    second: spreadsheetBearupdateidle_ts_16
+  - first:
+      213: -2482329775404806936
+    second: spreadsheetBearupdateidle_ts_17
+  - first:
+      213: -6008359467075757560
+    second: spreadsheetBearupdateidle_ts_18
+  - first:
+      213: -7157736130776882431
+    second: spreadsheetBearupdateidle_ts_19
+  - first:
+      213: -8910340779839486062
+    second: spreadsheetBearupdateidle_ts_20
+  - first:
+      213: -5722313418989337691
+    second: spreadsheetBearupdateidle_ts_21
+  - first:
+      213: 8741348856648222117
+    second: spreadsheetBearupdateidle_ts_22
+  - first:
+      213: 1430256315881013664
+    second: spreadsheetBearupdateidle_ts_23
+  - first:
+      213: -8453840697000833658
+    second: spreadsheetBearupdateidle_ts_24
+  - first:
+      213: 7545857256361363690
+    second: spreadsheetBearupdateidle_ts_25
+  - first:
+      213: -155051307210711420
+    second: spreadsheetBearupdateidle_ts_26
+  - first:
+      213: 3473111108377787400
+    second: spreadsheetBearupdateidle_ts_27
+  - first:
+      213: -2989906804807023286
+    second: spreadsheetBearupdateidle_ts_28
+  - first:
+      213: -2791072789594679815
+    second: spreadsheetBearupdateidle_ts_29
+  - first:
+      213: -6848785591799346678
+    second: spreadsheetBearupdateidle_ts_30
+  - first:
+      213: 352268240665825271
+    second: spreadsheetBearupdateidle_ts_31
+  - first:
+      213: 8631662138439951050
+    second: spreadsheetBearupdateidle_ts_32
+  - first:
+      213: 7918058418325837236
+    second: spreadsheetBearupdateidle_ts_33
+  - first:
+      213: -4818754828087701736
+    second: spreadsheetBearupdateidle_ts_34
+  - first:
+      213: 8132250963835189173
+    second: spreadsheetBearupdateidle_ts_35
+  - first:
+      213: -2487446838509735856
+    second: spreadsheetBearupdateidle_ts_36
+  - first:
+      213: 3861853998682283882
+    second: spreadsheetBearupdateidle_ts_37
+  - first:
+      213: -5357304914210692748
+    second: spreadsheetBearupdateidle_ts_38
+  - first:
+      213: -7453345115449137684
+    second: spreadsheetBearupdateidle_ts_39
+  - first:
+      213: 8402995360991293553
+    second: spreadsheetBearupdateidle_ts_40
+  - first:
+      213: 9001081456410982223
+    second: spreadsheetBearupdateidle_ts_41
+  - first:
+      213: 881706699172602039
+    second: spreadsheetBearupdateidle_ts_42
+  - first:
+      213: -7124035713288754345
+    second: spreadsheetBearupdateidle_ts_43
+  - first:
+      213: 2219073118985567846
+    second: spreadsheetBearupdateidle_ts_44
+  - first:
+      213: 6040132541791627921
+    second: spreadsheetBearupdateidle_ts_45
+  - first:
+      213: -5998304399292450446
+    second: spreadsheetBearupdateidle_ts_46
+  - first:
+      213: -7623011856758337746
+    second: spreadsheetBearupdateidle_ts_47
+  - first:
+      213: 6662673634160926578
+    second: spreadsheetBearupdateidle_ts_48
+  - first:
+      213: -919543690511302938
+    second: spreadsheetBearupdateidle_ts_49
+  - first:
+      213: -6430550793209261301
+    second: spreadsheetBearupdateidle_ts_50
+  - first:
+      213: -1632904391993684545
+    second: spreadsheetBearupdateidle_ts_51
+  - first:
+      213: -2884733766856841370
+    second: spreadsheetBearupdateidle_ts_52
+  - first:
+      213: -2143912965263180268
+    second: spreadsheetBearupdateidle_ts_53
+  - first:
+      213: -6485546669913365366
+    second: spreadsheetBearupdateidle_ts_54
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 998
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb68deedcf8ce020800000000000000
+      internalID: 2372429218355637235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 995
+        width: 70
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8218ef11f1ef76b60800000000000000
+      internalID: 7739433894058819880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_2
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 994
+        width: 77
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca25492da8da74050800000000000000
+      internalID: 5784783058130719404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_3
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 995
+        width: 68
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8528a51741ed720800000000000000
+      internalID: 2872756089391306924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_4
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 994
+        width: 68
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e5ee11bc0279480800000000000000
+      internalID: -8892602882668470781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_5
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 992
+        width: 87
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb907a13bd6e5e20800000000000000
+      internalID: 3341228589565647859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_6
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 902
+        width: 53
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eebdfc434894c5b0800000000000000
+      internalID: -5348983042587377952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_7
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 901
+        width: 94
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be5334367b3fd1f0800000000000000
+      internalID: -1018029611894481226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_8
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 909
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef06a74b21b99640800000000000000
+      internalID: 5087292053535461350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_9
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 904
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b697844cf2095b0800000000000000
+      internalID: -5363734636122248397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_10
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 896
+        width: 75
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d4a811105ea6e80800000000000000
+      internalID: -8184477580040450759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_11
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 795
+        width: 67
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413cfd623aa9f0580800000000000000
+      internalID: -8858691916491930860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_12
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 793
+        width: 74
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 550116fe8e853f640800000000000000
+      internalID: 5112527759467417685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_13
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 791
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7c2b648010d0ad50800000000000000
+      internalID: 6746621011160673406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_14
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 790
+        width: 53
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a771126b889b5d2f0800000000000000
+      internalID: -948648149669308550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_15
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 841
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2276763adb1ed740800000000000000
+      internalID: 5178607245553201708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_16
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 843
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d198c350a8eec1af0800000000000000
+      internalID: -424201988318918371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_17
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 808
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec0f91a83efc8dd0800000000000000
+      internalID: -2482329775404806936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_18
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 694
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a181af5e40e9ca0800000000000000
+      internalID: -6008359467075757560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_19
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 692
+        width: 71
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103a01199ec9aac90800000000000000
+      internalID: -7157736130776882431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_20
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 694
+        width: 74
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2978dfd054c185480800000000000000
+      internalID: -8910340779839486062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_21
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 695
+        width: 72
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a380b773424690b0800000000000000
+      internalID: -5722313418989337691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_22
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 695
+        width: 80
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a5c842b8728f4970800000000000000
+      internalID: 8741348856648222117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_23
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 698
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1c8dd9a8a49d310800000000000000
+      internalID: 1430256315881013664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_24
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 697
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d468b2dacedaa80800000000000000
+      internalID: -8453840697000833658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_25
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 656
+        width: 68
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8093be13548b860800000000000000
+      internalID: 7545857256361363690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_26
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 647
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48edeb758a529ddf0800000000000000
+      internalID: -155051307210711420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_27
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 570
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c3258d628f23030800000000000000
+      internalID: 3473111108377787400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_28
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 567
+        width: 71
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4544fb2a97b186d0800000000000000
+      internalID: -2989906804807023286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_29
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 566
+        width: 77
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f553f9e51e1449d0800000000000000
+      internalID: -2791072789594679815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_30
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 567
+        width: 81
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a8cf96ac934f0a0800000000000000
+      internalID: -6848785591799346678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_31
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 566
+        width: 84
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ffc986391283e400800000000000000
+      internalID: 352268240665825271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_32
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 568
+        width: 87
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2e6ee7bf2d9c770800000000000000
+      internalID: 8631662138439951050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_33
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 606
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b55a170e2892ed60800000000000000
+      internalID: 7918058418325837236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_34
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 599
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f4224c308502db0800000000000000
+      internalID: -4818754828087701736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_35
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 537
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b779b34a2f8bd070800000000000000
+      internalID: 8132250963835189173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_36
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 538
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05075f88740da7dd0800000000000000
+      internalID: -2487446838509735856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_37
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 447
+        width: 68
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f11e530cf089530800000000000000
+      internalID: 3861853998682283882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_38
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 446
+        width: 81
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4716403909707a5b0800000000000000
+      internalID: -5357304914210692748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_39
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 449
+        width: 80
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5e2456b16609890800000000000000
+      internalID: -7453345115449137684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_40
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 449
+        width: 90
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170342582cf6d9470800000000000000
+      internalID: 8402995360991293553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_41
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 324
+        width: 92
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f477bb315e34aec70800000000000000
+      internalID: 9001081456410982223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_42
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 323
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0e34842937c3c00800000000000000
+      internalID: 881706699172602039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_43
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 323
+        width: 87
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b2a367347522d90800000000000000
+      internalID: -7124035713288754345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_44
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 325
+        width: 87
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66eb0cb9e3bbbce10800000000000000
+      internalID: 2219073118985567846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_45
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 324
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a64c57b8cd2d350800000000000000
+      internalID: 6040132541791627921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_46
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 322
+        width: 87
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 279b281ededb1cca0800000000000000
+      internalID: -5998304399292450446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_47
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 324
+        width: 85
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2f045fca1f953690800000000000000
+      internalID: -7623011856758337746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_48
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 193
+        width: 59
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27fd582be52967c50800000000000000
+      internalID: 6662673634160926578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_49
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 195
+        width: 60
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee3f9ba2ef1d33f0800000000000000
+      internalID: -919543690511302938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_50
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 196
+        width: 56
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03d7a4cf1812c6a0800000000000000
+      internalID: -6430550793209261301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_51
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 188
+        width: 53
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd8a036b12c659e0800000000000000
+      internalID: -1632904391993684545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_52
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 102
+        width: 84
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6676cea4ced57f7d0800000000000000
+      internalID: -2884733766856841370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_53
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 105
+        width: 68
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e322c548a4f32e0800000000000000
+      internalID: -2143912965263180268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spreadsheetBearupdateidle_ts_54
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 102
+        width: 94
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84a8956aa5bef5a0800000000000000
+      internalID: -6485546669913365366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      spreadsheetBearupdateidle_ts_0: 2372429218355637235
+      spreadsheetBearupdateidle_ts_1: 7739433894058819880
+      spreadsheetBearupdateidle_ts_10: -8184477580040450759
+      spreadsheetBearupdateidle_ts_11: -8858691916491930860
+      spreadsheetBearupdateidle_ts_12: 5112527759467417685
+      spreadsheetBearupdateidle_ts_13: 6746621011160673406
+      spreadsheetBearupdateidle_ts_14: -948648149669308550
+      spreadsheetBearupdateidle_ts_15: 5178607245553201708
+      spreadsheetBearupdateidle_ts_16: -424201988318918371
+      spreadsheetBearupdateidle_ts_17: -2482329775404806936
+      spreadsheetBearupdateidle_ts_18: -6008359467075757560
+      spreadsheetBearupdateidle_ts_19: -7157736130776882431
+      spreadsheetBearupdateidle_ts_2: 5784783058130719404
+      spreadsheetBearupdateidle_ts_20: -8910340779839486062
+      spreadsheetBearupdateidle_ts_21: -5722313418989337691
+      spreadsheetBearupdateidle_ts_22: 8741348856648222117
+      spreadsheetBearupdateidle_ts_23: 1430256315881013664
+      spreadsheetBearupdateidle_ts_24: -8453840697000833658
+      spreadsheetBearupdateidle_ts_25: 7545857256361363690
+      spreadsheetBearupdateidle_ts_26: -155051307210711420
+      spreadsheetBearupdateidle_ts_27: 3473111108377787400
+      spreadsheetBearupdateidle_ts_28: -2989906804807023286
+      spreadsheetBearupdateidle_ts_29: -2791072789594679815
+      spreadsheetBearupdateidle_ts_3: 2872756089391306924
+      spreadsheetBearupdateidle_ts_30: -6848785591799346678
+      spreadsheetBearupdateidle_ts_31: 352268240665825271
+      spreadsheetBearupdateidle_ts_32: 8631662138439951050
+      spreadsheetBearupdateidle_ts_33: 7918058418325837236
+      spreadsheetBearupdateidle_ts_34: -4818754828087701736
+      spreadsheetBearupdateidle_ts_35: 8132250963835189173
+      spreadsheetBearupdateidle_ts_36: -2487446838509735856
+      spreadsheetBearupdateidle_ts_37: 3861853998682283882
+      spreadsheetBearupdateidle_ts_38: -5357304914210692748
+      spreadsheetBearupdateidle_ts_39: -7453345115449137684
+      spreadsheetBearupdateidle_ts_4: -8892602882668470781
+      spreadsheetBearupdateidle_ts_40: 8402995360991293553
+      spreadsheetBearupdateidle_ts_41: 9001081456410982223
+      spreadsheetBearupdateidle_ts_42: 881706699172602039
+      spreadsheetBearupdateidle_ts_43: -7124035713288754345
+      spreadsheetBearupdateidle_ts_44: 2219073118985567846
+      spreadsheetBearupdateidle_ts_45: 6040132541791627921
+      spreadsheetBearupdateidle_ts_46: -5998304399292450446
+      spreadsheetBearupdateidle_ts_47: -7623011856758337746
+      spreadsheetBearupdateidle_ts_48: 6662673634160926578
+      spreadsheetBearupdateidle_ts_49: -919543690511302938
+      spreadsheetBearupdateidle_ts_5: 3341228589565647859
+      spreadsheetBearupdateidle_ts_50: -6430550793209261301
+      spreadsheetBearupdateidle_ts_51: -1632904391993684545
+      spreadsheetBearupdateidle_ts_52: -2884733766856841370
+      spreadsheetBearupdateidle_ts_53: -2143912965263180268
+      spreadsheetBearupdateidle_ts_54: -6485546669913365366
+      spreadsheetBearupdateidle_ts_6: -5348983042587377952
+      spreadsheetBearupdateidle_ts_7: -1018029611894481226
+      spreadsheetBearupdateidle_ts_8: 5087292053535461350
+      spreadsheetBearupdateidle_ts_9: -5363734636122248397
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
