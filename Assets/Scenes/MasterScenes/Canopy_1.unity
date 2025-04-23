@@ -4752,7 +4752,8 @@ MonoBehaviour:
   - I have no idea what you are, but I'd imagine you're lost. Are you hungry?
   - SwitchP
   - "No tengo idea de lo que acabas de decir, pero \xBFtienes algo de comida? "
-  - '*You have no clue what the bird is saying, but they are intently sniffing you*'
+  - '*You have no clue what the bird is saying, but they are intently staring intently
+    at your food*'
   - Interaction
   myPortrait: {fileID: 7331609563332058413, guid: c64aaf92a6db8f6439ed2906902517b0, type: 3}
   myInteractionYSel: Yes
