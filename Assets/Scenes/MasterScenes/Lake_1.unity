@@ -2079,11 +2079,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.93
+      value: 0.97
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.92
+      value: 2.21
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -49758,6 +49758,10 @@ PrefabInstance:
       propertyPath: myBackGround
       value: 
       objectReference: {fileID: -4534929632248972272, guid: c920028ff192d744989b99de972eb79c, type: 3}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: door1SceneName
+      value: Plains_1
+      objectReference: {fileID: 0}
     - target: {fileID: 7578924285782844394, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.96926886
