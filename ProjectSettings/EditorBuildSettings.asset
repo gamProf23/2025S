@@ -101,5 +101,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MasterScenes/PlayTestEnd.unity
     guid: 753eff1282b446b4892d7b2fb53f1e6d
+  - enabled: 1
+    path: Assets/Scenes/MasterScenes/MountainTopL_1.unity
+    guid: ec71dc98374bab7478ec6c5b98b40171
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

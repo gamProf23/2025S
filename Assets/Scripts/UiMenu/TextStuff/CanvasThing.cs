@@ -289,6 +289,7 @@ public class CanvasThing : MonoBehaviour
     void MapButton()
     {
         map.transform.gameObject.SetActive(true);
+        seasonTimer.gameObject.SetActive(false);
 
     }
 
@@ -345,6 +346,7 @@ public class CanvasThing : MonoBehaviour
     void MapBackButton()
     {
         map.transform.gameObject.SetActive(false);
+        seasonTimer.gameObject.SetActive(true);
     }
     public void AddBerry()
     {
