@@ -616,7 +616,7 @@ public class SceneInfo : MonoBehaviour
 
     void WildSetUp(WildExit exit)
     {
-        if (exit.wildDirection == WildExit.WildDirection.left) 
+        if (exit.wildDirection == WildExit.WildDirection.left)
         {
             player.transform.position = new Vector2(exit.transform.position.x + exit.GetComponent<SpriteRenderer>().bounds.size.x / 2, exit.transform.position.y - ((exit.GetComponent<SpriteRenderer>().bounds.size.y / 2)));
         }
@@ -624,6 +624,7 @@ public class SceneInfo : MonoBehaviour
         {
             player.transform.position = new Vector2(exit.transform.position.x - exit.GetComponent<SpriteRenderer>().bounds.size.x / 2, exit.transform.position.y - ((exit.GetComponent<SpriteRenderer>().bounds.size.y / 2)));
         }
+
     }
 
     void FindExits()
