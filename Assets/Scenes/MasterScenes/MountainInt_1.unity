@@ -2181,11 +2181,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.34
+      value: 2.49
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20.84
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2395,13 +2395,14 @@ MonoBehaviour:
   - ....
   - SwitchP
   - Too Soon?
-  - Anyway, could you snag some sweet red berries (3) for me? The moon commands you.
-  - I'll let you in on a little secret if so. The moon commands me.
+  - Anyway, could you snag some sweet red berries (3) for me?
+  - I'll let you in on a little secret if so.
+  - The moon commands you. The moon commands me.
   - Interaction
   myPortrait: {fileID: -5625881231707511812, guid: 11574fcd032553c46b02c8ea2937954f, type: 3}
-  myInteractionYSel: 
-  myInteractionNSel: 
-  myInteractionText: 
+  myInteractionYSel: Yes
+  myInteractionNSel: No
+  myInteractionText: (Will you give berries)
   berryCondition: 3
   fishCondition: 0
   honeyCondition: 0
