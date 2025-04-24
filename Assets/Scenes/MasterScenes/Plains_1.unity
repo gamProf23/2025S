@@ -33530,7 +33530,8 @@ MonoBehaviour:
   fishCondition: 5
   honeyCondition: 0
   myInteractionYText:
-  - Splendid!
+  - Splendid! Also... I hear making noise near a wall all the way on the right will
+    do something...
   myInteractionNText:
   - Do you not care for my artistic desires?
   myInteractionFailText:
