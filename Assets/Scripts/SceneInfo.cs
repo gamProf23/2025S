@@ -127,6 +127,8 @@ public class SceneInfo : MonoBehaviour
 
     public static ExitDirections exitDirection;
 
+
+
     private void Awake()
     {
         FindExits();
@@ -722,6 +724,10 @@ public class SceneInfo : MonoBehaviour
 
     }
 
+    int GetCMAmount()
+    {
+        return 0;
+    }
     
 
     public static partial class SceneHelper
