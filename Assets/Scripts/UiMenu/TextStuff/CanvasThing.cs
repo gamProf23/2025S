@@ -67,9 +67,6 @@ public class CanvasThing : MonoBehaviour
 
     public int cmAmount = 0;
 
-    public AudioClip animalTalk;
-    public AudioClip bearTalk;
-
     private void Awake()
     {
         berryText = transform.GetChild(0).GetComponent<TMP_Text>();
@@ -400,15 +397,6 @@ public class CanvasThing : MonoBehaviour
                     textBoxPortrait.sprite = image;
                 }
 
-                if (GetComponent<AudioSource>().clip == animalTalk)
-                {
-                    GetComponent<AudioSource>().clip = bearTalk;
-                }
-                else
-                {
-                    GetComponent<AudioSource>().clip = animalTalk;
-                }
-
                 continue;
             }
 
@@ -423,13 +411,6 @@ public class CanvasThing : MonoBehaviour
                 emptyText += c;
                 textBoxText.text = emptyText;
                 Input.ResetInputAxes();
-
-                if (s.IndexOf(c) % 2 == 0)
-                {
-                    GetComponent<AudioSource>().Stop();
-                    GetComponent<AudioSource>().volume = 0.25f * soundSlider.value;
-                    GetComponent<AudioSource>().Play();
-                }
 
                 yield return new WaitForSeconds(0.05f);
 

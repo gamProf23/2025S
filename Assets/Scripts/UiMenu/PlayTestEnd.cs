@@ -26,7 +26,7 @@ public class PlayTestEnd : MonoBehaviour
         berryText.text = FindFirstObjectByType<CanvasThing>().berryCount.ToString();
         fishText.text = FindFirstObjectByType<CanvasThing>().fishCount.ToString();
         honeyText.text = FindFirstObjectByType<CanvasThing>().honeyCount.ToString();
-        animalText.text = "Animals Helped: " + FindAnyObjectByType<CanvasThing>().cmAmount.ToString() + "/12";
+        animalText.text = "Animals Helped: " + FindAnyObjectByType<CanvasThing>().cmAmount.ToString() + "/14";
 
         Destroy(FindAnyObjectByType<Bear>().gameObject);
         Destroy(FindAnyObjectByType<CamFollow>().gameObject);
