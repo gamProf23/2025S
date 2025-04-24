@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PortraitBeaver_0: -3308899172574637065
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

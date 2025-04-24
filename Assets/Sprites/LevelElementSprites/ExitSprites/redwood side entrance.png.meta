@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      redwood side entrance_0: 7017365853751713628
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      toucanPortrait_0: -980174006412991082
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
