@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tonys_hole.png_0: -3289045607655580380
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
