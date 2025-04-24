@@ -49931,7 +49931,7 @@ PrefabInstance:
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: myBackGround
       value: 
-      objectReference: {fileID: -4534929632248972272, guid: c920028ff192d744989b99de972eb79c, type: 3}
+      objectReference: {fileID: -2869391783109106272, guid: cec71c43104f5e94481f6e321835826b, type: 3}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: door1SceneName
       value: Plains_1
@@ -87744,6 +87744,10 @@ PrefabInstance:
     - target: {fileID: 6352727610799780925, guid: cae602c5f3316144fb027eb7122e8075, type: 3}
       propertyPath: m_Name
       value: Water
+      objectReference: {fileID: 0}
+    - target: {fileID: 6768924104126342019, guid: cae602c5f3316144fb027eb7122e8075, type: 3}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
