@@ -2395,8 +2395,8 @@ MonoBehaviour:
   - ....
   - SwitchP
   - Too Soon?
-  - Anyway, could you snag some sweet red berries (3) for me?
-  - I'll let you in on a little secret if so.
+  - Anyway, could you snag some sweet red berries (3) for me? The moon commands you.
+  - I'll let you in on a little secret if so. The moon commands me.
   - Interaction
   myPortrait: {fileID: -5625881231707511812, guid: 11574fcd032553c46b02c8ea2937954f, type: 3}
   myInteractionYSel: 
@@ -2405,10 +2405,15 @@ MonoBehaviour:
   berryCondition: 3
   fishCondition: 0
   honeyCondition: 0
-  myInteractionYText: []
-  myInteractionNText: []
-  myInteractionFailText: []
-  conditionMetText: []
+  myInteractionYText:
+  - 'Hey thanks man. '
+  - 'The moon told me that there was a secret room in the room above. '
+  myInteractionNText:
+  - Fine, I'll find them myself.
+  myInteractionFailText:
+  - Don't let the moon see you, it never forgets and it never sleeps.
+  conditionMetText:
+  - The moon can't even complete this challenge, it makes a lot of noise.
   conditionIsMet: 0
 --- !u!1 &1152058028
 GameObject:
