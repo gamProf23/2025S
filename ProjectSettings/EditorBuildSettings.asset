@@ -77,7 +77,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MasterScenes/MountainInt_1.unity
     guid: 3f9c82fcacb296d46988b658315cdc05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Sprites/Tiles/Water/LakeWatR 1.prefab
     guid: e518a24806081fc48aa51927888a211e
   - enabled: 1
@@ -96,10 +96,22 @@ EditorBuildSettings:
     path: Assets/Scenes/MasterScenes/Waterfall_1.unity
     guid: a681f36f1b18b0d48b54e43b2fa89a49
   - enabled: 1
-    path: Assets/Scenes/MasterScenes/MountainTopRL_1.unity
-    guid: e6193a992a2f19c4f9bce6e739514ca7
+    path: Assets/Scenes/MasterScenes/MountainTopR_1.unity
+    guid: 8d1eae5157196474bbe9229f19ae2793
+  - enabled: 1
+    path: Assets/Scenes/MasterScenes/PlayTestEnd.unity
+    guid: 753eff1282b446b4892d7b2fb53f1e6d
   - enabled: 1
     path: Assets/Scenes/MasterScenes/MountainTopL_1.unity
     guid: ec71dc98374bab7478ec6c5b98b40171
+  - enabled: 1
+    path: Assets/Scenes/BonusRoom/bonus_berry.unity
+    guid: 38c3356a2156c7e45a74217cd2718b50
+  - enabled: 1
+    path: Assets/Scenes/BonusRoom/bonus_fish.unity
+    guid: f1903d45211bcfb4e8493fc3f0aebbb7
+  - enabled: 1
+    path: Assets/Scenes/BonusRoom/bonus_honey.unity
+    guid: f3107ee42752ea84eb0f90bffe557343
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
