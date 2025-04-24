@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      birdanim2_0: -1612095268733684169
+      birdanim2_1: -9198480047821830644
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
