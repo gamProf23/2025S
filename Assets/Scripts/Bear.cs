@@ -203,8 +203,6 @@ public class Bear : MonoBehaviour
             myClaw.transform.position = new Vector2(transform.position.x + (2.25f/6), transform.position.y + (1.75f/6));
             myRoar.transform.position = new Vector2(transform.position.x + (GetComponent<SpriteRenderer>().size.x * 0.5f) + (2.5f/6), transform.position.y);
         }
-
-        
     }
 
 
@@ -336,11 +334,6 @@ public class Bear : MonoBehaviour
             }
         }
 
-        if(isClimbing == false && climbingSounds.Contains(track3.clip))
-        {
-            track3.Stop();
-        }
-
         //Roaring
         if (Input.GetKey(roarKey) && isTalking == false)
         {
@@ -371,6 +364,7 @@ public class Bear : MonoBehaviour
                 myRoar.transform.GetChild(0).transform.gameObject.SetActive(false);
                 myRoar.transform.GetChild(1).transform.gameObject.SetActive(true);
             }
+            
         }
 
         if (Input.GetKeyDown(roarKey) && isTalking == false)
@@ -990,12 +984,7 @@ public class Bear : MonoBehaviour
                         {
                             GetComponent<Rigidbody2D>().MovePosition(Vector2.MoveTowards(transform.position, new Vector2(collision.transform.position.x, collision.transform.position.y + collision.gameObject.GetComponent<Collider2D>().bounds.size.y / 2), collision.transform.parent.GetComponent<MovingGround>().moveSpeed * Time.deltaTime));
                             myMGround = collision.gameObject;
-
-                            if (collision.transform.parent.GetComponent<MovingGround>().stopOnRoar == false && isRoaring == false)
-                            {
-                                playerRB.AddRelativeForceY(-10 * collision.transform.parent.GetComponent<MovingGround>().moveSpeed);
-                            }
-                            
+                            playerRB.AddRelativeForceY(-10 * collision.transform.parent.GetComponent<MovingGround>().moveSpeed);
                             isOnMGround = true;
 
                             if (whereToClone != collision.transform.parent.GetComponent<MovingGround>().whereTo)
@@ -1090,10 +1079,6 @@ public class Bear : MonoBehaviour
             //Debug.Log(playerRB.linearVelocityX);
             
             
-        }
-        else
-        {
-            isOnSlope = false;
         }
     }
 

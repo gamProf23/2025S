@@ -13,12 +13,6 @@ public class SceneInfo : MonoBehaviour
     public Canvas myCanvasPrefab;
     public Sprite myBackGround;
     public AudioClip myMusic;
-    public List<AudioClip> myAmbience;
-    
-    System.Random randomSoundInt;
-    float timeTillPlay;
-    float timeTillPlayI;
-    bool soundQueued = false;
 
     public static bool hasLoadedPrefab = false;
 
@@ -136,7 +130,7 @@ public class SceneInfo : MonoBehaviour
     private void Awake()
     {
         FindExits();
-        randomSoundInt = new System.Random();
+
         //Debug.Log(previousScene);
         
 
@@ -161,7 +155,6 @@ public class SceneInfo : MonoBehaviour
 
             if (lastMusic != myMusic)
             {
-                Debug.Log(lastMusic.name);
                 FindAnyObjectByType<CamFollow>().GetComponent<AudioSource>().clip = myMusic;
                 FindAnyObjectByType<CamFollow>().GetComponent<AudioSource>().Play();
             }
@@ -194,28 +187,6 @@ public class SceneInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (myAmbience.Count != 0)
-        {
-            GetComponent<AudioSource>().volume = 0.25f * FindAnyObjectByType<CanvasThing>().soundSlider.value;
-            if (soundQueued == false)
-            {
-                soundQueued = true;
-                timeTillPlayI = randomSoundInt.Next(5, 10);
-            }
-
-            if (soundQueued == true)
-            {
-                timeTillPlay = timeTillPlay + Time.deltaTime;
-
-                if (timeTillPlay >= timeTillPlayI)
-                {
-                    GetComponent<AudioSource>().clip = myAmbience[randomSoundInt.Next(myAmbience.Count)];
-                    GetComponent<AudioSource>().Play();
-                    timeTillPlay = 0;
-                    soundQueued = false;
-                }
-            }
-        }
 
         if (L1SceneName != "")
         {
@@ -317,13 +288,15 @@ public class SceneInfo : MonoBehaviour
     private void OnDestroy()
     {
         previousScene = gameObject.scene.name;
+        lastMusic = myMusic;
     }
 
     void SwitchSceneLeftOrRight(string sceneName, Exit exit, ExitDirections ed)
     {
         if (exit != null && loadingNew == false)
         {
-            lastMusic = myMusic;
+
+            
             if ((player.transform.position.x >= exit.transform.position.x) && (exit.name.Contains("R") == true) || (player.transform.position.x <= exit.transform.position.x) && (exit.name.Contains("L")))
             {
                 if (exit.exitWhenAbove == true && exit.exitWhenBelow == true)
@@ -378,7 +351,6 @@ public class SceneInfo : MonoBehaviour
     {
         if (exit != null && loadingNew == false)
         {
-            lastMusic = myMusic;
             if ((player.transform.position.y >= exit.transform.position.y) && (exit.name.Contains("U") == true) || (player.transform.position.y <= exit.transform.position.y) && (exit.name.Contains("D")))
             {
                 if (player.transform.position.x < exit.transform.position.x + (exit.GetComponent<SpriteRenderer>().bounds.size.x / 2) && player.transform.position.x > exit.transform.position.x - (exit.GetComponent<SpriteRenderer>().bounds.size.x / 2))
@@ -405,7 +377,6 @@ public class SceneInfo : MonoBehaviour
     {
         if (door != null && loadingNew == false)
         {
-            lastMusic = myMusic;
             if ((player.transform.position.y < door.transform.position.y + (door.GetComponent<SpriteRenderer>().bounds.size.y / 2) && player.transform.position.y > door.transform.position.y - (door.GetComponent<SpriteRenderer>().bounds.size.y / 2)) && (player.transform.position.x < door.transform.position.x + (door.GetComponent<SpriteRenderer>().bounds.size.x / 2) && player.transform.position.x > door.transform.position.x - (door.GetComponent<SpriteRenderer>().bounds.size.x / 2)))
             {
                 if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) && player.isGrounded == true && hasEnteredDoor == false)
@@ -426,7 +397,6 @@ public class SceneInfo : MonoBehaviour
     {
         if (exit != null && loadingNew == false)
         {
-            lastMusic = myMusic;
             if (exit.wildDirection == WildExit.WildDirection.left)
             {
                 if (player.transform.position.x <= exit.transform.position.x)
@@ -646,7 +616,7 @@ public class SceneInfo : MonoBehaviour
 
     void WildSetUp(WildExit exit)
     {
-        if (exit.wildDirection == WildExit.WildDirection.left) 
+        if (exit.wildDirection == WildExit.WildDirection.left)
         {
             player.transform.position = new Vector2(exit.transform.position.x + exit.GetComponent<SpriteRenderer>().bounds.size.x / 2, exit.transform.position.y - ((exit.GetComponent<SpriteRenderer>().bounds.size.y / 2)));
         }
@@ -654,6 +624,7 @@ public class SceneInfo : MonoBehaviour
         {
             player.transform.position = new Vector2(exit.transform.position.x - exit.GetComponent<SpriteRenderer>().bounds.size.x / 2, exit.transform.position.y - ((exit.GetComponent<SpriteRenderer>().bounds.size.y / 2)));
         }
+
     }
 
     void FindExits()

@@ -39,7 +39,7 @@ public class CanvasThing : MonoBehaviour
     Image seasonTimerMarker;
     float markerStart = -96;
     float markerEnd = 96;
-    float timeLimit = 900;
+    float timeLimit = 900; //900
     float currentTime;
 
     Image optionsMenu;
@@ -64,9 +64,6 @@ public class CanvasThing : MonoBehaviour
 
     public Sprite bearPortrait;
     bool keyPressed = false;
-
-    public AudioClip animalTalk;
-    public AudioClip bearTalk;
 
     private void Awake()
     {
@@ -174,7 +171,7 @@ public class CanvasThing : MonoBehaviour
                 }
             }
 
-            if (Input.GetKeyDown(FindAnyObjectByType<Bear>().jumpKey) || Input.GetKeyDown(FindAnyObjectByType<Bear>().clawKey))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.J))
             {
                 tbInteraction.gameObject.SetActive(false);
 
@@ -237,7 +234,8 @@ public class CanvasThing : MonoBehaviour
 
             if(Math.Abs(seasonTimerMarker.transform.localPosition.x) > markerEnd)
             {
-                //Stuff for season transition
+                FindAnyObjectByType<SceneInfo>().ToTitleScreen();
+                SceneManager.LoadScene("PlayTestEnd");
             }
         }
         
@@ -288,6 +286,7 @@ public class CanvasThing : MonoBehaviour
     void MapButton()
     {
         map.transform.gameObject.SetActive(true);
+        seasonTimer.gameObject.SetActive(false);
 
     }
 
@@ -325,7 +324,7 @@ public class CanvasThing : MonoBehaviour
 
 
         CamFollow cam = FindAnyObjectByType<CamFollow>();
-        cam.GetComponent<AudioSource>().volume = 0.4f * soundSlider.value;
+        cam.GetComponent<AudioSource>().volume = 0.1f * soundSlider.value;
 
 
     }
@@ -344,6 +343,7 @@ public class CanvasThing : MonoBehaviour
     void MapBackButton()
     {
         map.transform.gameObject.SetActive(false);
+        seasonTimer.gameObject.SetActive(true);
     }
     public void AddBerry()
     {
@@ -380,7 +380,6 @@ public class CanvasThing : MonoBehaviour
         textBox.transform.gameObject.SetActive(true);
         textBoxPortrait.sprite = image;
         keyPressed = false;
-        GetComponent<AudioSource>().clip = animalTalk;
 
         foreach (string s in text)
         {
@@ -393,15 +392,6 @@ public class CanvasThing : MonoBehaviour
                 else if(textBoxPortrait.sprite == bearPortrait)
                 {
                     textBoxPortrait.sprite = image;
-                }
-
-                if(GetComponent<AudioSource>().clip == animalTalk)
-                {
-                    GetComponent<AudioSource>().clip = bearTalk;
-                }
-                else
-                {
-                    GetComponent<AudioSource>().clip = animalTalk;
                 }
 
                 continue;
@@ -418,13 +408,6 @@ public class CanvasThing : MonoBehaviour
                 emptyText += c;
                 textBoxText.text = emptyText;
                 Input.ResetInputAxes();
-
-                if (s.IndexOf(c) % 2 == 0)
-                {
-                    GetComponent<AudioSource>().Stop();
-                    GetComponent<AudioSource>().volume = 0.25f * soundSlider.value;
-                    GetComponent<AudioSource>().Play();
-                }
 
                 yield return new WaitForSeconds(0.05f);
 
