@@ -1,10 +1,19 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/UI/Map/Map_With_Key_RoomsN_Icons.png.meta
 guid: 6eedc5c47df0c9b4d9a33bedb75af0fd
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 7166324753821263311
     second: Map_With_Key_RoomsN_Icons_0
+========
+guid: 334f4bc87817305419f0fe26eb52ee78
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5687387395678295475
+    second: Map_With_Key_RoomsN_Icons (1)_0
+>>>>>>>> 7383168 (Added New Map):Assets/Sprites/UI/Map/Map_With_Key_RoomsN_Icons (1).png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,7 +109,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/UI/Map/Map_With_Key_RoomsN_Icons.png.meta
       name: Map_With_Key_RoomsN_Icons_0
+========
+      name: Map_With_Key_RoomsN_Icons (1)_0
+>>>>>>>> 7383168 (Added New Map):Assets/Sprites/UI/Map/Map_With_Key_RoomsN_Icons (1).png.meta
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +128,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<<< HEAD:Assets/Sprites/UI/Map/Map_With_Key_RoomsN_Icons.png.meta
       spriteID: fc5ea901566e37360800000000000000
       internalID: 7166324753821263311
+========
+      spriteID: d4aaf84fb475211b0800000000000000
+      internalID: -5687387395678295475
+>>>>>>>> 7383168 (Added New Map):Assets/Sprites/UI/Map/Map_With_Key_RoomsN_Icons (1).png.meta
       vertices: []
       indices: 
       edges: []
@@ -125,7 +143,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +153,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<<< HEAD:Assets/Sprites/UI/Map/Map_With_Key_RoomsN_Icons.png.meta
       Map_With_Key_RoomsN_Icons_0: 7166324753821263311
+========
+      Map_With_Key_RoomsN_Icons (1)_0: -5687387395678295475
+>>>>>>>> 7383168 (Added New Map):Assets/Sprites/UI/Map/Map_With_Key_RoomsN_Icons (1).png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
