@@ -2397,6 +2397,7 @@ MonoBehaviour:
   - Too Soon?
   - Anyway, could you snag some sweet red berries (3) for me?
   - I'll let you in on a little secret if so.
+  - Interaction
   myPortrait: {fileID: -5625881231707511812, guid: 11574fcd032553c46b02c8ea2937954f, type: 3}
   myInteractionYSel: 
   myInteractionNSel: 
