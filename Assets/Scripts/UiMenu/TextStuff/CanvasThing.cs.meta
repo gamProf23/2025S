@@ -1,2 +1,20 @@
 fileFormatVersion: 2
 guid: 15db32a0295c7024e8c3583dbd515060
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - controlOptions: {instanceID: 0}
+  - soundSlider: {instanceID: 0}
+  - jumpDrop: {instanceID: 0}
+  - rollDrop: {instanceID: 0}
+  - roarDrop: {instanceID: 0}
+  - clawDrop: {instanceID: 0}
+  - bearPortrait: {instanceID: 0}
+  - animalTalk: {fileID: 8300000, guid: e0dcef3688479e54199f072c17b6a9db, type: 3}
+  - bearTalk: {fileID: 8300000, guid: 287b5e6c17211b947b6ec348f0f856dc, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
