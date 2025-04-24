@@ -121,6 +121,20 @@ public class SceneInfo : MonoBehaviour
         return conditionsMet;
     }
 
+    public int GetCMAmount()
+    {
+        int bruh = 0;
+        foreach (List<string> list in conditionsMet.Values)
+        {
+            foreach(string key in list)
+            {
+                bruh++;
+            }
+        }
+
+        return bruh;
+    }
+
     //leaving more room for more directions
     public enum ExitDirections
     {
@@ -754,10 +768,7 @@ public class SceneInfo : MonoBehaviour
 
     }
 
-    int GetCMAmount()
-    {
-        return 0;
-    }
+    
     
 
     public static partial class SceneHelper
