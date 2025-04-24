@@ -2181,11 +2181,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.17
+      value: 2.49
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.57
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2397,17 +2397,24 @@ MonoBehaviour:
   - Too Soon?
   - Anyway, could you snag some sweet red berries (3) for me?
   - I'll let you in on a little secret if so.
+  - The moon commands you. The moon commands me.
+  - Interaction
   myPortrait: {fileID: -5625881231707511812, guid: 11574fcd032553c46b02c8ea2937954f, type: 3}
-  myInteractionYSel: 
-  myInteractionNSel: 
-  myInteractionText: 
+  myInteractionYSel: Yes
+  myInteractionNSel: No
+  myInteractionText: (Will you give berries)
   berryCondition: 3
   fishCondition: 0
   honeyCondition: 0
-  myInteractionYText: []
-  myInteractionNText: []
-  myInteractionFailText: []
-  conditionMetText: []
+  myInteractionYText:
+  - 'Hey thanks man. '
+  - 'The moon told me that there was a secret room in the room above. '
+  myInteractionNText:
+  - Fine, I'll find them myself.
+  myInteractionFailText:
+  - Don't let the moon see you, it never forgets and it never sleeps.
+  conditionMetText:
+  - The moon can't even complete this challenge, it makes a lot of noise.
   conditionIsMet: 0
 --- !u!1 &1152058028
 GameObject:
@@ -2658,7 +2665,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -1985883871193497188, guid: 9e36b8742028e2d4f9bf1adc90b7448e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -39883,11 +39890,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5590078492667123608, guid: 94069ea3071b8e444b9b6b04f7a62340, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.039
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 5590078492667123608, guid: 94069ea3071b8e444b9b6b04f7a62340, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.185
+      value: -0.44
       objectReference: {fileID: 0}
     - target: {fileID: 6014456067990811809, guid: 94069ea3071b8e444b9b6b04f7a62340, type: 3}
       propertyPath: m_Name
@@ -39895,11 +39902,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6367615391175428530, guid: 94069ea3071b8e444b9b6b04f7a62340, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.019000053
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 6367615391175428530, guid: 94069ea3071b8e444b9b6b04f7a62340, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.15
+      value: 1.92
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

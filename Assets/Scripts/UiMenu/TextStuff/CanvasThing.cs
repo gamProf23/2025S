@@ -65,6 +65,8 @@ public class CanvasThing : MonoBehaviour
     public Sprite bearPortrait;
     bool keyPressed = false;
 
+    public int cmAmount = 0;
+
     private void Awake()
     {
         berryText = transform.GetChild(0).GetComponent<TMP_Text>();
@@ -234,6 +236,7 @@ public class CanvasThing : MonoBehaviour
 
             if(Math.Abs(seasonTimerMarker.transform.localPosition.x) > markerEnd)
             {
+                cmAmount = FindAnyObjectByType<SceneInfo>().GetCMAmount();
                 FindAnyObjectByType<SceneInfo>().ToTitleScreen();
                 SceneManager.LoadScene("PlayTestEnd");
             }
