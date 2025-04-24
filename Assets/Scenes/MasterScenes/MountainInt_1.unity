@@ -2181,11 +2181,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.49
+      value: 3.17
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.54
+      value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2397,24 +2397,17 @@ MonoBehaviour:
   - Too Soon?
   - Anyway, could you snag some sweet red berries (3) for me?
   - I'll let you in on a little secret if so.
-  - The moon commands you. The moon commands me.
-  - Interaction
   myPortrait: {fileID: -5625881231707511812, guid: 11574fcd032553c46b02c8ea2937954f, type: 3}
-  myInteractionYSel: Yes
-  myInteractionNSel: No
-  myInteractionText: (Will you give berries)
+  myInteractionYSel: 
+  myInteractionNSel: 
+  myInteractionText: 
   berryCondition: 3
   fishCondition: 0
   honeyCondition: 0
-  myInteractionYText:
-  - 'Hey thanks man. '
-  - 'The moon told me that there was a secret room in the room above. '
-  myInteractionNText:
-  - Fine, I'll find them myself.
-  myInteractionFailText:
-  - Don't let the moon see you, it never forgets and it never sleeps.
-  conditionMetText:
-  - The moon can't even complete this challenge, it makes a lot of noise.
+  myInteractionYText: []
+  myInteractionNText: []
+  myInteractionFailText: []
+  conditionMetText: []
   conditionIsMet: 0
 --- !u!1 &1152058028
 GameObject:
@@ -2665,7 +2658,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -1985883871193497188, guid: 9e36b8742028e2d4f9bf1adc90b7448e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -28429,6 +28422,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 4, y: 89, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 17
+      m_TileSpriteIndex: 9
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 30, y: 89, z: 0}
     second:
       serializedVersion: 2
@@ -28679,6 +28682,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741826
+  - first: {x: 4, y: 90, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 13
+      m_TileSpriteIndex: 15
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 30, y: 90, z: 0}
     second:
       serializedVersion: 2
@@ -30977,7 +30990,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 18d53f1d1c0069e448b45c3361647bdb, type: 2}
   - m_RefCount: 2068
     m_Data: {fileID: 11400000, guid: 9c1696cdef35e5b4485008170db78757, type: 2}
-  - m_RefCount: 76
+  - m_RefCount: 77
     m_Data: {fileID: 11400000, guid: 2509876ab34312a499076792961f2eff, type: 2}
   - m_RefCount: 69
     m_Data: {fileID: 11400000, guid: 19722bdfa19c5d84d8e130db2c67ecd1, type: 2}
@@ -30985,7 +30998,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 0f4e39e10044b404e8ca84f675a6e7dd, type: 2}
   - m_RefCount: 51
     m_Data: {fileID: 11400000, guid: 015421f9e64cf9d45857a7c5eca6b24c, type: 2}
-  - m_RefCount: 19
+  - m_RefCount: 20
     m_Data: {fileID: 11400000, guid: 385be962cc42edb419192d64319b0221, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 5
@@ -31006,7 +31019,7 @@ Tilemap:
     m_Data: {fileID: 1773971087, guid: ad5bd8f3f5ba6144e86c75a09f9ada8a, type: 3}
   - m_RefCount: 29
     m_Data: {fileID: -339642564, guid: ad5bd8f3f5ba6144e86c75a09f9ada8a, type: 3}
-  - m_RefCount: 19
+  - m_RefCount: 20
     m_Data: {fileID: -613375214, guid: 95c868f5dc5ba4e409acfdc405ec8dac, type: 3}
   - m_RefCount: 51
     m_Data: {fileID: -500695318, guid: 95c868f5dc5ba4e409acfdc405ec8dac, type: 3}
@@ -31018,14 +31031,14 @@ Tilemap:
     m_Data: {fileID: -611383496, guid: 95c868f5dc5ba4e409acfdc405ec8dac, type: 3}
   - m_RefCount: 2068
     m_Data: {fileID: 1755262473, guid: 95c868f5dc5ba4e409acfdc405ec8dac, type: 3}
-  - m_RefCount: 76
+  - m_RefCount: 77
     m_Data: {fileID: -2033300555, guid: 95c868f5dc5ba4e409acfdc405ec8dac, type: 3}
   - m_RefCount: 69
     m_Data: {fileID: -137242902, guid: 95c868f5dc5ba4e409acfdc405ec8dac, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: -367227753, guid: 95c868f5dc5ba4e409acfdc405ec8dac, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 2690
+  - m_RefCount: 2692
     m_Data:
       e00: 1
       e01: 0
@@ -31044,7 +31057,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 2690
+  - m_RefCount: 2692
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -31342,9 +31355,9 @@ CompositeCollider2D:
       - X: 10699999
         Y: 190350000
       - X: 10699999
-        Y: 227150000
+        Y: 222150000
       - X: 13299999
-        Y: 227150000
+        Y: 222150000
       - X: 13299999
         Y: 229650000
       - X: 77700000
@@ -31701,8 +31714,8 @@ CompositeCollider2D:
       - {x: 1.3299999, y: 18.725023}
       - {x: 1.3299706, y: 19.035}
       - {x: 1.0699999, y: 19.035028}
-      - {x: 1.0700293, y: 22.715}
-      - {x: 1.3299999, y: 22.715029}
+      - {x: 1.0700293, y: 22.215}
+      - {x: 1.3299999, y: 22.215029}
       - {x: 1.3300294, y: 22.965}
       - {x: 7.77, y: 22.964972}
       - {x: 7.7699704, y: 22.285}
@@ -39890,11 +39903,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5590078492667123608, guid: 94069ea3071b8e444b9b6b04f7a62340, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.06
+      value: 0.039
       objectReference: {fileID: 0}
     - target: {fileID: 5590078492667123608, guid: 94069ea3071b8e444b9b6b04f7a62340, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.44
+      value: -0.185
       objectReference: {fileID: 0}
     - target: {fileID: 6014456067990811809, guid: 94069ea3071b8e444b9b6b04f7a62340, type: 3}
       propertyPath: m_Name
@@ -39902,11 +39915,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6367615391175428530, guid: 94069ea3071b8e444b9b6b04f7a62340, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.06
+      value: 0.019000053
       objectReference: {fileID: 0}
     - target: {fileID: 6367615391175428530, guid: 94069ea3071b8e444b9b6b04f7a62340, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.92
+      value: 2.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
