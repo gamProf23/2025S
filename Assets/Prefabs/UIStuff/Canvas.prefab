@@ -3268,7 +3268,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6376905725563674852, guid: c28f45e009651e548ab4e227f6137e11, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 334f4bc87817305419f0fe26eb52ee78, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10200,8 +10200,7 @@ MonoBehaviour:
   roarDrop: {fileID: 0}
   clawDrop: {fileID: 0}
   bearPortrait: {fileID: 7001406613617822090, guid: 49698aa039aaae64c9b609e7e8447d4a, type: 3}
-  animalTalk: {fileID: 8300000, guid: e0dcef3688479e54199f072c17b6a9db, type: 3}
-  bearTalk: {fileID: 8300000, guid: 287b5e6c17211b947b6ec348f0f856dc, type: 3}
+  cmAmount: 0
   crRunning: 0
 --- !u!114 &4990949584324369121
 MonoBehaviour:
