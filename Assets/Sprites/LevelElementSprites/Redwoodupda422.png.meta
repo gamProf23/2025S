@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: bcb0161b2d2932a4296a97a11cc6625e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5384617776586704171
+    second: Redwoodupda422_0
+  - first:
+      213: 7960308576544299148
+    second: Redwoodupda422_1
+  - first:
+      213: -9162818752878961286
+    second: Redwoodupda422_2
+  - first:
+      213: 4177252532053705170
+    second: Redwoodupda422_3
+  - first:
+      213: 1412112793734223342
+    second: Redwoodupda422_4
+  - first:
+      213: -4236210091972291539
+    second: Redwoodupda422_5
+  - first:
+      213: 3319908074406468906
+    second: Redwoodupda422_6
+  - first:
+      213: -7379721135899293250
+    second: Redwoodupda422_7
+  - first:
+      213: 8700482851351081642
+    second: Redwoodupda422_8
+  - first:
+      213: -470632473885587869
+    second: Redwoodupda422_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Redwoodupda422_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 182
+        width: 73
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dabb4f39aef545b0800000000000000
+      internalID: -5384617776586704171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redwoodupda422_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 184
+        width: 49
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c881b6f8972b87e60800000000000000
+      internalID: 7960308576544299148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redwoodupda422_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 6
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d9c5514e027d080800000000000000
+      internalID: -9162818752878961286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redwoodupda422_3
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 138
+        width: 141
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1892ebb0598f930800000000000000
+      internalID: 4177252532053705170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redwoodupda422_4
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 92
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5105daa15d89310800000000000000
+      internalID: 1412112793734223342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redwoodupda422_5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 92
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d241112ad55f535c0800000000000000
+      internalID: -4236210091972291539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redwoodupda422_6
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 111
+        width: 85
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2dd2f5ddcea21e20800000000000000
+      internalID: 3319908074406468906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redwoodupda422_7
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 14
+        width: 17
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9c741f9b6f59990800000000000000
+      internalID: -7379721135899293250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redwoodupda422_8
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 20
+        width: 23
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa2b8216e035eb870800000000000000
+      internalID: 8700482851351081642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redwoodupda422_9
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 70
+        width: 86
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366494e224af779f0800000000000000
+      internalID: -470632473885587869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Redwoodupda422_0: -5384617776586704171
+      Redwoodupda422_1: 7960308576544299148
+      Redwoodupda422_2: -9162818752878961286
+      Redwoodupda422_3: 4177252532053705170
+      Redwoodupda422_4: 1412112793734223342
+      Redwoodupda422_5: -4236210091972291539
+      Redwoodupda422_6: 3319908074406468906
+      Redwoodupda422_7: -7379721135899293250
+      Redwoodupda422_8: 8700482851351081642
+      Redwoodupda422_9: -470632473885587869
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
