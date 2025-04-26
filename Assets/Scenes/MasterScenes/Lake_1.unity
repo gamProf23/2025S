@@ -49944,6 +49944,14 @@ PrefabInstance:
       propertyPath: door3SceneName
       value: bonus_fish
       objectReference: {fileID: 0}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: myAmbience.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
+      propertyPath: 'myAmbience.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a0669b25d9949a46868b5ed5833d702, type: 3}
     - target: {fileID: 7578924285782844394, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.96926886

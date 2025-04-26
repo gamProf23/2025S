@@ -50,7 +50,8 @@ MonoBehaviour:
   myCameraPrefab: {fileID: 6931553661465259174, guid: 51818c52813fd254682260b3cc284fdf, type: 3}
   myCanvasPrefab: {fileID: 5896310346828634814, guid: 5e7d43b79a6d16145b8fea02e10e65a0, type: 3}
   myBackGround: {fileID: -6484041478135567464, guid: 7583ba31cb56b9645b870355cac3d599, type: 3}
-  myMusic: {fileID: 8300000, guid: 13ef9443156798746839ce97236b297e, type: 3}
+  myMusic: {fileID: 8300000, guid: 72ba1ed7ec9b0804cb9b5a3b4ef6e11f, type: 3}
+  myAmbience: []
   cameraClone: {fileID: 0}
   canvasClone: {fileID: 0}
   L1SceneName: 

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -69,6 +70,8 @@ public class CanvasThing : MonoBehaviour
 
     public AudioClip animalTalk;
     public AudioClip bearTalk;
+
+    bool inBonus = false;
 
     private void Awake()
     {
@@ -231,7 +234,7 @@ public class CanvasThing : MonoBehaviour
             seasonTimerMarker.enabled = true;
         }
 
-        if (pauseMenu.transform.gameObject.activeSelf == false && FindAnyObjectByType<Bear>().isTalking == false)
+        if (pauseMenu.transform.gameObject.activeSelf == false && FindAnyObjectByType<Bear>().isTalking == false && inBonus == false)
         {
             currentTime = currentTime + Time.deltaTime;
 
@@ -245,6 +248,34 @@ public class CanvasThing : MonoBehaviour
             }
         }
         
+
+        if(Input.GetKeyDown(KeyCode.M))
+        {
+            if (pauseMenu.transform.gameObject.activeSelf == false && map.gameObject.activeSelf == false)
+            {
+                Time.timeScale = 0;
+                pauseMenu.transform.gameObject.SetActive(true);
+                MapButton();
+            }
+            else if (map.gameObject.activeSelf == true)
+            {
+                MapBackButton();
+                Time.timeScale = 1;
+                pauseMenu.transform.gameObject.SetActive(false);
+            }
+        }
+ 
+        if (FindAnyObjectByType<SceneInfo>().gameObject.scene.name.Contains("bonus") == true)
+        {
+            seasonTimer.gameObject.SetActive(false);
+            inBonus = true;
+        }
+        else
+        {
+            seasonTimer.gameObject.SetActive(true);
+            inBonus = false;
+
+        }
     }
 
 

@@ -177,7 +177,7 @@ public class SceneInfo : MonoBehaviour
 
             if (lastMusic != myMusic)
             {
-                Debug.Log(lastMusic.name);
+                //Debug.Log(lastMusic.name);
                 FindAnyObjectByType<CamFollow>().GetComponent<AudioSource>().clip = myMusic;
                 FindAnyObjectByType<CamFollow>().GetComponent<AudioSource>().Play();
             }

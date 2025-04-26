@@ -33864,19 +33864,19 @@ PrefabInstance:
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: 'myAmbience.Array.data[0]'
       value: 
-      objectReference: {fileID: 8300000, guid: cbba23c2f172cb747af838544543f044, type: 3}
+      objectReference: {fileID: 8300000, guid: 0e6eee20b8491a74593b13beb656f192, type: 3}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: 'myAmbience.Array.data[1]'
       value: 
-      objectReference: {fileID: 8300000, guid: ee56072ec8602eb46a5ab36d3d9f4d7f, type: 3}
+      objectReference: {fileID: 8300000, guid: fbc4ea074f8b2744ea2c07e3d53c34a2, type: 3}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: 'myAmbience.Array.data[2]'
       value: 
-      objectReference: {fileID: 8300000, guid: 8abc790d42b93bf4780695646424373a, type: 3}
+      objectReference: {fileID: 8300000, guid: 61d8fd557f8dece46af0893c381a62c1, type: 3}
     - target: {fileID: 2997653304522546107, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: 'myAmbience.Array.data[3]'
       value: 
-      objectReference: {fileID: 8300000, guid: 525ac1164e2800147985017031511dc0, type: 3}
+      objectReference: {fileID: 8300000, guid: 5884e1e48e51c3440ab8705d1eb1b568, type: 3}
     - target: {fileID: 7578924285782844394, guid: 3f3fbc8dcff0dc144a7c818bcb7d0e5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.96926886
