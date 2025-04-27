@@ -49737,6 +49737,8 @@ MonoBehaviour:
   - (I go where the food is.)
   - '*glub glub glub glub glub glub glub glub glub glub glub.*'
   - (Now give me fish and I'll give you some sunken treasure.)
+  - '*glub glub glub glub glub!*'
+  - (Be careful with the currents!)
   - Interaction
   myPortrait: {fileID: -1884701423190137557, guid: 1f7f95803b430dc47b25da35f8f338a5, type: 3}
   myInteractionYSel: '*glub* (Yes)'
