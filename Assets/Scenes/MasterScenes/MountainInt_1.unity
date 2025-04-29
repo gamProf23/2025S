@@ -2408,13 +2408,13 @@ MonoBehaviour:
   honeyCondition: 0
   myInteractionYText:
   - 'Hey thanks man. '
-  - 'The moon told me that there was a secret room in the room above. '
+  - I heard the Owl that's present here in Fall has some good intel...
   myInteractionNText:
   - Fine, I'll find them myself.
   myInteractionFailText:
   - Don't let the moon see you, it never forgets and it never sleeps.
   conditionMetText:
-  - The moon can't even complete this challenge, it makes a lot of noise.
+  - May the moon bless you. Don't forget about the owl in fall.
   conditionIsMet: 0
 --- !u!1 &1152058028
 GameObject:
