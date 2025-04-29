@@ -36,8 +36,8 @@ public class CanvasThing : MonoBehaviour
     Image map;
     Button mapBackButton;
 
-    Image seasonTimer;
-    Image seasonTimerMarker;
+    public Image seasonTimer;
+    public Image seasonTimerMarker;
     float markerStart = -96;
     float markerEnd = 96;
     float timeLimit = 900; //900
