@@ -33530,8 +33530,7 @@ MonoBehaviour:
   fishCondition: 5
   honeyCondition: 0
   myInteractionYText:
-  - Splendid! Also... I hear making noise near a wall all the way on the right will
-    do something...
+  - Splendid!
   myInteractionNText:
   - Do you not care for my artistic desires?
   myInteractionFailText:
@@ -37044,18 +37043,23 @@ MonoBehaviour:
   - SwitchP
   - Well you see that seniorita over there?
   - SwitchP
-  - Anglea? Isn't she-
+  - Angela? Isn't she-
   - SwitchP
-  - I think the way to this lovely woman's heart is five whole berries!
+  - I think the way to this lovely woman's heart is a golden berry!
   - Mind getting that for your dashing friend?
   - SwitchP
   - Sure...if your that pawsitive about this.
+  - SwitchP
+  - On the right of these pretty pastures, lies a wall that only the mighty can pass!
+  - With the might of a voice the heavens can hear!
+  - SwitchP
+  - ...okay.
   - Interaction
-  myPortrait: {fileID: -197016370080783507, guid: fd48279bf4813ef40bea4c1af854d609, type: 3}
+  myPortrait: {fileID: -8311846641201667769, guid: d04f67596b88e514d82c8d90ddd2ab56, type: 3}
   myInteractionYSel: Yes
   myInteractionNSel: No
-  myInteractionText: Give the bunny 5 berries?
-  berryCondition: 5
+  myInteractionText: Give the bunny the golden berry?
+  berryCondition: 0
   fishCondition: 0
   honeyCondition: 0
   myInteractionYText:
