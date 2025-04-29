@@ -237,6 +237,116 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 693f273b610cfc846978c30518191a05, type: 3}
+--- !u!1 &206147771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 206147774}
+  - component: {fileID: 206147773}
+  - component: {fileID: 206147772}
+  m_Layer: 0
+  m_Name: Wind_animation_spreadhseet_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &206147772
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206147771}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1c0c7569bc51efc4e818af0150cee7b4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!212 &206147773
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206147771}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 4977564332634745422, guid: 566d0306273e77c4389076b316068f21, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.32, y: 0.34}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &206147774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206147771}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.413, y: 0.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &217728042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2946,15 +3056,17 @@ CompositeCollider2D:
         Y: -165350000
       - X: 405900000
         Y: -165350000
-    - - X: 166699984
-        Y: -40250000
+    - - X: 164099984
+        Y: -37850000
+      - X: 166699984
+        Y: -37850000
       - X: 166699984
         Y: -29650000
       - X: 158300000
         Y: -29650000
       - X: 158300000
         Y: -40350000
-      - X: 166299984
+      - X: 164099984
         Y: -40350000
     - - X: 247299984
         Y: -128450000
@@ -3540,15 +3652,17 @@ CompositeCollider2D:
         Y: -222850000
       - X: 665899968
         Y: -222850000
-    - - X: 897299968
-        Y: -200250000
+    - - X: 894700032
+        Y: -197850000
+      - X: 897299968
+        Y: -197850000
       - X: 897299968
         Y: -184650000
       - X: 870699904
         Y: -184650000
       - X: 870699904
         Y: -200350000
-      - X: 896899968
+      - X: 894700032
         Y: -200350000
     - - X: 840099968
         Y: -257150000
@@ -3880,8 +3994,9 @@ CompositeCollider2D:
       - {x: 6.99003, y: -8.535}
       - {x: 7.25, y: -8.535029}
       - {x: 7.2500296, y: -16.535}
-    - - {x: 16.629995, y: -4.035}
-      - {x: 16.669998, y: -4.024978}
+    - - {x: 16.40997, y: -4.035}
+      - {x: 16.410027, y: -3.785}
+      - {x: 16.669998, y: -3.7849708}
       - {x: 16.66997, y: -2.9650002}
       - {x: 15.83, y: -2.9650292}
       - {x: 15.830029, y: -4.035}
@@ -4177,8 +4292,9 @@ CompositeCollider2D:
       - {x: 63.67003, y: -22.035}
       - {x: 64.44999, y: -22.035028}
       - {x: 64.45002, y: -22.285}
-    - - {x: 89.689995, y: -20.035}
-      - {x: 89.729996, y: -20.024979}
+    - - {x: 89.46997, y: -20.035}
+      - {x: 89.47004, y: -19.785}
+      - {x: 89.729996, y: -19.784971}
       - {x: 89.729965, y: -18.465}
       - {x: 87.06999, y: -18.465029}
       - {x: 87.07002, y: -20.035}
@@ -9573,7 +9689,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741825
+      m_AllTileFlags: 1
   - first: {x: 221, y: -79, z: 0}
     second:
       serializedVersion: 2
@@ -47113,7 +47229,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741825
+      m_AllTileFlags: 1
   - first: {x: 74, y: -16, z: 0}
     second:
       serializedVersion: 2
@@ -54840,7 +54956,7 @@ MonoBehaviour:
     there.
   - Is there any chance you could bring me say... 7 fish?
   - Interaction
-  myPortrait: {fileID: 7414385115374638362, guid: a0ed4aa4e157bcb49b360d862f8b23bb, type: 3}
+  myPortrait: {fileID: -8390875716601096777, guid: 877a4a879ee3e834683d0e08a4c794fe, type: 3}
   myInteractionYSel: Yes
   myInteractionNSel: No
   myInteractionText: Help Eagle out and give her 7 fish?
@@ -57605,19 +57721,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7184075831904904870, guid: 4f9622f6ac17cfa40afd3c672c99f9e8, type: 3}
       propertyPath: m_LocalAABB.m_Center.x
-      value: -0.35083866
+      value: -0.20952034
       objectReference: {fileID: 0}
     - target: {fileID: 7184075831904904870, guid: 4f9622f6ac17cfa40afd3c672c99f9e8, type: 3}
       propertyPath: m_LocalAABB.m_Center.y
-      value: -1.3916588
+      value: -1.2901897
       objectReference: {fileID: 0}
     - target: {fileID: 7184075831904904870, guid: 4f9622f6ac17cfa40afd3c672c99f9e8, type: 3}
       propertyPath: m_LocalAABB.m_Extent.x
-      value: 5.4179077
+      value: 5.2765875
       objectReference: {fileID: 0}
     - target: {fileID: 7184075831904904870, guid: 4f9622f6ac17cfa40afd3c672c99f9e8, type: 3}
       propertyPath: m_LocalAABB.m_Extent.y
-      value: 3.3989344
+      value: 3.5004034
       objectReference: {fileID: 0}
     - target: {fileID: 7184075831904904870, guid: 4f9622f6ac17cfa40afd3c672c99f9e8, type: 3}
       propertyPath: 'm_Sprites.Array.data[0]'
@@ -57631,6 +57747,14 @@ PrefabInstance:
       propertyPath: m_SpriteShape
       value: 
       objectReference: {fileID: 11400000, guid: ecd63568d7c1e4a4a96cd2666185b104, type: 2}
+    - target: {fileID: 7496854541577024670, guid: 4f9622f6ac17cfa40afd3c672c99f9e8, type: 3}
+      propertyPath: m_Spline.m_ControlPoints.Array.data[0].position.x
+      value: -5.3941536
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496854541577024670, guid: 4f9622f6ac17cfa40afd3c672c99f9e8, type: 3}
+      propertyPath: m_Spline.m_ControlPoints.Array.data[0].position.y
+      value: 0.3803978
+      objectReference: {fileID: 0}
     - target: {fileID: 8026822029453769609, guid: 4f9622f6ac17cfa40afd3c672c99f9e8, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
       value: 24
@@ -58234,3 +58358,4 @@ SceneRoots:
   - {fileID: 579067911}
   - {fileID: 1942812899}
   - {fileID: 1584546386}
+  - {fileID: 206147774}
