@@ -284,7 +284,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wind_animation_spreadhseet_0: 4977564332634745422
+      Wind_animation_spreadhseet_1: -6529215850636370959
+      Wind_animation_spreadhseet_2: 8438911409627154801
+      Wind_animation_spreadhseet_3: 2184875611226137618
+      Wind_animation_spreadhseet_4: -9011475907515830861
+      Wind_animation_spreadhseet_5: -6367969267484610265
+      Wind_animation_spreadhseet_6: 8600357389667575531
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
