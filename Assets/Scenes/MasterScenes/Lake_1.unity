@@ -2310,11 +2310,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.39
+      value: 34.3
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.43
+      value: 3.8
       objectReference: {fileID: 0}
     - target: {fileID: 6169465909306726727, guid: 9d3ff430cd7f5e746a5b966daae5d07b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -99406,20 +99406,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myText:
   - SwitchP
-  - Hey Moose.
+  - Hey Morrison! How are you doing?
   - SwitchP
-  - Nice view, isn't it?
+  - Nothing much Barry.
   - SwitchP
+  - Its...just bear.
   - SwitchP
-  - By any chance, do you think you could bring me 10 fish?
-  - Getting to this spot takes a lot of energy, and I still need to get back home.
-  - Interaction
+  - Yeah yeah, by any chance do you think you could find me something?
+  - 'Ya see...a Golden Fish sounds almighty right now. '
+  - And I heard rumblings of one below the depths.
+  - SwitchP
+  - Water you talking about?
+  - SwitchP
+  - '*Slow laughing*'
+  - I always appreciate your jokes Bear.
   myPortrait: {fileID: 8108001588628327625, guid: 0b73fa9602c66ca449ad68ec2419ef28, type: 3}
   myInteractionYSel: Yes
   myInteractionNSel: No
-  myInteractionText: Give Moose 10 fish?
+  myInteractionText: Give Moose The Golden Fish?
   berryCondition: 0
-  fishCondition: 10
+  fishCondition: 0
   honeyCondition: 0
   myInteractionYText:
   - Thank you.
