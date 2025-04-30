@@ -73,6 +73,15 @@ public class CanvasThing : MonoBehaviour
 
     bool inBonus = false;
 
+    Image goldItems;
+    Image goldBerry;
+    Image goldFish;
+    Image goldHoney;
+
+    bool goldBerryBool = false;
+    bool goldFishBool = false;
+    bool goldHoneyBool = false;
+
     private void Awake()
     {
         berryText = transform.GetChild(0).GetComponent<TMP_Text>();
@@ -125,6 +134,11 @@ public class CanvasThing : MonoBehaviour
         soundButton.onClick.AddListener(SoundButton);
         controlButton.onClick.AddListener(ControlButton);
         optionBackButton.onClick.AddListener(OptionBackButton);
+
+        goldItems = transform.GetChild(9).GetComponent<Image>();
+        goldBerry = goldItems.transform.GetChild(0).GetComponent<Image>();
+        goldFish = goldItems.transform.GetChild(1).GetComponent<Image>();
+        goldHoney = goldItems.transform.GetChild(2).GetComponent<Image>();
 
         DontDestroyOnLoad(gameObject);
     }
@@ -276,6 +290,52 @@ public class CanvasThing : MonoBehaviour
             inBonus = false;
 
         }
+
+
+        if (FindAnyObjectByType<SceneInfo>().GetCMList().ContainsKey("bonus_berry") && goldBerryBool == false)
+        {
+            goldBerry.gameObject.SetActive(true);
+            goldBerryBool = true;
+
+            if (goldCRRunning == false)
+            {
+                StartCoroutine("GoldCR");
+            }
+        }
+
+        if (FindAnyObjectByType<SceneInfo>().GetCMList().ContainsKey("bonus_fish") && goldFishBool == false)
+        {
+            goldFish.gameObject.SetActive(true);
+            goldFishBool = true;
+
+            if (goldCRRunning == false)
+            {
+                StartCoroutine("GoldCR");
+            }
+        }
+
+        if (FindAnyObjectByType<SceneInfo>().GetCMList().ContainsKey("bonus_fish") && goldHoneyBool == false)
+        {
+            goldHoney.gameObject.SetActive(true);
+            goldHoneyBool = true;
+
+            if (goldCRRunning == false)
+            {
+                StartCoroutine("GoldCR");
+            }
+        }
+
+        if(goldCRRunning == false)
+        {
+            if (pauseMenu.gameObject.activeSelf == true)
+            {
+                goldItems.gameObject.SetActive(true);
+            }
+            else if (goldItems.gameObject.activeSelf == true)
+            {
+                goldItems.gameObject.SetActive(false);
+            }
+        }
     }
 
 
@@ -417,6 +477,7 @@ public class CanvasThing : MonoBehaviour
         textBox.transform.gameObject.SetActive(true);
         textBoxPortrait.sprite = image;
         keyPressed = false;
+        GetComponent<AudioSource>().clip = animalTalk;
 
         foreach (string s in text)
         {
@@ -531,6 +592,29 @@ public class CanvasThing : MonoBehaviour
         ySel.gameObject.SetActive(true);
         nSel.gameObject.SetActive(false);
         
+    }
+
+    bool goldCRRunning = false;
+
+    IEnumerator GoldCR()
+    {
+        goldCRRunning = true;
+        Vector2 ogPos = new Vector2();
+        goldItems.gameObject.SetActive(true);
+
+        ogPos = goldItems.transform.position;
+
+        goldItems.transform.position = new Vector2(ogPos.x - 200, ogPos.y);
+
+        while (goldItems.transform.position.x <= ogPos.x - 0.1f)
+        {
+            goldItems.transform.position = Vector2.Lerp(goldItems.transform.position, ogPos, 0.01f);
+            yield return new WaitForEndOfFrame();
+        }
+
+        yield return new WaitForSeconds(3f);
+
+        goldCRRunning = false;
     }
 
 }
