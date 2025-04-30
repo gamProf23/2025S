@@ -6,6 +6,7 @@ public class Fish : MonoBehaviour
 {
     public Collectable myFish;
     Collectable fishClone;
+    public bool imortal;
     
     private void Awake()
     {
@@ -35,7 +36,7 @@ public class Fish : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Claw" && FindAnyObjectByType<Bear>().isSwiping == true)
+        if (collision.gameObject.tag == "Claw" && FindAnyObjectByType<Bear>().isSwiping == true && imortal == false)
         {
             if (myFish != null)
             {
