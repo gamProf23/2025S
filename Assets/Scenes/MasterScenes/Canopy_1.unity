@@ -2060,6 +2060,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3979076408709845419, guid: 206eeb527d3219f4a9c6ec5829833a20, type: 3}
   m_PrefabInstance: {fileID: 1908303989}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &238428264 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2921408447761465505, guid: a155c53620cc39149a0f46781484fdeb, type: 3}
+  m_PrefabInstance: {fileID: 7220060432317876253}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &239964079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12645,13 +12650,17 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.008767903
       objectReference: {fileID: 0}
+    - target: {fileID: 4246655360095114248, guid: a155c53620cc39149a0f46781484fdeb, type: 3}
+      propertyPath: leftHeading
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4763586075909634546, guid: a155c53620cc39149a0f46781484fdeb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 56.13
+      value: 47.5
       objectReference: {fileID: 0}
     - target: {fileID: 4763586075909634546, guid: a155c53620cc39149a0f46781484fdeb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.64
+      value: 5.6
       objectReference: {fileID: 0}
     - target: {fileID: 4763586075909634546, guid: a155c53620cc39149a0f46781484fdeb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24786,26 +24795,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1912488068704397262, guid: a155c53620cc39149a0f46781484fdeb, type: 3}
-      propertyPath: m_Size.x
-      value: 1.1683581
-      objectReference: {fileID: 0}
-    - target: {fileID: 1912488068704397262, guid: a155c53620cc39149a0f46781484fdeb, type: 3}
-      propertyPath: m_Size.y
-      value: 1.2805429
-      objectReference: {fileID: 0}
-    - target: {fileID: 1912488068704397262, guid: a155c53620cc39149a0f46781484fdeb, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.0039994717
-      objectReference: {fileID: 0}
-    - target: {fileID: 1912488068704397262, guid: a155c53620cc39149a0f46781484fdeb, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.008767903
-      objectReference: {fileID: 0}
-    - target: {fileID: 4745264687603254521, guid: a155c53620cc39149a0f46781484fdeb, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 4246655360095114248, guid: a155c53620cc39149a0f46781484fdeb, type: 3}
+      propertyPath: birdSprite
+      value: 
+      objectReference: {fileID: 238428264}
     - target: {fileID: 4763586075909634546, guid: a155c53620cc39149a0f46781484fdeb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 41.51
