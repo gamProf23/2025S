@@ -374,6 +374,11 @@ public class CanvasThing : MonoBehaviour
                 StartCoroutine("FinalTextCR");
             }
         }
+
+        if (FindAnyObjectByType<SceneInfo>().GetCMList().ContainsKey("bonus_final"))
+        {
+            SceneManager.LoadScene("PlayTestEnd");
+        }
     }
 
 
