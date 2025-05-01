@@ -99413,8 +99413,8 @@ MonoBehaviour:
   - Its...just bear.
   - SwitchP
   - Yeah yeah, by any chance do you think you could find me something?
-  - 'Ya see...a Golden Fish sounds almighty right now. '
-  - And I heard rumblings of one below the depths.
+  - Ya see...a some fish sounds almighty right now.
+  - And I heard rumblings of several down below the depths.
   - SwitchP
   - Water you talking about?
   - SwitchP
@@ -99423,9 +99423,9 @@ MonoBehaviour:
   myPortrait: {fileID: 8108001588628327625, guid: 0b73fa9602c66ca449ad68ec2419ef28, type: 3}
   myInteractionYSel: Yes
   myInteractionNSel: No
-  myInteractionText: Give Moose The Golden Fish?
+  myInteractionText: Give Moose 10 fish?
   berryCondition: 0
-  fishCondition: 0
+  fishCondition: 10
   honeyCondition: 0
   myInteractionYText:
   - Thank you.
