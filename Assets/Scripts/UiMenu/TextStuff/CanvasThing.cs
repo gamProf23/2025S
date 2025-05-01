@@ -314,7 +314,7 @@ public class CanvasThing : MonoBehaviour
             }
         }
 
-        if (FindAnyObjectByType<SceneInfo>().GetCMList().ContainsKey("bonus_fish") && goldHoneyBool == false)
+        if (FindAnyObjectByType<SceneInfo>().GetCMList().ContainsKey("bonus_honey") && goldHoneyBool == false)
         {
             goldHoney.gameObject.SetActive(true);
             goldHoneyBool = true;
