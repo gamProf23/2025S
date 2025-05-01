@@ -335,6 +335,20 @@ public class CanvasThing : MonoBehaviour
             {
                 goldItems.gameObject.SetActive(false);
             }
+
+            if (map.gameObject.activeSelf == true || optionsMenu.gameObject.activeSelf == true)
+            {
+                goldItems.gameObject.SetActive(false);
+            }
+        }
+
+        if (map.gameObject.activeSelf == true)
+        {
+            seasonTimer.gameObject.SetActive(false);
+        }
+        else
+        {
+            seasonTimer.gameObject.SetActive(true);
         }
     }
 
