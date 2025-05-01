@@ -2829,7 +2829,7 @@ MonoBehaviour:
   - SwitchP
   - Oh uh... why?
   - SwitchP
-  - Well, My precious golden honey seems to of been misplaced.
+  - Well, My precious  honey seems to of been misplaced.
   - If I were to remember correctly it was in the upper regions of the mountain.
   - SwitchP
   - I'd never take you as the type to lose anything.
@@ -2837,17 +2837,22 @@ MonoBehaviour:
   - Well i'm not. Its just been a slip up given this whole situation.
   - Not to mention the giant footsteps I hear near it. Do you mind finding it for
     me?
+  - Interaction
   myPortrait: {fileID: -5767965085490994945, guid: 55b445526a876984f91b124aa0f1fbfd, type: 3}
-  myInteractionYSel: 
-  myInteractionNSel: 
-  myInteractionText: 
+  myInteractionYSel: Yes
+  myInteractionNSel: No
+  myInteractionText: Give the owl 3 honey?
   berryCondition: 0
   fishCondition: 0
-  honeyCondition: 0
-  myInteractionYText: []
-  myInteractionNText: []
-  myInteractionFailText: []
-  conditionMetText: []
+  honeyCondition: 3
+  myInteractionYText:
+  - Thank you kind sir, I hope you found what you were looking for there.
+  myInteractionNText:
+  - Shoo!
+  myInteractionFailText:
+  - Shoo!
+  conditionMetText:
+  - I hope that room was a hoot!
   conditionIsMet: 0
 --- !u!212 &1242350804
 SpriteRenderer:
