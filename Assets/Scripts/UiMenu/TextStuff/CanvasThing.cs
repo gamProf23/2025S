@@ -82,6 +82,12 @@ public class CanvasThing : MonoBehaviour
     bool goldFishBool = false;
     bool goldHoneyBool = false;
 
+    TMP_Text finalText;
+
+
+    [HideInInspector]
+    public bool allGold = false;
+
     private void Awake()
     {
         berryText = transform.GetChild(0).GetComponent<TMP_Text>();
@@ -139,6 +145,8 @@ public class CanvasThing : MonoBehaviour
         goldBerry = goldItems.transform.GetChild(0).GetComponent<Image>();
         goldFish = goldItems.transform.GetChild(1).GetComponent<Image>();
         goldHoney = goldItems.transform.GetChild(2).GetComponent<Image>();
+
+        finalText = transform.GetChild(10).GetComponent<TMP_Text>();
 
         DontDestroyOnLoad(gameObject);
     }
@@ -349,6 +357,16 @@ public class CanvasThing : MonoBehaviour
         else
         {
             seasonTimer.gameObject.SetActive(true);
+        }
+
+        if (goldBerryBool == true && goldFishBool == true && goldHoneyBool == true)
+        {
+            allGold = true;
+
+            if (finalTextCRRan == false)
+            {
+                StartCoroutine("FinalTextCR");
+            }
         }
     }
 
@@ -629,6 +647,21 @@ public class CanvasThing : MonoBehaviour
         yield return new WaitForSeconds(3f);
 
         goldCRRunning = false;
+    }
+
+    bool finalTextCRRan = false;
+
+    IEnumerator FinalTextCR()
+    {
+        yield return new WaitForSeconds(3f);
+
+        finalTextCRRan = true;
+        finalText.gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(3f);
+
+        finalText.gameObject.SetActive(false);
+
     }
 
 }
