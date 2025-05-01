@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MammothAnim_0: 7986214781640451397
+      MammothAnim_1: 5293154151157056249
+      MammothAnim_2: 2770802132992992372
+      MammothAnim_3: 542919346974624764
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
