@@ -2960,7 +2960,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -97
   m_Sprite: {fileID: -9102900633203978818, guid: 937f655092890b84e828ed9a420a62c6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4189,7 +4189,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -98
   m_Sprite: {fileID: -5973403104142821216, guid: 859a5d3d65beb2c4a8f4f9a19e1bb152, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4428,6 +4428,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc7d2b7d591ffa34c908a5edcc96aee0, type: 3}
+--- !u!1001 &1558003213
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2420360895201328639, guid: a653aa25a31f0b441b9e8b0dbf45c335, type: 3}
+      propertyPath: m_Name
+      value: SingleFallingPlatRock (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388740144498324180, guid: a653aa25a31f0b441b9e8b0dbf45c335, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.492183
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388740144498324180, guid: a653aa25a31f0b441b9e8b0dbf45c335, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.557
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388740144498324180, guid: a653aa25a31f0b441b9e8b0dbf45c335, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388740144498324180, guid: a653aa25a31f0b441b9e8b0dbf45c335, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388740144498324180, guid: a653aa25a31f0b441b9e8b0dbf45c335, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388740144498324180, guid: a653aa25a31f0b441b9e8b0dbf45c335, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388740144498324180, guid: a653aa25a31f0b441b9e8b0dbf45c335, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388740144498324180, guid: a653aa25a31f0b441b9e8b0dbf45c335, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388740144498324180, guid: a653aa25a31f0b441b9e8b0dbf45c335, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388740144498324180, guid: a653aa25a31f0b441b9e8b0dbf45c335, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a653aa25a31f0b441b9e8b0dbf45c335, type: 3}
 --- !u!1001 &1644784008
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5581,7 +5638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4388740144498324180, guid: a653aa25a31f0b441b9e8b0dbf45c335, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.1389234
+      value: 1.393
       objectReference: {fileID: 0}
     - target: {fileID: 4388740144498324180, guid: a653aa25a31f0b441b9e8b0dbf45c335, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17939,6 +17996,7 @@ SceneRoots:
   - {fileID: 1733866513}
   - {fileID: 1517686653}
   - {fileID: 2046772848}
+  - {fileID: 1558003213}
   - {fileID: 1305432777}
   - {fileID: 389904858}
   - {fileID: 703037348}

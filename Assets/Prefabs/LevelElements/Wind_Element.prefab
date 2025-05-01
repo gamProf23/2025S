@@ -308,9 +308,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e08a245c16632645827090cc2634636, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windElement: {fileID: 0}
-  windRenderer: {fileID: 0}
-  windCollider: {fileID: 0}
-  windEffector: {fileID: 0}
   windTimer: 0
-  windOn: 1
+  windOn: 0
+  windConstant: 0
