@@ -86,7 +86,7 @@ public class CanvasThing : MonoBehaviour
 
 
     [HideInInspector]
-    public bool allGold = false;
+    public bool allGold = true;
 
     private void Awake()
     {
@@ -256,7 +256,7 @@ public class CanvasThing : MonoBehaviour
             seasonTimerMarker.enabled = true;
         }
 
-        if (pauseMenu.transform.gameObject.activeSelf == false && FindAnyObjectByType<Bear>().isTalking == false && inBonus == false)
+        if (pauseMenu.transform.gameObject.activeSelf == false && FindAnyObjectByType<Bear>().isTalking == false && inBonus == false && allGold == false)
         {
             currentTime = currentTime + Time.deltaTime;
 
@@ -287,10 +287,15 @@ public class CanvasThing : MonoBehaviour
             }
         }
  
-        if (FindAnyObjectByType<SceneInfo>().gameObject.scene.name.Contains("bonus") == true)
+        if (FindAnyObjectByType<SceneInfo>().gameObject.scene.name.Contains("bonus") == true || allGold == true)
         {
             seasonTimer.gameObject.SetActive(false);
-            inBonus = true;
+            
+            if (FindAnyObjectByType<SceneInfo>().gameObject.scene.name.Contains("bonus") == true)
+            {
+                inBonus = true;
+            }
+            
         }
         else
         {
