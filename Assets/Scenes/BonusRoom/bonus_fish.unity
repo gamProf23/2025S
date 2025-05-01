@@ -49639,9 +49639,9 @@ MonoBehaviour:
   - (Be careful with the currents!)
   - Interaction
   myPortrait: {fileID: -1884701423190137557, guid: 1f7f95803b430dc47b25da35f8f338a5, type: 3}
-  myInteractionYSel: '*glub* (Yes)'
-  myInteractionNSel: '*glub* (No)'
-  myInteractionText: '*glub glub glub glub glub glub* (Give Princess ()?)'
+  myInteractionYSel: Yes
+  myInteractionNSel: No
+  myInteractionText: '*glub glub glub glub glub glub* (Give Princess 6 Fish?)'
   berryCondition: 0
   fishCondition: 6
   honeyCondition: 0
