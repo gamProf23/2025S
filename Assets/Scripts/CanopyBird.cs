@@ -4,9 +4,18 @@ public class CanopyBird : MonoBehaviour
 {
     public bool leftHeading;
     public int birdSpeed;
+    public SpriteRenderer birdSprite;
     private void awake()
     {
 
+        
+    }
+
+    private void Start(){
+        if (leftHeading != true)
+        {
+            flipBird();
+        }
     }
 
     private void Update()
@@ -27,12 +36,21 @@ public class CanopyBird : MonoBehaviour
             if(leftHeading == true)
             {
                 leftHeading = false;
+                flipBird();
             }
             else
             {
                 leftHeading = true;
+                flipBird();
             }
         }
+    }
+
+    private void flipBird()
+    {
+        Vector2 birdOrientation = birdSprite.gameObject.transform.localScale;
+        birdOrientation.x *= -1;
+        birdSprite.gameObject.transform.localScale = birdOrientation;
     }
 
 }

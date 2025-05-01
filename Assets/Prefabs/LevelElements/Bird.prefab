@@ -288,3 +288,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftHeading: 1
   birdSpeed: 5
+  birdSprite: {fileID: 2921408447761465505}
