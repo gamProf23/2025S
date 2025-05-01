@@ -119,5 +119,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BonusRoom/bonus_final.unity
     guid: b93b3b46beae58d48a68206c976af2e6
+  - enabled: 1
+    path: Assets/Scenes/MasterScenes/Credits.unity
+    guid: d636bbd58d760b1438e620e6ca575294
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

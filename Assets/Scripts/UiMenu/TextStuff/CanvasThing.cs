@@ -86,10 +86,11 @@ public class CanvasThing : MonoBehaviour
 
 
     [HideInInspector]
-    public bool allGold = true;
+    public bool allGold;
 
     private void Awake()
     {
+        allGold = false;
         berryText = transform.GetChild(0).GetComponent<TMP_Text>();
         fishText = transform.GetChild(1).GetComponent<TMP_Text>();
         honeyText = transform.GetChild(2).GetComponent<TMP_Text>();
@@ -355,7 +356,7 @@ public class CanvasThing : MonoBehaviour
             }
         }
 
-        if (map.gameObject.activeSelf == true)
+        if (map.gameObject.activeSelf == true || allGold == true)
         {
             seasonTimer.gameObject.SetActive(false);
         }
