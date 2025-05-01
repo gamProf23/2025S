@@ -41,7 +41,7 @@ public class PlayTestEnd : MonoBehaviour
     void ExitButton()
     {
        
-        SceneManager.LoadScene("TitleScreen");
+        SceneManager.LoadScene("Credits");
     }
     // Update is called once per frame
     void Update()
