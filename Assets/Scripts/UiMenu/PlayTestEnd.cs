@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayTestEnd : MonoBehaviour
 {
+    Image bgImage;
     TMP_Text berryText;
     TMP_Text fishText;
     TMP_Text honeyText;
@@ -12,10 +13,11 @@ public class PlayTestEnd : MonoBehaviour
     Button exitButton;
 
     TMP_Text animalText;
-
+    public Sprite goodEnding;
     
     private void Awake()
     {
+        bgImage = transform.GetChild(0).GetComponent<Image>();
         berryText = transform.GetChild(1).GetComponent<TMP_Text>();
         fishText = transform.GetChild(2).GetComponent<TMP_Text>();
         honeyText = transform.GetChild(3).GetComponent<TMP_Text>();
@@ -31,6 +33,11 @@ public class PlayTestEnd : MonoBehaviour
         Destroy(FindAnyObjectByType<Bear>().gameObject);
         Destroy(FindAnyObjectByType<CamFollow>().gameObject);
         Destroy(FindAnyObjectByType<CanvasThing>().gameObject);
+
+        if (FindAnyObjectByType<CanvasThing>().cmAmount == 17 || FindAnyObjectByType<CanvasThing>().allGold == true)
+        {
+            bgImage.sprite = goodEnding;
+        }
     }
 
     void Start()
