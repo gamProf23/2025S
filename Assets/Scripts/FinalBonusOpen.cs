@@ -7,11 +7,11 @@ public class FinalBonusOpen : MonoBehaviour
         if (FindAnyObjectByType<CanvasThing>().allGold == true)
         {
             gameObject.SetActive(true);
+            transform.position = new Vector3(-70.1217f, -15.07157f);
         }
         else
         {
             gameObject.SetActive(false);
-            transform.position = new Vector3(1000, 1000);
         }
     }
 
@@ -22,6 +22,6 @@ public class FinalBonusOpen : MonoBehaviour
 
     void Update()
     {
-
+      
     }
 }

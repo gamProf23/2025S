@@ -70831,7 +70831,7 @@ MonoBehaviour:
   - SwitchP
   - Angela? Isn't she-
   - SwitchP
-  - I think the way to this lovely woman's heart is a golden berry!
+  - I think the way to this lovely woman's heart is a bundle of 5 Berries.
   - Mind getting that for your dashing friend?
   - SwitchP
   - Sure...if your that pawsitive about this.
@@ -70844,8 +70844,8 @@ MonoBehaviour:
   myPortrait: {fileID: -8311846641201667769, guid: d04f67596b88e514d82c8d90ddd2ab56, type: 3}
   myInteractionYSel: Yes
   myInteractionNSel: No
-  myInteractionText: Give the bunny the golden berry?
-  berryCondition: 0
+  myInteractionText: Give the bunny 5 berries?
+  berryCondition: 5
   fishCondition: 0
   honeyCondition: 0
   myInteractionYText:

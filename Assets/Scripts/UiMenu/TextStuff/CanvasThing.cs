@@ -290,6 +290,7 @@ public class CanvasThing : MonoBehaviour
  
         if (FindAnyObjectByType<SceneInfo>().gameObject.scene.name.Contains("bonus") == true || allGold == true)
         {
+            Debug.Log("bruh");
             seasonTimer.gameObject.SetActive(false);
             
             if (FindAnyObjectByType<SceneInfo>().gameObject.scene.name.Contains("bonus") == true)
@@ -356,7 +357,7 @@ public class CanvasThing : MonoBehaviour
             }
         }
 
-        if (map.gameObject.activeSelf == true || allGold == true)
+        if ((map.gameObject.activeSelf == true || allGold == true) || FindAnyObjectByType<SceneInfo>().gameObject.scene.name.Contains("bonus") == true)
         {
             seasonTimer.gameObject.SetActive(false);
         }

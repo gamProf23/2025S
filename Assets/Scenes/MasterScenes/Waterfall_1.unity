@@ -25444,6 +25444,7 @@ MonoBehaviour:
   - ...10 please.
   - SwitchP
   - Keep tight Franny.
+  - Interaction
   myPortrait: {fileID: -6201927694825288388, guid: 60cd33a065a00c94aaa50c0318ae0359, type: 3}
   myInteractionYSel: 
   myInteractionNSel: 
@@ -25451,10 +25452,14 @@ MonoBehaviour:
   berryCondition: 0
   fishCondition: 10
   honeyCondition: 0
-  myInteractionYText: []
-  myInteractionNText: []
-  myInteractionFailText: []
-  conditionMetText: []
+  myInteractionYText:
+  - ...thanks man.
+  myInteractionNText:
+  - it's ok I know you're busy...
+  myInteractionFailText:
+  - ...jerk.
+  conditionMetText:
+  - ..thanks for helping me... but why are you still here?
   conditionIsMet: 0
 --- !u!1 &1445532327
 GameObject:
