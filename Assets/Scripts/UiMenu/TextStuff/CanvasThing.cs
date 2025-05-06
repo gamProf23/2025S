@@ -379,6 +379,8 @@ public class CanvasThing : MonoBehaviour
         if (FindAnyObjectByType<SceneInfo>().GetCMList().ContainsKey("bonus_final"))
         {
             SceneManager.LoadScene("PlayTestEnd");
+            cmAmount = FindAnyObjectByType<SceneInfo>().GetCMAmount() - 1;
+            FindAnyObjectByType<SceneInfo>().ToTitleScreen();
         }
     }
 
